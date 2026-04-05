@@ -116,11 +116,7 @@ export default function ContactPage() {
         {/* Handshake illustration — absolutely positioned to sit in lower half */}
         <div
           aria-hidden
-          className="pointer-events-none absolute left-0 right-0"
-          style={{
-            top: "35%",
-            bottom: "120px",
-          }}
+          className="pointer-events-none absolute top-[58%] -left-[12%] right-[20%] bottom-[140px] md:top-[35%] md:left-0 md:right-0 md:bottom-[120px]"
         >
           <HandshakeIllustration />
         </div>
