@@ -44,7 +44,7 @@ const caseStudiesByCategory: Record<string, CaseStudy[]> = {
       title: "Bujeti Category",
       category: "BUJETI",
       description: "Enabling better category management of expenses",
-      imageSrc: "/images/bujeti bills 2.png",
+      imageSrc: "/images/BUJETIC2.png",
       imageAlt: "Bujeti category management interface",
       bgColor: "#D68F2D",
       href: "/case-studies/bujeti-category",
