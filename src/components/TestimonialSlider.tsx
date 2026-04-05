@@ -131,7 +131,7 @@ export default function TestimonialSlider({
               aria-selected={isActive}
               aria-label={`Go to testimonial ${i + 1}`}
               onClick={() => goTo(i)}
-              className="w-11 h-11 flex items-center justify-center rounded-full"
+              className="w-9 h-9 md:w-11 md:h-11 flex items-center justify-center rounded-full"
             >
               <span
                 className="block w-[14px] h-[14px] rounded-full transition-all duration-300 ease-out"
