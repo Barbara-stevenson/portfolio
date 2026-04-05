@@ -14,6 +14,7 @@ interface CaseStudy {
   imageAlt: string;
   bgColor: string;
   href?: string;
+  imagePosition?: string;
 }
 
 const caseStudiesByCategory: Record<string, CaseStudy[]> = {
@@ -37,6 +38,7 @@ const caseStudiesByCategory: Record<string, CaseStudy[]> = {
       imageAlt: "Bujeti expense management dashboard",
       bgColor: "#73986C",
       href: "/case-studies/bujeti-bills",
+      imagePosition: "center 30%",
     },
     {
       title: "Bujeti Category",
@@ -188,6 +190,7 @@ export default function Home() {
               imageAlt={study.imageAlt}
               bgColor={study.bgColor}
               href={study.href}
+              imagePosition={study.imagePosition}
             />
           ))}
         </div>

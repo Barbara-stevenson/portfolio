@@ -32,7 +32,7 @@ export default function BujetiCategoryCaseStudy() {
       {/* ── Hero / Lead Image ── */}
       <section className="mb-16">
         <LightboxImage
-          src="/images/bujeti category 1.png"
+          src="/images/BUJETIC1.png"
           alt="Bujeti Category Management product interface"
           className="w-full rounded-[16px] object-cover"
         />
@@ -239,7 +239,7 @@ export default function BujetiCategoryCaseStudy() {
           <LightboxImage
             src="/images/bujeti category 11.png"
             alt="Edit category modal"
-            className="w-full rounded-[16px]"
+            className="w-full md:w-[50%] mx-auto rounded-[16px]"
           />
         </div>
       </section>

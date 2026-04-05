@@ -8,6 +8,7 @@ interface CaseStudyCardProps {
   imageAlt: string;
   bgColor?: string;
   href?: string;
+  imagePosition?: string;
 }
 
 export default function CaseStudyCard({
@@ -18,6 +19,7 @@ export default function CaseStudyCard({
   imageAlt,
   bgColor = "#C6592A",
   href,
+  imagePosition = "center",
 }: CaseStudyCardProps) {
   const content = (
     <article
@@ -26,12 +28,16 @@ export default function CaseStudyCard({
     >
       {/* Internal padding wrapper */}
       <div className="p-[20px] flex flex-col gap-4">
-        {/* Image area */}
-        <div className="w-full overflow-hidden rounded-[12px]">
+        {/* Image area — fixed aspect per Figma (746×283) */}
+        <div
+          className="w-full overflow-hidden rounded-[12px]"
+          style={{ aspectRatio: "746 / 283" }}
+        >
           <img
             src={imageSrc}
             alt={imageAlt}
-            className="w-full h-auto object-cover"
+            className="w-full h-full object-cover"
+            style={{ objectPosition: imagePosition }}
           />
         </div>
 
