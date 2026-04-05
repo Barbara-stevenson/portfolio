@@ -81,8 +81,8 @@ export default function MobileMenu({ open, onClose }: MobileMenuProps) {
 
       {/* Social footer */}
       <div className="border-t border-heading-orange/60 pt-4 mx-4">
-        <div className="flex flex-col items-center gap-2">
-          <nav className="flex items-center gap-5">
+        <nav className="flex items-center justify-between gap-4">
+          <div className="flex items-center gap-5">
             <a
               href="https://www.linkedin.com/in/barbara-odusola-stevenson/"
               target="_blank"
@@ -99,14 +99,14 @@ export default function MobileMenu({ open, onClose }: MobileMenuProps) {
             >
               Medium
             </a>
-          </nav>
+          </div>
           <a
             href="mailto:Barbarastevenson.design@gmail.com"
             className="text-social-brown text-[12px] font-medium"
           >
             Barbarastevenson.design@gmail.com
           </a>
-        </div>
+        </nav>
       </div>
     </div>
   );

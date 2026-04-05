@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
 import CapsuleButton from "@/components/CapsuleButton";
 import MobileMenu from "@/components/MobileMenu";
@@ -36,9 +37,13 @@ export default function AboutSidebar({
     >
       {/* Mobile top bar: left-aligned logo + right-aligned hamburger */}
       <div className="flex items-center justify-between md:hidden mb-6 relative z-10">
-        <span className="font-display text-logo font-light text-logo-gray tracking-wide uppercase">
+        <Link
+          href="/"
+          aria-label="Go to home"
+          className="font-display text-logo font-light text-logo-gray tracking-wide uppercase"
+        >
           BARBARA.
-        </span>
+        </Link>
         <button
           aria-label="Open menu"
           className="p-3 -mr-3"
@@ -56,9 +61,13 @@ export default function AboutSidebar({
 
       {/* Top: logo (desktop) + intro paragraph */}
       <div className="relative z-10 flex flex-col gap-[30px]">
-        <span className="hidden md:inline font-display text-logo font-light text-logo-gray tracking-wide uppercase">
+        <Link
+          href="/"
+          aria-label="Go to home"
+          className="hidden md:inline font-display text-logo font-light text-logo-gray tracking-wide uppercase"
+        >
           BARBARA.
-        </span>
+        </Link>
 
         <p className="text-body-copper text-[16px] leading-[120%] md:text-body max-w-[485px]">
           I design high-quality, accessible experiences that move people and

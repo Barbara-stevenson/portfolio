@@ -85,9 +85,13 @@ export default function ContactPage() {
 
         {/* Mobile top bar: left-aligned logo + right-aligned hamburger */}
         <div className="flex items-center justify-between md:hidden mb-6 relative z-10">
-          <span className="font-display text-logo font-light text-logo-gray tracking-wide uppercase">
+          <Link
+            href="/"
+            aria-label="Go to home"
+            className="font-display text-logo font-light text-logo-gray tracking-wide uppercase"
+          >
             BARBARA.
-          </span>
+          </Link>
           <button
             aria-label="Open menu"
             className="p-3 -mr-3"
@@ -105,9 +109,13 @@ export default function ContactPage() {
 
         {/* Top: logo (desktop only) + heading */}
         <div className="relative z-10">
-          <span className="hidden md:inline font-display text-logo font-light text-logo-gray tracking-wide uppercase">
+          <Link
+            href="/"
+            aria-label="Go to home"
+            className="hidden md:inline font-display text-logo font-light text-logo-gray tracking-wide uppercase"
+          >
             BARBARA.
-          </span>
+          </Link>
           <h1 className="md:mt-[30px] text-heading-orange font-sans font-medium text-[24px] leading-[110%] md:text-hero-heading max-w-[468px]">
             Let&rsquo;s make magic together
           </h1>

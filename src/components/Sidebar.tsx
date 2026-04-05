@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useState } from "react";
 import CapsuleButton from "@/components/CapsuleButton";
 import MobileMenu from "@/components/MobileMenu";
@@ -30,9 +31,13 @@ export default function Sidebar({ className = "" }: { className?: string }) {
         <div className="relative z-10">
           {/* Mobile: left-aligned logo + right-aligned hamburger */}
           <div className="flex items-center justify-between md:hidden mb-6">
-            <span className="font-display text-logo font-light text-logo-gray tracking-wide uppercase">
+            <Link
+              href="/"
+              aria-label="Go to home"
+              className="font-display text-logo font-light text-logo-gray tracking-wide uppercase"
+            >
               BARBARA.
-            </span>
+            </Link>
             <button
               aria-label="Open menu"
               className="p-3 -mr-3"
@@ -50,9 +55,13 @@ export default function Sidebar({ className = "" }: { className?: string }) {
 
           {/* Desktop: just logo */}
           <div className="hidden md:block">
-            <span className="font-display text-logo font-light text-logo-gray tracking-wide uppercase">
+            <Link
+              href="/"
+              aria-label="Go to home"
+              className="font-display text-logo font-light text-logo-gray tracking-wide uppercase"
+            >
               BARBARA.
-            </span>
+            </Link>
           </div>
 
           {/* Headline */}
