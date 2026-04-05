@@ -125,7 +125,7 @@ export default function AboutSidebar({
         </a>
 
         {/* Footer — identical treatment to the home page sidebar footer */}
-        <div className="hidden md:block border-t border-white/10 pt-6">
+        <div className="border-t border-white/10 pt-6">
           <nav className="flex items-center justify-between">
             <a
               href="https://www.linkedin.com/in/barbara-odusola-stevenson/"

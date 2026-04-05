@@ -64,7 +64,7 @@ export default function ContactPage() {
     <main className="min-h-screen flex flex-col md:flex-row bg-sage">
       {/* ═══════════ LEFT PANEL: Dark sidebar ═══════════ */}
       <aside
-        className={`relative bg-[#1B1B1B] text-white flex flex-col justify-between px-8 py-10 md:px-10 md:py-10 md:w-[548px] md:min-w-[548px] md:h-screen md:sticky md:top-0 overflow-hidden transition-all duration-700 ease-out ${
+        className={`relative bg-[#1B1B1B] text-white flex flex-col justify-between px-8 py-10 md:px-10 md:py-10 min-h-[620px] md:min-h-0 md:w-[548px] md:min-w-[548px] md:h-screen md:sticky md:top-0 overflow-hidden transition-all duration-700 ease-out ${
           mounted ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-6"
         }`}
       >
@@ -116,7 +116,7 @@ export default function ContactPage() {
         {/* Handshake illustration — absolutely positioned to sit in lower half */}
         <div
           aria-hidden
-          className="pointer-events-none absolute top-[58%] -left-[12%] right-[20%] bottom-[140px] md:top-[35%] md:left-0 md:right-0 md:bottom-[120px]"
+          className="pointer-events-none absolute top-[45%] -left-[10%] right-[18%] bottom-[120px] md:top-[35%] md:left-0 md:right-0 md:bottom-[120px]"
         >
           <HandshakeIllustration />
         </div>

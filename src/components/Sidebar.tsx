@@ -80,8 +80,8 @@ export default function Sidebar({ className = "" }: { className?: string }) {
             <CapsuleButton direction="right">Work with me</CapsuleButton>
           </a>
 
-          {/* Social links — desktop only (mobile has them in the menu overlay) */}
-          <div className="hidden md:block border-t border-white/10 pt-6">
+          {/* Social links */}
+          <div className="border-t border-white/10 pt-6">
             <nav className="flex items-center justify-between">
               <a
                 href="https://www.linkedin.com/in/barbara-odusola-stevenson/"
