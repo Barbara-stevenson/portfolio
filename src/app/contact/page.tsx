@@ -64,14 +64,14 @@ export default function ContactPage() {
     <main className="min-h-screen flex flex-col md:flex-row bg-sage">
       {/* ═══════════ LEFT PANEL: Dark sidebar ═══════════ */}
       <aside
-        className={`relative bg-[#1B1B1B] text-white flex flex-col justify-between px-8 py-10 md:px-10 md:py-10 min-h-[620px] md:min-h-0 md:w-[548px] md:min-w-[548px] md:h-screen md:sticky md:top-0 overflow-hidden transition-all duration-700 ease-out ${
+        className={`bg-dark text-white flex flex-col px-6 py-6 md:px-10 md:py-10 md:justify-between relative overflow-hidden md:sticky md:top-0 md:h-screen md:w-[38%] md:min-w-[380px] md:max-w-[548px] md:shrink-0 transition-all duration-700 ease-out ${
           mounted ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-6"
         }`}
       >
-        {/* Decorative ellipse behind handshake */}
+        {/* Decorative ellipse behind handshake — desktop only */}
         <div
           aria-hidden
-          className="absolute pointer-events-none"
+          className="hidden md:block absolute pointer-events-none"
           style={{
             width: "306px",
             height: "398px",
@@ -85,7 +85,7 @@ export default function ContactPage() {
 
         {/* Mobile top bar: left-aligned logo + right-aligned hamburger */}
         <div className="flex items-center justify-between md:hidden mb-6 relative z-10">
-          <span className="font-display text-[24px] text-[#A0A1A1] leading-none tracking-wide uppercase">
+          <span className="font-display text-logo font-light text-logo-gray tracking-wide uppercase">
             BARBARA.
           </span>
           <button
@@ -103,26 +103,39 @@ export default function ContactPage() {
           </button>
         </div>
 
-        {/* Top: logo + heading */}
-        <div className="relative z-10 flex flex-col gap-[30px]">
-          <p className="hidden md:block font-display text-[24px] text-[#A0A1A1] leading-none tracking-wide">
+        {/* Top: logo (desktop only) + heading */}
+        <div className="relative z-10">
+          <span className="hidden md:inline font-display text-logo font-light text-logo-gray tracking-wide uppercase">
             BARBARA.
-          </p>
-          <h1 className="font-sans font-medium text-[36px] md:text-[44px] leading-[1.1] text-[#FE9161] max-w-[468px]">
+          </span>
+          <h1 className="md:mt-[30px] text-heading-orange font-sans font-medium text-[24px] leading-[110%] md:text-hero-heading max-w-[468px]">
             Let&rsquo;s make magic together
           </h1>
         </div>
 
-        {/* Handshake illustration — absolutely positioned to sit in lower half */}
+        {/* Handshake — flow block on mobile (scaled up with overflow-hidden so hand edges clip),
+            absolute positioned on desktop */}
         <div
           aria-hidden
-          className="pointer-events-none absolute top-[45%] -left-[10%] right-[18%] bottom-[120px] md:top-[35%] md:left-0 md:right-0 md:bottom-[120px]"
+          className="relative z-10 md:hidden h-[260px] -mx-6 mt-6 overflow-hidden"
+        >
+          <div
+            className="absolute inset-0"
+            style={{ transform: "scale(1.35)", transformOrigin: "center" }}
+          >
+            <HandshakeIllustration />
+          </div>
+        </div>
+        <div
+          aria-hidden
+          className="hidden md:block pointer-events-none absolute left-0 right-0"
+          style={{ top: "35%", bottom: "120px" }}
         >
           <HandshakeIllustration />
         </div>
 
         {/* Footer */}
-        <div className="relative z-10 mt-10 md:mt-0">
+        <div className="relative z-10 mt-6 md:mt-0">
           <ContactFooterLinks />
         </div>
       </aside>
