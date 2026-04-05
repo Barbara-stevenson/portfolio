@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Barbara — Portfolio Preview</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://api.fontshare.com" />
+  <link href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@400;500;700&display=swap" rel="stylesheet" />
+  <link href="https://api.fontshare.com/v2/css?f[]=mango-grotesque@400&display=swap" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Cabinet Grotesk"', 'sans-serif'],
+            display: ['"Mango Grotesque"', 'sans-serif'],
+          },
+          fontSize: {
+            'hero-heading': ['44px', { lineHeight: '110%' }],
+            'section-heading': ['28px', { lineHeight: '120%' }],
+            'body': ['20px', { lineHeight: '120%' }],
+            'button': ['16px', { lineHeight: 'normal' }],
+            'nav': ['16px', { lineHeight: 'normal' }],
+            'caption': ['14px', { lineHeight: '120%' }],
+            'logo': ['24px', { lineHeight: 'normal' }],
+          },
+          colors: {
+            dark: '#1B1B1B',
+            sage: { DEFAULT: '#9CA79A', light: '#AFBBAD' },
+            'card-orange': '#C8623A',
+            'heading-orange': '#FE9161',
+            'body-copper': '#CA947C',
+            'logo-gray': '#A0A1A1',
+            'social-brown': '#93563B',
+            'dark-text': '#111211',
+            'pill-text': '#392C1A',
+          },
+          borderRadius: { button: '16px' },
+        },
+      },
+    }
+  </script>
+  <style>
+    .scrollbar-hide::-webkit-scrollbar { display: none; }
+    .scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+  </style>
+</head>
+<body class="font-sans font-medium antialiased">
+
+  <main class="min-h-screen flex flex-col md:flex-row">
+
+    <!-- ── Left Panel: Sticky dark sidebar ── -->
+    <aside class="bg-dark text-white flex flex-col justify-between px-4 py-8 md:px-10 md:py-10 relative overflow-hidden md:sticky md:top-0 md:h-screen md:w-[38%] md:min-w-[380px] md:max-w-[548px] md:shrink-0">
+
+      <!-- Decorative circle -->
+      <div class="absolute pointer-events-none" style="width:460px;height:460px;right:-140px;top:50%;transform:translateY(-50%);border-radius:50%;background:#2a2a2a;"></div>
+
+      <!-- Top: Logo -->
+      <div class="relative z-10">
+        <!-- Mobile nav bar -->
+        <div class="flex items-center justify-between md:hidden mb-6">
+          <button aria-label="Menu" class="p-1">
+            <svg width="20" height="14" viewBox="0 0 20 14" fill="none"><path d="M0 1h20M0 7h20M0 13h20" stroke="#A0A1A1" stroke-width="1.5"/></svg>
+          </button>
+          <span class="font-display text-logo text-logo-gray tracking-wide uppercase">BARBARA.</span>
+          <button aria-label="Settings" class="p-1">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" stroke="#A0A1A1" stroke-width="1.5"/><circle cx="10" cy="10" r="3" stroke="#A0A1A1" stroke-width="1.5"/></svg>
+          </button>
+        </div>
+        <!-- Desktop logo -->
+        <div class="hidden md:block mb-6">
+          <span class="font-display text-logo text-logo-gray tracking-wide uppercase">BARBARA.</span>
+        </div>
+      </div>
+
+      <!-- Middle: Headline -->
+      <div class="relative z-10 flex-1 flex flex-col justify-center">
+        <h1 class="text-heading-orange font-sans font-medium text-[24px] leading-[110%] md:text-hero-heading">
+          I&rsquo;m Barbara, a product designer innovating unique experiences &amp; streamlining complex systems.
+        </h1>
+      </div>
+
+      <!-- Bottom: Body + CTA + Social -->
+      <div class="relative z-10 space-y-6">
+        <p class="text-body-copper text-[14px] leading-[120%] md:text-body">
+          With a keen sense for simplifying complexities, I merge user and business needs to deliver successful outcomes.
+        </p>
+
+        <a href="#contact" class="inline-flex items-center gap-3 px-6 py-4 bg-sage text-black text-button font-medium border border-black rounded-button hover:opacity-90 transition-opacity">
+          Work with me
+          <svg width="24" height="12" viewBox="0 0 24 12" fill="none"><path d="M0 6h22m0 0l-5-5m5 5l-5 5" stroke="currentColor" stroke-width="1.5"/></svg>
+        </a>
+
+        <!-- Divider + social links -->
+        <div class="border-t border-white/10 pt-6">
+          <nav class="flex flex-wrap items-center gap-x-[26px] gap-y-2">
+            <a href="#" class="text-social-brown text-caption font-medium hover:text-heading-orange transition-colors">Linkedin</a>
+            <a href="#" class="text-social-brown text-caption font-medium hover:text-heading-orange transition-colors">Medium</a>
+            <a href="#" class="text-social-brown text-caption font-medium hover:text-heading-orange transition-colors">Twitter</a>
+            <a href="#" class="text-social-brown text-caption font-medium hover:text-heading-orange transition-colors">Instagram</a>
+            <a href="mailto:barbarastevenson.design@gmail.com" class="text-social-brown text-caption font-medium hover:text-heading-orange transition-colors">barbarastevenson.design@gmail.com</a>
+          </nav>
+        </div>
+      </div>
+    </aside>
+
+    <!-- ── Right Panel: Sage content area ── -->
+    <section class="flex-1 bg-sage relative">
+
+      <!-- Sticky wrapper: nav + heading + pills -->
+      <div class="md:sticky md:top-0 md:z-20 bg-sage">
+        <!-- Desktop navigation -->
+        <header class="hidden md:flex items-center justify-end px-[54px] pt-10 pb-0">
+          <nav class="flex items-center gap-6">
+            <a href="#" class="text-nav font-medium text-dark-text hover:text-heading-orange transition-colors">Home</a>
+            <a href="#" class="text-nav font-medium text-dark-text hover:text-heading-orange transition-colors">Articles</a>
+            <a href="#" class="text-nav font-medium text-dark-text hover:text-heading-orange transition-colors">About</a>
+            <a href="#" class="text-nav font-medium text-dark-text hover:text-heading-orange transition-colors">Contact</a>
+          </nav>
+        </header>
+
+        <!-- Selected Case Studies heading + pills -->
+        <div class="px-4 md:px-[54px] pt-6 md:pt-8 pb-4 md:pb-6 space-y-4 md:space-y-6">
+          <h2 class="text-section-heading font-bold text-dark-text">Selected Case Studies</h2>
+          <div class="flex items-center gap-4 overflow-x-auto pb-1 scrollbar-hide">
+            <button class="whitespace-nowrap px-5 py-2.5 rounded-full text-caption font-medium border bg-heading-orange/20 border-heading-orange text-pill-text">Fin Tech</button>
+            <button class="whitespace-nowrap px-5 py-2.5 rounded-full text-caption font-medium border bg-transparent border-dark-text/30 text-pill-text hover:border-dark-text/60">Health Tech</button>
+            <button class="whitespace-nowrap px-5 py-2.5 rounded-full text-caption font-medium border bg-transparent border-dark-text/30 text-pill-text hover:border-dark-text/60">Digital Media</button>
+            <button class="whitespace-nowrap px-5 py-2.5 rounded-full text-caption font-medium border bg-transparent border-dark-text/30 text-pill-text hover:border-dark-text/60">Marketing Sites</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Case study cards -->
+      <div class="px-4 md:px-[54px] pb-10 space-y-8 md:space-y-10">
+
+        <!-- ARM Card -->
+        <article class="group cursor-pointer">
+          <div class="relative w-full overflow-hidden rounded-2xl" style="background-color:#C8623A">
+            <div class="aspect-[16/10] flex items-center justify-center p-6 md:p-10">
+              <div class="w-full h-full bg-dark/20 rounded-lg flex items-center justify-center text-white/40 text-sm">
+                [ARM Project Image]
+              </div>
+            </div>
+          </div>
+          <div class="mt-4 space-y-1">
+            <span class="text-caption font-medium text-dark-text uppercase tracking-wide">ARM</span>
+            <h3 class="text-[20px] md:text-[24px] leading-[120%] font-bold text-dark-text">
+              Creating an omnichannel experience across invesments, securities and pensions products.
+            </h3>
+          </div>
+        </article>
+
+        <!-- Bujeti Card 1 -->
+        <article class="group cursor-pointer">
+          <div class="relative w-full overflow-hidden rounded-2xl" style="background-color:#9CA79A">
+            <div class="aspect-[16/10] flex items-center justify-center p-6 md:p-10">
+              <div class="w-full h-full bg-dark/20 rounded-lg flex items-center justify-center text-white/40 text-sm">
+                [Bujeti Project Image]
+              </div>
+            </div>
+          </div>
+          <div class="mt-4 space-y-1">
+            <span class="text-caption font-medium text-dark-text uppercase tracking-wide">BUJETI</span>
+            <h3 class="text-[20px] md:text-[24px] leading-[120%] font-bold text-dark-text">
+              Providing users with a centralized system for managing and tracking recurring expenses
+            </h3>
+          </div>
+        </article>
+
+        <!-- Bujeti Card 2 -->
+        <article class="group cursor-pointer">
+          <div class="relative w-full overflow-hidden rounded-2xl" style="background-color:#D4943A">
+            <div class="aspect-[16/10] flex items-center justify-center p-6 md:p-10">
+              <div class="w-full h-full bg-dark/20 rounded-lg flex items-center justify-center text-white/40 text-sm">
+                [Bujeti Category Image]
+              </div>
+            </div>
+          </div>
+          <div class="mt-4 space-y-1">
+            <span class="text-caption font-medium text-dark-text uppercase tracking-wide">BUJETI</span>
+            <h3 class="text-[20px] md:text-[24px] leading-[120%] font-bold text-dark-text">
+              Enabling better category management of expenses
+            </h3>
+          </div>
+        </article>
+
+        <!-- Bujeti Card 3 -->
+        <article class="group cursor-pointer">
+          <div class="relative w-full overflow-hidden rounded-2xl" style="background-color:#4A9B9B">
+            <div class="aspect-[16/10] flex items-center justify-center p-6 md:p-10">
+              <div class="w-full h-full bg-dark/20 rounded-lg flex items-center justify-center text-white/40 text-sm">
+                [Bujeti Onboarding Image]
+              </div>
+            </div>
+          </div>
+          <div class="mt-4 space-y-1">
+            <span class="text-caption font-medium text-dark-text uppercase tracking-wide">BUJETI</span>
+            <h3 class="text-[20px] md:text-[24px] leading-[120%] font-bold text-dark-text">
+              Revamping onboarding experience
+            </h3>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+  </main>
+
+</body>
+</html>

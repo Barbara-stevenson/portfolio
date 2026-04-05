@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ── Self-hosted Mango Grotesque ── */
+@font-face {
+  font-family: "Mango Grotesque";
+  src: url("/fonts/MangoGrotesque-Light.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Mango Grotesque";
+  src: url("/fonts/MangoGrotesque-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --color-dark: #1b1b1b;
+  --color-sage: #9ca79a;
+  --color-sage-light: #afbbad;
+  --color-card-orange: #c8623a;
+  --color-heading-orange: #fe9161;
+  --color-body-copper: #ca947c;
+  --color-logo-gray: #a0a1a1;
+  --color-social-brown: #93563b;
+  --color-dark-text: #111211;
+  --color-pill-text: #392c1a;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: "Cabinet Grotesk", sans-serif;
+    font-weight: 500;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
