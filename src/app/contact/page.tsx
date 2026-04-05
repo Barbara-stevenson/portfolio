@@ -121,15 +121,18 @@ export default function ContactPage() {
           </h1>
         </div>
 
-        {/* Handshake — flow block on mobile (scaled up with overflow-hidden so hand edges clip),
-            absolute positioned on desktop */}
+        {/* Handshake — flow block on mobile. Aspect ratio matches the
+            hands-shaking PNG (1424 × 708). Scale anchored at bottom pushes
+            forearms off the sides while keeping the clasped hands in frame.
+            Desktop stays absolute. */}
         <div
           aria-hidden
-          className="relative z-10 md:hidden h-[260px] -mx-6 mt-6 overflow-hidden"
+          className="relative z-10 md:hidden w-full mt-6 overflow-hidden"
+          style={{ aspectRatio: "1424 / 708" }}
         >
           <div
             className="absolute inset-0"
-            style={{ transform: "scale(1.35)", transformOrigin: "center" }}
+            style={{ transform: "scale(1.18)", transformOrigin: "center bottom" }}
           >
             <HandshakeIllustration />
           </div>
