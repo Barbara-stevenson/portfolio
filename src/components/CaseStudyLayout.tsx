@@ -1,7 +1,9 @@
 "use client";
 
 import Link from "next/link";
+import { useState } from "react";
 import CapsuleButton from "@/components/CapsuleButton";
+import MobileMenu from "@/components/MobileMenu";
 import { useSlideNav } from "@/components/SlideTransition";
 
 /* ── Types ── */
@@ -36,11 +38,33 @@ export default function CaseStudyLayout({
   children,
 }: CaseStudyLayoutProps) {
   const { slideNavigate } = useSlideNav();
+  const [menuOpen, setMenuOpen] = useState(false);
 
   return (
+    <>
     <main className="min-h-screen flex flex-col md:flex-row bg-[#1A1A1A]">
       {/* ── Left Panel: Sticky sage sidebar ── */}
       <aside className="bg-sage text-dark-text flex flex-col px-6 py-8 md:px-10 md:py-10 md:justify-between relative overflow-hidden md:sticky md:top-0 md:h-screen md:w-[30%] md:min-w-[304px] md:max-w-[438px] md:shrink-0">
+        {/* Mobile top bar: left-aligned logo + right-aligned hamburger */}
+        <div className="flex items-center justify-between md:hidden mb-4 relative z-10">
+          <span className="font-display text-logo font-light text-dark-text tracking-wide uppercase">
+            BARBARA.
+          </span>
+          <button
+            aria-label="Open menu"
+            className="p-3 -mr-3"
+            onClick={() => setMenuOpen(true)}
+          >
+            <svg width="24" height="14" viewBox="0 0 24 14" fill="none">
+              <path
+                d="M0 1h24M0 7h24M0 13h24"
+                stroke="#111211"
+                strokeWidth="1.5"
+              />
+            </svg>
+          </button>
+        </div>
+
         {/* Decorative circles */}
         <div
           className="absolute pointer-events-none"
@@ -209,13 +233,17 @@ export default function CaseStudyLayout({
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <nav className="flex items-center gap-6">
               <a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/in/barbara-odusola-stevenson/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-social-brown text-caption font-medium hover:text-heading-orange transition-colors"
               >
                 Linkedin
               </a>
               <a
-                href="https://medium.com"
+                href="https://medium.com/@barbara-stevenson"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-social-brown text-caption font-medium hover:text-heading-orange transition-colors"
               >
                 Medium
@@ -231,5 +259,7 @@ export default function CaseStudyLayout({
         </footer>
       </section>
     </main>
+    <MobileMenu open={menuOpen} onClose={() => setMenuOpen(false)} />
+    </>
   );
 }

@@ -6,6 +6,7 @@ import HandshakeIllustration from "@/components/HandshakeIllustration";
 import ContactCard from "@/components/ContactCard";
 import SkillPill from "@/components/SkillPill";
 import ContactFooterLinks from "@/components/ContactFooterLinks";
+import MobileMenu from "@/components/MobileMenu";
 
 /* ── Skill pills ───────────────────────────── */
 const skills: { label: string; width: number }[] = [
@@ -51,6 +52,7 @@ const skills: { label: string; width: number }[] = [
 
 export default function ContactPage() {
   const [mounted, setMounted] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
     const t = requestAnimationFrame(() => setMounted(true));
@@ -58,6 +60,7 @@ export default function ContactPage() {
   }, []);
 
   return (
+    <>
     <main className="min-h-screen flex flex-col md:flex-row bg-sage">
       {/* ═══════════ LEFT PANEL: Dark sidebar ═══════════ */}
       <aside
@@ -80,13 +83,33 @@ export default function ContactPage() {
           }}
         />
 
+        {/* Mobile top bar: left-aligned logo + right-aligned hamburger */}
+        <div className="flex items-center justify-between md:hidden mb-6 relative z-10">
+          <span className="font-display text-[24px] text-[#A0A1A1] leading-none tracking-wide uppercase">
+            BARBARA.
+          </span>
+          <button
+            aria-label="Open menu"
+            className="p-3 -mr-3"
+            onClick={() => setMenuOpen(true)}
+          >
+            <svg width="24" height="14" viewBox="0 0 24 14" fill="none">
+              <path
+                d="M0 1h24M0 7h24M0 13h24"
+                stroke="#A0A1A1"
+                strokeWidth="1.5"
+              />
+            </svg>
+          </button>
+        </div>
+
         {/* Top: logo + heading */}
         <div className="relative z-10 flex flex-col gap-[30px]">
-          <p className="font-display text-[24px] text-[#A0A1A1] leading-none tracking-wide">
+          <p className="hidden md:block font-display text-[24px] text-[#A0A1A1] leading-none tracking-wide">
             BARBARA.
           </p>
           <h1 className="font-sans font-medium text-[36px] md:text-[44px] leading-[1.1] text-[#FE9161] max-w-[468px]">
-            Lets make magic together
+            Let&rsquo;s make magic together
           </h1>
         </div>
 
@@ -234,5 +257,7 @@ export default function ContactPage() {
         </div>
       </section>
     </main>
+    <MobileMenu open={menuOpen} onClose={() => setMenuOpen(false)} />
+    </>
   );
 }

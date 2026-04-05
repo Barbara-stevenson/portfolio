@@ -28,11 +28,14 @@ export default function Sidebar({ className = "" }: { className?: string }) {
 
         {/* Top section: Logo + Headline */}
         <div className="relative z-10">
-          {/* Mobile: hamburger + centered logo + icon */}
+          {/* Mobile: left-aligned logo + right-aligned hamburger */}
           <div className="flex items-center justify-between md:hidden mb-6">
+            <span className="font-display text-logo font-light text-logo-gray tracking-wide uppercase">
+              BARBARA.
+            </span>
             <button
               aria-label="Open menu"
-              className="p-1"
+              className="p-3 -mr-3"
               onClick={() => setMenuOpen(true)}
             >
               <svg width="24" height="14" viewBox="0 0 24 14" fill="none">
@@ -41,23 +44,6 @@ export default function Sidebar({ className = "" }: { className?: string }) {
                   stroke="#A0A1A1"
                   strokeWidth="1.5"
                 />
-              </svg>
-            </button>
-            <span className="font-display text-logo font-light text-logo-gray tracking-wide uppercase">
-              BARBARA.
-            </span>
-            <button aria-label="Profile" className="p-1">
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="#A0A1A1"
-                strokeWidth="1.5"
-              >
-                <circle cx="12" cy="12" r="10" />
-                <circle cx="12" cy="10" r="3" />
-                <path d="M5.5 19.5c1.5-3 3.8-4.5 6.5-4.5s5 1.5 6.5 4.5" />
               </svg>
             </button>
           </div>

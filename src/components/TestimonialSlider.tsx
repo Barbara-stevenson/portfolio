@@ -120,7 +120,7 @@ export default function TestimonialSlider({
       </div>
 
       {/* Dots */}
-      <div className="flex items-center gap-4" role="tablist" aria-label="Choose testimonial">
+      <div className="flex items-center gap-2" role="tablist" aria-label="Choose testimonial">
         {testimonials.map((t, i) => {
           const isActive = i === activeIndex;
           return (
@@ -131,12 +131,16 @@ export default function TestimonialSlider({
               aria-selected={isActive}
               aria-label={`Go to testimonial ${i + 1}`}
               onClick={() => goTo(i)}
-              className="w-[14px] h-[14px] rounded-full transition-all duration-300 ease-out"
-              style={{
-                backgroundColor: isActive ? "#CA9550" : "rgba(17,18,17,0.25)",
-                transform: isActive ? "scale(1.15)" : "scale(1)",
-              }}
-            />
+              className="w-11 h-11 flex items-center justify-center rounded-full"
+            >
+              <span
+                className="block w-[14px] h-[14px] rounded-full transition-all duration-300 ease-out"
+                style={{
+                  backgroundColor: isActive ? "#CA9550" : "rgba(17,18,17,0.25)",
+                  transform: isActive ? "scale(1.15)" : "scale(1)",
+                }}
+              />
+            </button>
           );
         })}
       </div>

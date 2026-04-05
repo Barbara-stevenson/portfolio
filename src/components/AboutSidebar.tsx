@@ -1,7 +1,9 @@
 "use client";
 
 import Image from "next/image";
+import { useState } from "react";
 import CapsuleButton from "@/components/CapsuleButton";
+import MobileMenu from "@/components/MobileMenu";
 
 interface AboutSidebarProps {
   className?: string;
@@ -25,13 +27,36 @@ export default function AboutSidebar({
   portraits = ["/images/B1.png"],
   activePortraitIndex = 0,
 }: AboutSidebarProps) {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
+    <>
     <aside
       className={`bg-dark text-white flex flex-col px-6 py-6 md:px-10 md:py-10 md:justify-between relative overflow-hidden md:sticky md:top-0 md:h-screen md:w-[38%] md:min-w-[380px] md:max-w-[548px] md:shrink-0 ${className}`}
     >
-      {/* Top: logo + intro paragraph */}
-      <div className="relative z-10 flex flex-col gap-[30px]">
+      {/* Mobile top bar: left-aligned logo + right-aligned hamburger */}
+      <div className="flex items-center justify-between md:hidden mb-6 relative z-10">
         <span className="font-display text-logo font-light text-logo-gray tracking-wide uppercase">
+          BARBARA.
+        </span>
+        <button
+          aria-label="Open menu"
+          className="p-3 -mr-3"
+          onClick={() => setMenuOpen(true)}
+        >
+          <svg width="24" height="14" viewBox="0 0 24 14" fill="none">
+            <path
+              d="M0 1h24M0 7h24M0 13h24"
+              stroke="#A0A1A1"
+              strokeWidth="1.5"
+            />
+          </svg>
+        </button>
+      </div>
+
+      {/* Top: logo (desktop) + intro paragraph */}
+      <div className="relative z-10 flex flex-col gap-[30px]">
+        <span className="hidden md:inline font-display text-logo font-light text-logo-gray tracking-wide uppercase">
           BARBARA.
         </span>
 
@@ -128,5 +153,7 @@ export default function AboutSidebar({
         </div>
       </div>
     </aside>
+    <MobileMenu open={menuOpen} onClose={() => setMenuOpen(false)} />
+    </>
   );
 }

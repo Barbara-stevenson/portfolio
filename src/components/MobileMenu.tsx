@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useEffect } from "react";
 
 interface MobileMenuProps {
@@ -32,7 +33,7 @@ export default function MobileMenu({ open, onClose }: MobileMenuProps) {
       <div className="flex justify-end">
         <button
           aria-label="Close menu"
-          className="p-2"
+          className="p-3 -m-1"
           onClick={onClose}
         >
           <svg
@@ -51,21 +52,28 @@ export default function MobileMenu({ open, onClose }: MobileMenuProps) {
       </div>
 
       {/* Nav links */}
-      <nav className="mt-6 ml-4 space-y-4">
-        <a
-          href="#articles"
-          className="block text-heading-orange font-sans font-medium text-[16px]"
+      <nav className="mt-6 ml-4 flex flex-col">
+        <Link
+          href="/"
+          className="block text-heading-orange font-sans font-medium text-[20px] py-3"
           onClick={onClose}
         >
-          Article
-        </a>
-        <a
+          Home
+        </Link>
+        <Link
+          href="/about"
+          className="block text-heading-orange font-sans font-medium text-[20px] py-3"
+          onClick={onClose}
+        >
+          About
+        </Link>
+        <Link
           href="/contact"
-          className="block text-heading-orange font-sans font-medium text-[16px]"
+          className="block text-heading-orange font-sans font-medium text-[20px] py-3"
           onClick={onClose}
         >
           Contact
-        </a>
+        </Link>
       </nav>
 
       {/* Spacer */}
