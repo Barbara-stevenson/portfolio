@@ -3,7 +3,7 @@ export default function ContactFooterLinks() {
     <div className="border-t border-white/10 pt-6">
       <nav className="flex items-center justify-between">
         <a
-          href="https://linkedin.com"
+          href="https://www.linkedin.com/in/barbara-odusola-stevenson/"
           target="_blank"
           rel="noopener noreferrer"
           className="text-social-brown text-caption font-medium hover:text-heading-orange transition-colors"
@@ -11,7 +11,7 @@ export default function ContactFooterLinks() {
           Linkedin
         </a>
         <a
-          href="https://medium.com"
+          href="https://medium.com/@barbara-stevenson"
           target="_blank"
           rel="noopener noreferrer"
           className="text-social-brown text-caption font-medium hover:text-heading-orange transition-colors"

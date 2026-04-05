@@ -76,13 +76,17 @@ export default function MobileMenu({ open, onClose }: MobileMenuProps) {
         <div className="flex flex-col items-center gap-2">
           <nav className="flex items-center gap-5">
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/barbara-odusola-stevenson/"
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-social-brown text-[12px] font-medium"
             >
               Linkedin
             </a>
             <a
-              href="https://medium.com"
+              href="https://medium.com/@barbara-stevenson"
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-social-brown text-[12px] font-medium"
             >
               Medium

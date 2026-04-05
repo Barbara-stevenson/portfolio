@@ -87,7 +87,10 @@ export default function Sidebar({ className = "" }: { className?: string }) {
             and beyond.
           </p>
 
-          <a href="#contact" className="inline-block">
+          <a
+            href="mailto:Barbarastevenson.design@gmail.com"
+            className="inline-block"
+          >
             <CapsuleButton direction="right">Work with me</CapsuleButton>
           </a>
 
@@ -95,13 +98,17 @@ export default function Sidebar({ className = "" }: { className?: string }) {
           <div className="hidden md:block border-t border-white/10 pt-6">
             <nav className="flex items-center justify-between">
               <a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/in/barbara-odusola-stevenson/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-social-brown text-caption font-medium hover:text-heading-orange transition-colors"
               >
                 Linkedin
               </a>
               <a
-                href="https://medium.com"
+                href="https://medium.com/@barbara-stevenson"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-social-brown text-caption font-medium hover:text-heading-orange transition-colors"
               >
                 Medium

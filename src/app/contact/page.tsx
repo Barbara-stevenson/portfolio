@@ -166,7 +166,7 @@ export default function ContactPage() {
             >
               <ContactCard
                 label="Linkedin"
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/in/barbara-odusola-stevenson/"
                 bgColor="#C6592A"
               />
               <ContactCard
@@ -183,18 +183,18 @@ export default function ContactPage() {
             >
               <ContactCard
                 label="Instagram"
-                href="https://instagram.com"
+                href="https://www.instagram.com/barbarastevenson_/"
                 bgColor="#BA7C27"
                 labelPosition="top"
               />
               <ContactCard
                 label="Medium"
-                href="https://medium.com"
+                href="https://medium.com/@barbara-stevenson"
                 bgColor="#73986C"
               />
               <ContactCard
                 label="Twitter"
-                href="https://twitter.com"
+                href="https://x.com/Barbarastevensn"
                 bgColor="#C6592A"
               />
             </div>
@@ -204,7 +204,7 @@ export default function ContactPage() {
           <div className="md:hidden flex flex-col gap-4">
             <ContactCard
               label="Linkedin"
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/barbara-odusola-stevenson/"
               bgColor="#C6592A"
             />
             <ContactCard
@@ -214,19 +214,19 @@ export default function ContactPage() {
             />
             <ContactCard
               label="Instagram"
-              href="https://instagram.com"
+              href="https://www.instagram.com/barbarastevenson_/"
               bgColor="#BA7C27"
               labelPosition="top"
             />
             <div className="grid grid-cols-2 gap-4">
               <ContactCard
                 label="Medium"
-                href="https://medium.com"
+                href="https://medium.com/@barbara-stevenson"
                 bgColor="#73986C"
               />
               <ContactCard
                 label="Twitter"
-                href="https://twitter.com"
+                href="https://x.com/Barbarastevensn"
                 bgColor="#C6592A"
               />
             </div>

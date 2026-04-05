@@ -1,7 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
 import CapsuleButton from "@/components/CapsuleButton";
 
 interface AboutSidebarProps {
@@ -93,15 +92,18 @@ export default function AboutSidebar({
           business needs to deliver successful outcomes.
         </p>
 
-        <Link href="/contact" className="inline-block">
+        <a
+          href="mailto:Barbarastevenson.design@gmail.com"
+          className="inline-block"
+        >
           <CapsuleButton direction="right">Work with me</CapsuleButton>
-        </Link>
+        </a>
 
         {/* Footer — identical treatment to the home page sidebar footer */}
         <div className="hidden md:block border-t border-white/10 pt-6">
           <nav className="flex items-center justify-between">
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/barbara-odusola-stevenson/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-social-brown text-caption font-medium hover:text-heading-orange transition-colors"
@@ -109,7 +111,7 @@ export default function AboutSidebar({
               Linkedin
             </a>
             <a
-              href="https://medium.com"
+              href="https://medium.com/@barbara-stevenson"
               target="_blank"
               rel="noopener noreferrer"
               className="text-social-brown text-caption font-medium hover:text-heading-orange transition-colors"
