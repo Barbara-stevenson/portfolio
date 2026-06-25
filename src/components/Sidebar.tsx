@@ -78,8 +78,8 @@ export default function Sidebar({ className = "" }: { className?: string }) {
         <div className="relative z-10 space-y-6 mt-8 md:mt-0">
           <p className="text-body-copper text-[16px] leading-[120%] md:text-body">
             I&rsquo;ve spent years at the intersection of user needs and
-            business strategy, shipping products in fintech, health tech,
-            and beyond.
+            business strategy, shipping products across fintech, B2B SaaS,
+            health tech, and media.
           </p>
 
           <a

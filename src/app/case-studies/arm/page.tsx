@@ -83,6 +83,7 @@ function Video({ src, label }: { src: string; label?: string }) {
       loop
       playsInline
       controls
+      preload="none"
       aria-label={label}
       className="w-full md:w-1/3 mx-auto rounded-[16px] bg-black block"
     />

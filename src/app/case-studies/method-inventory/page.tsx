@@ -59,6 +59,7 @@ function Video({
       loop
       playsInline
       controls
+      preload="none"
       aria-label={label}
       className="w-full rounded-[16px] bg-black block"
     />
