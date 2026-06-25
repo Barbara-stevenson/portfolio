@@ -59,6 +59,18 @@ const caseStudiesByCategory: Record<string, CaseStudy[]> = {
       href: "/case-studies/bujeti-onboarding",
     },
   ],
+  "B2B SaaS": [
+    {
+      title: "Method Inventory",
+      category: "METHOD CRM",
+      description:
+        "Giving growing product businesses the confidence to manage and sell inventory inside Method — without building an ERP.",
+      imageSrc: "/images/method-inventory-card.png",
+      imageAlt: "Method CRM inventory — sales order list with derived status columns",
+      bgColor: "#217C8D",
+      href: "/case-studies/method-inventory",
+    },
+  ],
   "Health Tech": [
     {
       title: "eMedic",

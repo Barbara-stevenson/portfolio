@@ -1,6 +1,6 @@
 "use client";
 
-const categories = ["Fin Tech", "Health Tech", "Digital Media", "Marketing Sites"];
+const categories = ["Fin Tech", "B2B SaaS", "Health Tech", "Digital Media", "Marketing Sites"];
 
 interface CategoryPillsProps {
   active: string;

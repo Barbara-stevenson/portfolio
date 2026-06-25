@@ -1,0 +1,170 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1061" viewBox="0 0 1920 1061" font-family="Inter, 'Helvetica Neue', Arial, sans-serif"><rect x="0" y="0" width="1920" height="1061" fill="#ffffff"/>
+<text x="58" y="58" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="17" font-weight="600" fill="#d61c74" text-anchor="start" letter-spacing="1.6">ARM ONE · CUSTOMER JOURNEY MAP</text>
+<text x="58" y="120" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="52" font-weight="600" fill="#231019" text-anchor="start" letter-spacing="-1.3">Customer Journey Map</text>
+<rect x="58.0" y="158" width="589.3333333333334" height="104" rx="12" fill="#fcebf3" stroke="#f3c2d9" stroke-width="1"/>
+<text x="78.0" y="192" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="400" fill="#5c4651" text-anchor="start">People engage with ARM because they seek secure and informed investment</text>
+<text x="78.0" y="214" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="400" fill="#5c4651" text-anchor="start">opportunities, financial growth, and reliable customer support.</text>
+<rect x="665.3333333333334" y="158" width="589.3333333333334" height="104" rx="12" fill="#fcebf3" stroke="#f3c2d9" stroke-width="1"/>
+<text x="685.3333333333334" y="192" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="400" fill="#5c4651" text-anchor="start">Digital tools should simplify financial decision-making and enable seamless</text>
+<text x="685.3333333333334" y="214" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="400" fill="#5c4651" text-anchor="start">global interactions.</text>
+<rect x="1272.6666666666667" y="158" width="589.3333333333334" height="104" rx="12" fill="#fcebf3" stroke="#f3c2d9" stroke-width="1"/>
+<text x="1292.6666666666667" y="192" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="400" fill="#5c4651" text-anchor="start">ARM&#x27;s platform needs to educate users, address concerns, and drive seamless</text>
+<text x="1292.6666666666667" y="214" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="400" fill="#5c4651" text-anchor="start">engagement with all products.</text>
+<text x="58" y="325.0" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="12.5" font-weight="700" fill="#ab97a1" text-anchor="start" letter-spacing="0.6">STAGES</text>
+<polygon points="176.0,286 487.2,286 505.2,320.0 487.2,354 176.0,354" fill="#d61c74"/>
+<text x="194.0" y="316" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="19" font-weight="700" fill="#fff" text-anchor="start">Research</text>
+<text x="194.0" y="336" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="500" fill="#fff" text-anchor="start">Awareness &amp; discovery</text>
+<polygon points="515.2,286 826.4000000000001,286 844.4000000000001,320.0 826.4000000000001,354 515.2,354" fill="#d61c74"/>
+<text x="533.2" y="316" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="19" font-weight="700" fill="#fff" text-anchor="start">Onboarding</text>
+<text x="533.2" y="336" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="500" fill="#fff" text-anchor="start">Sign-up &amp; setup</text>
+<polygon points="854.4,286 1165.6,286 1183.6,320.0 1165.6,354 854.4,354" fill="#d61c74"/>
+<text x="872.4" y="316" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="19" font-weight="700" fill="#fff" text-anchor="start">Purchasing</text>
+<text x="872.4" y="336" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="500" fill="#fff" text-anchor="start">Making an investment</text>
+<polygon points="1193.6,286 1504.8,286 1522.8,320.0 1504.8,354 1193.6,354" fill="#d61c74"/>
+<text x="1211.6" y="316" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="19" font-weight="700" fill="#fff" text-anchor="start">Post-purchase</text>
+<text x="1211.6" y="336" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="500" fill="#fff" text-anchor="start">Monitoring &amp; managing</text>
+<polygon points="1532.8,286 1844.0,286 1862.0,320.0 1844.0,354 1532.8,354" fill="#d61c74"/>
+<text x="1550.8" y="316" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="19" font-weight="700" fill="#fff" text-anchor="start">Ongoing</text>
+<text x="1550.8" y="336" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="500" fill="#fff" text-anchor="start">Long-term relationship</text>
+<text x="58" y="469.5" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="12.5" font-weight="700" fill="#ab97a1" text-anchor="start" letter-spacing="0.6">DOING</text>
+<rect x="176.0" y="364" width="329.2" height="201" rx="10" fill="#fdf2f7" stroke="#ecdfe6" stroke-width="1"/>
+<circle cx="194.0" cy="387" r="3" fill="#d61c74"/>
+<text x="207.0" y="392" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="15.5" font-weight="400" fill="#5c4651" text-anchor="start">Searching online for investment</text>
+<text x="207.0" y="413" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="15.5" font-weight="400" fill="#5c4651" text-anchor="start">options</text>
+<circle cx="194.0" cy="436" r="3" fill="#d61c74"/>
+<text x="207.0" y="441" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="15.5" font-weight="400" fill="#5c4651" text-anchor="start">Engaging with industry news &amp;</text>
+<text x="207.0" y="462" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="15.5" font-weight="400" fill="#5c4651" text-anchor="start">thought leadership from ARM</text>
+<circle cx="194.0" cy="485" r="3" fill="#d61c74"/>
+<text x="207.0" y="490" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="15.5" font-weight="400" fill="#5c4651" text-anchor="start">Talking with friends about investing</text>
+<circle cx="194.0" cy="513" r="3" fill="#d61c74"/>
+<text x="207.0" y="518" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="15.5" font-weight="400" fill="#5c4651" text-anchor="start">Comparing reviews across asset</text>
+<text x="207.0" y="539" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="15.5" font-weight="400" fill="#5c4651" text-anchor="start">products (stocks, pensions, etc.)</text>
+<rect x="515.2" y="364" width="329.2" height="201" rx="10" fill="#fdf2f7" stroke="#ecdfe6" stroke-width="1"/>
+<circle cx="533.2" cy="387" r="3" fill="#d61c74"/>
+<text x="546.2" y="392" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="15.5" font-weight="400" fill="#5c4651" text-anchor="start">Signing up for an account on ARM&#x27;s</text>
+<text x="546.2" y="413" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="15.5" font-weight="400" fill="#5c4651" text-anchor="start">digital platform</text>
+<circle cx="533.2" cy="436" r="3" fill="#d61c74"/>
+<text x="546.2" y="441" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="15.5" font-weight="400" fill="#5c4651" text-anchor="start">Exploring the available investment</text>
+<text x="546.2" y="462" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="15.5" font-weight="400" fill="#5c4651" text-anchor="start">options &amp; resources</text>
+<rect x="854.4" y="364" width="329.2" height="201" rx="10" fill="#fdf2f7" stroke="#ecdfe6" stroke-width="1"/>
+<circle cx="872.4" cy="387" r="3" fill="#d61c74"/>
+<text x="885.4" y="392" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="15.5" font-weight="400" fill="#5c4651" text-anchor="start">Choosing a specific product (stocks,</text>
+<text x="885.4" y="413" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="15.5" font-weight="400" fill="#5c4651" text-anchor="start">pension plans, etc.)</text>
+<circle cx="872.4" cy="436" r="3" fill="#d61c74"/>
+<text x="885.4" y="441" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="15.5" font-weight="400" fill="#5c4651" text-anchor="start">Making a purchase or investment</text>
+<rect x="1193.6" y="364" width="329.2" height="201" rx="10" fill="#fdf2f7" stroke="#ecdfe6" stroke-width="1"/>
+<circle cx="1211.6" cy="387" r="3" fill="#d61c74"/>
+<text x="1224.6" y="392" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="15.5" font-weight="400" fill="#5c4651" text-anchor="start">Checking the performance of their</text>
+<text x="1224.6" y="413" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="15.5" font-weight="400" fill="#5c4651" text-anchor="start">investments</text>
+<circle cx="1211.6" cy="436" r="3" fill="#d61c74"/>
+<text x="1224.6" y="441" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="15.5" font-weight="400" fill="#5c4651" text-anchor="start">Adjusting their portfolio based on</text>
+<text x="1224.6" y="462" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="15.5" font-weight="400" fill="#5c4651" text-anchor="start">market changes</text>
+<circle cx="1211.6" cy="485" r="3" fill="#d61c74"/>
+<text x="1224.6" y="490" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="15.5" font-weight="400" fill="#5c4651" text-anchor="start">Interacting with the dashboard to</text>
+<text x="1224.6" y="511" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="15.5" font-weight="400" fill="#5c4651" text-anchor="start">track progress</text>
+<rect x="1532.8" y="364" width="329.2" height="201" rx="10" fill="#fdf2f7" stroke="#ecdfe6" stroke-width="1"/>
+<circle cx="1550.8" cy="387" r="3" fill="#d61c74"/>
+<text x="1563.8" y="392" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="15.5" font-weight="400" fill="#5c4651" text-anchor="start">Expanding their portfolio with</text>
+<text x="1563.8" y="413" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="15.5" font-weight="400" fill="#5c4651" text-anchor="start">additional products</text>
+<circle cx="1550.8" cy="436" r="3" fill="#d61c74"/>
+<text x="1563.8" y="441" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="15.5" font-weight="400" fill="#5c4651" text-anchor="start">Monitoring ongoing performance</text>
+<circle cx="1550.8" cy="464" r="3" fill="#d61c74"/>
+<text x="1563.8" y="469" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="15.5" font-weight="400" fill="#5c4651" text-anchor="start">Engaging ARM for advice, updates, or</text>
+<text x="1563.8" y="490" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="15.5" font-weight="400" fill="#5c4651" text-anchor="start">retirement planning</text>
+<text x="58" y="631.5" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="12.5" font-weight="700" fill="#ab97a1" text-anchor="start" letter-spacing="0.6">THINKING</text>
+<rect x="176.0" y="575" width="329.2" height="103" rx="10" fill="#ffffff" stroke="#ecdfe6" stroke-width="1"/>
+<circle cx="194.0" cy="598" r="3" fill="#2f73d8"/>
+<text x="207.0" y="603" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="15.5" font-weight="400" fill="#5c4651" text-anchor="start">What&#x27;s the best way to secure my</text>
+<text x="207.0" y="624" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="15.5" font-weight="400" fill="#5c4651" text-anchor="start">financial future?</text>
+<circle cx="194.0" cy="647" r="3" fill="#2f73d8"/>
+<text x="207.0" y="652" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="15.5" font-weight="400" fill="#5c4651" text-anchor="start">Are these investments right for me?</text>
+<rect x="515.2" y="575" width="329.2" height="103" rx="10" fill="#ffffff" stroke="#ecdfe6" stroke-width="1"/>
+<circle cx="533.2" cy="598" r="3" fill="#2f73d8"/>
+<text x="546.2" y="603" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="15.5" font-weight="400" fill="#5c4651" text-anchor="start">Is my personal data secure?</text>
+<circle cx="533.2" cy="626" r="3" fill="#2f73d8"/>
+<text x="546.2" y="631" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="15.5" font-weight="400" fill="#5c4651" text-anchor="start">How much effort is required to get</text>
+<text x="546.2" y="652" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="15.5" font-weight="400" fill="#5c4651" text-anchor="start">started?</text>
+<rect x="854.4" y="575" width="329.2" height="103" rx="10" fill="#ffffff" stroke="#ecdfe6" stroke-width="1"/>
+<circle cx="872.4" cy="598" r="3" fill="#2f73d8"/>
+<text x="885.4" y="603" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="15.5" font-weight="400" fill="#5c4651" text-anchor="start">How do I know this is the right</text>
+<text x="885.4" y="624" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="15.5" font-weight="400" fill="#5c4651" text-anchor="start">choice for me?</text>
+<circle cx="872.4" cy="647" r="3" fill="#2f73d8"/>
+<text x="885.4" y="652" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="15.5" font-weight="400" fill="#5c4651" text-anchor="start">What are the fees associated?</text>
+<rect x="1193.6" y="575" width="329.2" height="103" rx="10" fill="#ffffff" stroke="#ecdfe6" stroke-width="1"/>
+<circle cx="1211.6" cy="598" r="3" fill="#2f73d8"/>
+<text x="1224.6" y="603" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="15.5" font-weight="400" fill="#5c4651" text-anchor="start">Am I getting the returns I expected?</text>
+<circle cx="1211.6" cy="626" r="3" fill="#2f73d8"/>
+<text x="1224.6" y="631" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="15.5" font-weight="400" fill="#5c4651" text-anchor="start">What are the latest market updates?</text>
+<rect x="1532.8" y="575" width="329.2" height="103" rx="10" fill="#ffffff" stroke="#ecdfe6" stroke-width="1"/>
+<circle cx="1550.8" cy="598" r="3" fill="#2f73d8"/>
+<text x="1563.8" y="603" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="15.5" font-weight="400" fill="#5c4651" text-anchor="start">What&#x27;s next for my portfolio?</text>
+<circle cx="1550.8" cy="626" r="3" fill="#2f73d8"/>
+<text x="1563.8" y="631" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="15.5" font-weight="400" fill="#5c4651" text-anchor="start">Should I diversify my investments?</text>
+<text x="58" y="755.0" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="12.5" font-weight="700" fill="#ab97a1" text-anchor="start" letter-spacing="0.6">FEELING</text>
+<rect x="176.0" y="688" width="329.2" height="124" rx="10" fill="#ffffff" stroke="#ecdfe6" stroke-width="1"/>
+<circle cx="194.0" cy="711" r="3" fill="#b8841f"/>
+<text x="207.0" y="716" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="15.5" font-weight="400" fill="#8a7480" text-anchor="start" font-style="italic">Curious but overwhelmed by options</text>
+<circle cx="194.0" cy="739" r="3" fill="#b8841f"/>
+<text x="207.0" y="744" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="15.5" font-weight="400" fill="#8a7480" text-anchor="start" font-style="italic">Skeptical about the reliability of</text>
+<text x="207.0" y="765" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="15.5" font-weight="400" fill="#8a7480" text-anchor="start" font-style="italic">digital platforms in this field</text>
+<rect x="515.2" y="688" width="329.2" height="124" rx="10" fill="#ffffff" stroke="#ecdfe6" stroke-width="1"/>
+<circle cx="533.2" cy="711" r="3" fill="#b8841f"/>
+<text x="546.2" y="716" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="15.5" font-weight="400" fill="#8a7480" text-anchor="start" font-style="italic">Cautious, looking for reassurance</text>
+<circle cx="533.2" cy="739" r="3" fill="#b8841f"/>
+<text x="546.2" y="744" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="15.5" font-weight="400" fill="#8a7480" text-anchor="start" font-style="italic">Hopeful for a simple, user-friendly</text>
+<text x="546.2" y="765" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="15.5" font-weight="400" fill="#8a7480" text-anchor="start" font-style="italic">process</text>
+<rect x="854.4" y="688" width="329.2" height="124" rx="10" fill="#ffffff" stroke="#ecdfe6" stroke-width="1"/>
+<circle cx="872.4" cy="711" r="3" fill="#b8841f"/>
+<text x="885.4" y="716" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="15.5" font-weight="400" fill="#8a7480" text-anchor="start" font-style="italic">Nervous, especially if it&#x27;s their</text>
+<text x="885.4" y="737" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="15.5" font-weight="400" fill="#8a7480" text-anchor="start" font-style="italic">first investment</text>
+<circle cx="872.4" cy="760" r="3" fill="#b8841f"/>
+<text x="885.4" y="765" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="15.5" font-weight="400" fill="#8a7480" text-anchor="start" font-style="italic">Hopeful about returns</text>
+<rect x="1193.6" y="688" width="329.2" height="124" rx="10" fill="#ffffff" stroke="#ecdfe6" stroke-width="1"/>
+<circle cx="1211.6" cy="711" r="3" fill="#b8841f"/>
+<text x="1224.6" y="716" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="15.5" font-weight="400" fill="#8a7480" text-anchor="start" font-style="italic">Anxious to see how investments are</text>
+<text x="1224.6" y="737" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="15.5" font-weight="400" fill="#8a7480" text-anchor="start" font-style="italic">performing</text>
+<circle cx="1211.6" cy="760" r="3" fill="#b8841f"/>
+<text x="1224.6" y="765" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="15.5" font-weight="400" fill="#8a7480" text-anchor="start" font-style="italic">Frustrated by a lack of updates or</text>
+<text x="1224.6" y="786" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="15.5" font-weight="400" fill="#8a7480" text-anchor="start" font-style="italic">transparency</text>
+<rect x="1532.8" y="688" width="329.2" height="124" rx="10" fill="#ffffff" stroke="#ecdfe6" stroke-width="1"/>
+<circle cx="1550.8" cy="711" r="3" fill="#b8841f"/>
+<text x="1563.8" y="716" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="15.5" font-weight="400" fill="#8a7480" text-anchor="start" font-style="italic">Confident or uncertain depending on</text>
+<text x="1563.8" y="737" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="15.5" font-weight="400" fill="#8a7480" text-anchor="start" font-style="italic">performance</text>
+<circle cx="1550.8" cy="760" r="3" fill="#b8841f"/>
+<text x="1563.8" y="765" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="15.5" font-weight="400" fill="#8a7480" text-anchor="start" font-style="italic">Desire for proactive guidance</text>
+<text x="58" y="840" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="700" fill="#ab97a1" text-anchor="start" letter-spacing="0.5">OPPORTUNITIES</text>
+<circle cx="181.0" cy="836" r="4.5" fill="#d61c74"/>
+<text x="194.0" y="840" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="700" fill="#b3175e" text-anchor="start" letter-spacing="0.4">GLOBAL OPPORTUNITIES</text>
+<text x="176.0" y="868" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#8a7480" text-anchor="start">Intuitive platform — easy navigation, clear</text>
+<text x="176.0" y="887" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#8a7480" text-anchor="start">data visualisation, integrated features.</text>
+<text x="176.0" y="916" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#8a7480" text-anchor="start">Seamless for customers worldwide —</text>
+<text x="176.0" y="935" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#8a7480" text-anchor="start">multi-language and multi-currency support.</text>
+<text x="176.0" y="964" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#8a7480" text-anchor="start">Proactive service — chatbots, personalised</text>
+<text x="176.0" y="983" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#8a7480" text-anchor="start">updates, live help; educate &amp; reassure at</text>
+<text x="176.0" y="1002" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#8a7480" text-anchor="start">decision points.</text>
+<circle cx="520.2" cy="836" r="4.5" fill="#d61c74"/>
+<text x="533.2" y="840" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="700" fill="#b3175e" text-anchor="start" letter-spacing="0.4">RESEARCH &amp; ONBOARDING</text>
+<text x="515.2" y="868" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#8a7480" text-anchor="start">Personalised content that speaks to different</text>
+<text x="515.2" y="887" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#8a7480" text-anchor="start">financial goals.</text>
+<text x="515.2" y="916" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#8a7480" text-anchor="start">Easy-to-understand comparisons and clear</text>
+<text x="515.2" y="935" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#8a7480" text-anchor="start">value propositions.</text>
+<text x="515.2" y="964" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#8a7480" text-anchor="start">Clear, simple onboarding steps with</text>
+<text x="515.2" y="983" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#8a7480" text-anchor="start">explanations; an educational tour for</text>
+<text x="515.2" y="1002" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#8a7480" text-anchor="start">first-time users.</text>
+<circle cx="859.4" cy="836" r="4.5" fill="#d61c74"/>
+<text x="872.4" y="840" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="700" fill="#b3175e" text-anchor="start" letter-spacing="0.4">PURCHASING A PRODUCT</text>
+<text x="854.4" y="868" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#8a7480" text-anchor="start">Calculators or simulations that help users</text>
+<text x="854.4" y="887" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#8a7480" text-anchor="start">understand potential outcomes.</text>
+<text x="854.4" y="916" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#8a7480" text-anchor="start">Easy access to support during the purchasing</text>
+<text x="854.4" y="935" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#8a7480" text-anchor="start">process.</text>
+<text x="854.4" y="964" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#8a7480" text-anchor="start">Simple, transparent explanations of each</text>
+<text x="854.4" y="983" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#8a7480" text-anchor="start">product and its risks.</text>
+<circle cx="1198.6" cy="836" r="4.5" fill="#d61c74"/>
+<text x="1211.6" y="840" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="700" fill="#b3175e" text-anchor="start" letter-spacing="0.4">POST-PURCHASE &amp; ONGOING</text>
+<text x="1193.6" y="868" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#8a7480" text-anchor="start">Personalised reports on portfolio</text>
+<text x="1193.6" y="887" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#8a7480" text-anchor="start">performance.</text>
+<text x="1193.6" y="916" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#8a7480" text-anchor="start">Insights &amp; recommendations based on goals;</text>
+<text x="1193.6" y="935" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#8a7480" text-anchor="start">educational content on managing investments.</text>
+<text x="1193.6" y="964" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#8a7480" text-anchor="start">Loyalty incentives and seamless mobile-first</text>
+<text x="1193.6" y="983" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#8a7480" text-anchor="start">portfolio management.</text>
+</svg>

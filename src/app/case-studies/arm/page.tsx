@@ -1,6 +1,6 @@
 "use client";
 
-import type { ReactNode } from "react";
+import { useEffect, useRef, type ReactNode } from "react";
 import CaseStudyLayout from "@/components/CaseStudyLayout";
 import LightboxImage from "@/components/Lightbox";
 
@@ -53,6 +53,39 @@ function Card({
     <div className={`bg-[#2E2E2E] rounded-[16px] p-6 md:p-8 ${className}`}>
       {children}
     </div>
+  );
+}
+
+/**
+ * Autoplaying walkthrough video — plays on its own (muted, looping) but
+ * exposes native controls so it can be paused and scrubbed, like the deck.
+ */
+function Video({ src, label }: { src: string; label?: string }) {
+  const ref = useRef<HTMLVideoElement>(null);
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+    const obs = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) el.play().catch(() => {});
+        else el.pause();
+      },
+      { threshold: 0.3 }
+    );
+    obs.observe(el);
+    return () => obs.disconnect();
+  }, []);
+  return (
+    <video
+      ref={ref}
+      src={src}
+      muted
+      loop
+      playsInline
+      controls
+      aria-label={label}
+      className="w-full md:w-1/3 mx-auto rounded-[16px] bg-black block"
+    />
   );
 }
 
@@ -190,9 +223,9 @@ export default function ARMCaseStudy() {
             How might we
           </span>
           <p className="text-white text-[22px] md:text-[26px] leading-[140%] italic font-light">
-            &ldquo;Reimagine ARM&rsquo;s digital experience to drive
-            engagement across all products, reduce dormant accounts, and
-            create more seamless global interactions.&rdquo;
+            &ldquo;How might we turn five products that behave like five
+            companies into one relationship a customer trusts with their whole
+            financial life?&rdquo;
           </p>
         </Card>
       </section>
@@ -273,10 +306,11 @@ export default function ARMCaseStudy() {
         </h2>
         <div className="border-t border-white/20 pt-6">
           <p className="text-white/80 text-[20px] leading-[150%] mb-6">
-            Research surfaced three customer archetypes, each underserved by
-            the existing fragmented experience.
+            These four came out of the profiling assessment — and they&rsquo;re
+            why &ldquo;application personalisation&rdquo; became a principle:
+            the same screen re-weights itself by archetype.
           </p>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <Card>
               <span className="text-heading-orange text-[14px] font-bold uppercase tracking-wider block mb-3">
                 01
@@ -285,10 +319,8 @@ export default function ARMCaseStudy() {
                 The First-Timer
               </h3>
               <p className="text-white/80 text-[16px] leading-[150%]">
-                Has never invested. Intimidated by jargon. Motivated by life
-                goals — their children&rsquo;s education, a first home,
-                retirement they don&rsquo;t fully understand. Needs
-                hand-holding and trust signals.
+                New to investing, cautious, unsure where to start. Plain
+                language, low minimums, &ldquo;just tell me what to buy.&rdquo;
               </p>
             </Card>
             <Card>
@@ -296,12 +328,11 @@ export default function ARMCaseStudy() {
                 02
               </span>
               <h3 className="text-white text-[20px] font-bold mb-3">
-                The Active Investor
+                The Delegator
               </h3>
               <p className="text-white/80 text-[16px] leading-[150%]">
-                Already invests, often across multiple platforms. Wants
-                product breadth, real performance data, fast execution.
-                Frustrated by ARM&rsquo;s fragmented experience.
+                Wants their money to grow without the day-to-day work. Trusted,
+                risk-matched recommendations; set-and-forget.
               </p>
             </Card>
             <Card>
@@ -309,12 +340,23 @@ export default function ARMCaseStudy() {
                 03
               </span>
               <h3 className="text-white text-[20px] font-bold mb-3">
-                The Switcher
+                The Active Investor
               </h3>
               <p className="text-white/80 text-[16px] leading-[150%]">
-                Currently with a digital-native fintech like Cowrywise,
-                Risevest, or Bamboo. Evaluating ARM for trust and product
-                depth. Will only switch if the experience feels modern enough.
+                Confident and hands-on — trades stocks, watches the market.
+                Real-time data, depth on every position, fast execution.
+              </p>
+            </Card>
+            <Card>
+              <span className="text-heading-orange text-[14px] font-bold uppercase tracking-wider block mb-3">
+                04
+              </span>
+              <h3 className="text-white text-[20px] font-bold mb-3">
+                The Long-Term Planner
+              </h3>
+              <p className="text-white/80 text-[16px] leading-[150%]">
+                Building wealth and retirement over a long horizon. A
+                whole-portfolio view, guidance, and products that compound.
               </p>
             </Card>
           </div>
@@ -513,9 +555,9 @@ export default function ARMCaseStudy() {
           </p>
         </div>
         <LightboxImage
-          src="/images/arm-information-architecture.png"
+          src="/images/arm-information-architecture.svg"
           alt="Information architecture — bottom-nav structure with Home, Portfolio, Explore, Support, Profile"
-          className="w-full rounded-[16px]"
+          className="w-full rounded-[16px] bg-white"
         />
       </section>
 
@@ -533,9 +575,9 @@ export default function ARMCaseStudy() {
           </p>
         </div>
         <LightboxImage
-          src="/images/arm-customer-journey-map.png"
+          src="/images/arm-journey-map.svg"
           alt="Customer Journey Map — Research, Onboarding, Purchasing, Post-Purchase, Ongoing Engagement"
-          className="w-full rounded-[16px]"
+          className="w-full rounded-[16px] bg-white"
         />
       </section>
 
@@ -559,10 +601,9 @@ export default function ARMCaseStudy() {
             foundation for the +45% cross-segment engagement lift.
           </p>
         </div>
-        <LightboxImage
-          src="/images/arm-dashboard.png"
-          alt="ARM ONE unified dashboard showing every product side-by-side"
-          className="w-full"
+        <Video
+          src="/videos/arm-activation.mp4"
+          label="ARM ONE unified dashboard — activation walkthrough"
         />
       </section>
 
@@ -585,10 +626,9 @@ export default function ARMCaseStudy() {
             Registration completion went from 52% to 76%.
           </p>
         </div>
-        <LightboxImage
-          src="/images/arm-onboarding.png"
-          alt="ARM ONE tier-aware onboarding flow with BVN nudge and tier-limit visibility"
-          className="w-full"
+        <Video
+          src="/videos/arm-tier-bvn.mp4"
+          label="ARM ONE tier-aware onboarding — BVN nudge and tier-limit visibility"
         />
       </section>
 
@@ -613,10 +653,9 @@ export default function ARMCaseStudy() {
             set. Re-takeable every six months as life changes.
           </p>
         </div>
-        <LightboxImage
-          src="/images/arm-robo-advisor.png"
-          alt="ARM ONE Robo Advisor — five-minute Investment Profiling assessment with personalised risk profile and matched recommendations"
-          className="w-full"
+        <Video
+          src="/videos/arm-risk-profile.mp4"
+          label="ARM ONE Robo Advisor — Investment Profiling assessment"
         />
       </section>
 
@@ -677,10 +716,9 @@ export default function ARMCaseStudy() {
             </Card>
           </div>
         </div>
-        <LightboxImage
-          src="/images/arm-stocks.png"
-          alt="ARM ONE Stocks — three-view progressive disclosure: Invest hub (market discovery), Portfolio view (holdings management with balance, GAINS/LOSS, and the four-action row), and Stock Details (full performance breakdown with commission, brokerage, price change, profit)"
-          className="w-full"
+        <Video
+          src="/videos/arm-trading.mp4"
+          label="ARM ONE Stocks — trading and progressive disclosure walkthrough"
         />
       </section>
 
@@ -767,7 +805,7 @@ export default function ARMCaseStudy() {
             </p>
             <div className="flex justify-center">
               <LightboxImage
-                src="/images/arm-mmf-first-timer.png"
+                src="/images/arm-product-firsttimer.png"
                 alt="MMF First-Timer view — product explained in plain language, Strategic Asset Allocation and Fund Fact Sheet above the fold, Buy Now CTA"
                 className="w-full md:w-1/2"
               />
@@ -791,7 +829,7 @@ export default function ARMCaseStudy() {
             </p>
             <div className="flex justify-center">
               <LightboxImage
-                src="/images/arm-mmf-switcher.png"
+                src="/images/arm-product-switcher.png"
                 alt="MMF Switcher view — Our Yield 21% p.a. vs Others 12–16% p.a. comparison, Fund Fact Sheet and Disclosure trust artefacts"
                 className="w-full md:w-1/2"
               />
@@ -800,68 +838,252 @@ export default function ARMCaseStudy() {
         </div>
       </section>
 
-      {/* ── Usability testing — two redesigns from the sessions ── */}
+      {/* ── Cross-sell — the card that turned savers into investors ── */}
       <section className="mb-16">
         <h2 className="text-[28px] font-bold text-white mb-2">
-          Usability testing — two redesigns from the sessions
+          The card that turned savers into investors
         </h2>
         <div className="border-t border-white/20 pt-6 mb-8">
           <p className="text-white/80 text-[20px] leading-[150%] mb-6">
-            After the initial implementation, I ran usability tests with 10
-            participants over Google Meet, recording all sessions. Two of
-            the most impactful changes to the product came directly out of
-            this testing.
+            Only 8% of customers held more than one product. Leadership wanted
+            a marketing campaign — but unification had already given us the
+            better surface: the dashboard itself. I designed a contextual
+            &ldquo;next best product&rdquo; card that led with the
+            customer&rsquo;s own money — a personalised LTV projection
+            (&ldquo;You&rsquo;ve saved ₦340,000 this year; it could be ₦410,000
+            in 12 months&rdquo;) instead of generic product marketing.
           </p>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <Card>
-              <h3 className="text-white text-[20px] font-bold mb-4">
-                Dashboard split — new vs. existing
-              </h3>
-              <p className="text-white/80 text-[16px] leading-[150%] mb-3">
-                <span className="text-heading-orange font-bold">
-                  Before:
-                </span>{" "}
-                A single dashboard served both. New customers saw empty
-                portfolio components; existing customers had to scroll past
-                onboarding nudges.
-              </p>
-              <p className="text-white/80 text-[16px] leading-[150%]">
-                <span className="text-heading-orange font-bold">
-                  After:
-                </span>{" "}
-                Two distinct dashboards. New users see a BVN nudge,
-                profiling CTA, and starter products. Existing users see the
-                full portfolio.
-              </p>
-            </Card>
-            <Card>
-              <h3 className="text-white text-[20px] font-bold mb-4">
-                Tier limits — in onboarding, not at purchase
-              </h3>
-              <p className="text-white/80 text-[16px] leading-[150%] mb-3">
-                <span className="text-heading-orange font-bold">
-                  Before:
-                </span>{" "}
-                Customers only discovered tier limits when they tried to
-                invest more than allowed. Drop-off at the worst moment.
-              </p>
-              <p className="text-white/80 text-[16px] leading-[150%]">
-                <span className="text-heading-orange font-bold">
-                  After:
-                </span>{" "}
-                Tier limits surface during onboarding success state, with a
-                one-tap path to upload Tier 3 documents.
-              </p>
-            </Card>
+          <p className="text-white/80 text-[20px] leading-[150%]">
+            I A/B tested copy and placement; the soft, trust-respecting variant
+            beat the aggressive one — cross-product adoption climbed from{" "}
+            <span className="text-heading-orange font-bold">8% to 23%</span>.
+          </p>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+          <div>
+            <p className="text-white/70 text-[16px] font-medium text-center mb-3 tracking-wide">
+              Soft · trust-respecting · won
+            </p>
+            <LightboxImage
+              src="/images/arm-crosssell-soft.png"
+              alt="Soft cross-sell variant — Make your cash work, personalised balance projection, See how it works CTA"
+              className="w-full rounded-[16px]"
+            />
+          </div>
+          <div>
+            <p className="text-white/70 text-[16px] font-medium text-center mb-3 tracking-wide">
+              Aggressive · pushy · lost
+            </p>
+            <LightboxImage
+              src="/images/arm-crosssell-aggressive.png"
+              alt="Aggressive cross-sell variant — Don't miss out, FOMO framing, INVEST NOW CTA"
+              className="w-full rounded-[16px]"
+            />
           </div>
         </div>
-        <div className="flex justify-center">
-          <LightboxImage
-            src="/images/arm-before-after.png"
-            alt="Before and after — dashboard split for new vs existing customers, plus tier-limit visibility moved into onboarding"
-            className="w-full md:w-2/3"
-          />
+        <Card className="!p-8 mb-4">
+          <span className="text-heading-orange text-[12px] uppercase tracking-wider font-bold block mb-2">
+            What I learned
+          </span>
+          <p className="text-white text-[20px] leading-[150%]">
+            &ldquo;Make your money work&rdquo; framing — anchoring on the
+            customer&rsquo;s own balance with a concrete projected gain —
+            outperformed generic product pitches. The &ldquo;Why am I seeing
+            this?&rdquo; transparency link reduced dismissals; customers who
+            understood the targeting logic were more likely to engage.
+          </p>
+        </Card>
+        <p className="text-white/60 text-[15px] leading-[150%]">
+          Instrumented in Mixpanel — card impression as the entry event;
+          opened-MMF-flow, first investment, and 30 / 90-day retention as the
+          conversion funnel.
+        </p>
+      </section>
+
+      {/* ── Three versions, not one redesign ── */}
+      <section className="mb-16">
+        <h2 className="text-[28px] font-bold text-white mb-2">
+          Three versions, not one redesign
+        </h2>
+        <div className="border-t border-white/20 pt-6 mb-8">
+          <p className="text-white/80 text-[20px] leading-[150%]">
+            After the first build I ran moderated usability tests — 10
+            participants over Google Meet, recording every session. The biggest
+            finding: one dashboard served both new and existing users, so new
+            users logged in to a $0 shell. I shipped, watched the data,
+            re-interviewed first-week users, then greyboxed two directions with
+            them before committing.
+          </p>
         </div>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div>
+            <p className="text-heading-orange text-[14px] font-bold uppercase tracking-wider text-center mb-3">
+              V1 — the default everyone ships
+            </p>
+            <LightboxImage
+              src="/images/arm-dashboard-V1.png"
+              alt="V1 new-user dashboard — $0 balance, empty cards, conditional content slots"
+              className="w-full rounded-[16px]"
+            />
+            <p className="text-white/80 text-[16px] leading-[150%] mt-4">
+              One dashboard for everyone, with conditional content slots. New
+              users saw empty zeros everywhere — it felt broken. Drop-off was
+              real; the data sent me back.
+            </p>
+          </div>
+          <div>
+            <p className="text-heading-orange text-[14px] font-bold uppercase tracking-wider text-center mb-3">
+              V2 — apologise for the emptiness
+            </p>
+            <LightboxImage
+              src="/images/arm-dashboard-V2.png"
+              alt="V2 new-user dashboard — Welcome, let's get you started, honest $0, primary CTA to fund or explore"
+              className="w-full rounded-[16px]"
+            />
+            <p className="text-white/80 text-[16px] leading-[150%] mt-4">
+              A &ldquo;Welcome, let&rsquo;s get you started,&rdquo; an honest
+              $0, and a primary CTA to fund or explore. The greybox session
+              confirmed it still felt like a placeholder, not a product.
+            </p>
+          </div>
+          <div>
+            <p className="text-heading-orange text-[14px] font-bold uppercase tracking-wider text-center mb-3">
+              V3 — a different surface entirely
+            </p>
+            <LightboxImage
+              src="/images/arm-dashboard-V3.png"
+              alt="V3 new-user dashboard — discovery surface with real products, top-performing funds, BVN nudge and profiling CTA"
+              className="w-full rounded-[16px]"
+            />
+            <p className="text-white/80 text-[16px] leading-[150%] mt-4">
+              The new-user dashboard shouldn&rsquo;t apologise for being empty —
+              it should be a discovery surface, not a monitoring one. Real
+              products, top-performing funds with live returns, a BVN nudge and
+              profiling CTA. Balance still $0 — honest — but useful immediately.
+            </p>
+          </div>
+        </div>
+        <Card className="!p-8 mt-8">
+          <span className="text-heading-orange text-[12px] uppercase tracking-wider font-bold block mb-2">
+            What I learned
+          </span>
+          <p className="text-white text-[20px] leading-[150%]">
+            The new-user state is its own product, not a degraded version of
+            the active one. That&rsquo;s now my default.
+          </p>
+        </Card>
+        <p className="text-white/80 text-[18px] leading-[150%] mt-6">
+          The same sessions surfaced a second fix: tier limits only appeared
+          when a customer tried to invest past them. I moved them into the
+          onboarding success state with a one-tap path to upgrade —
+          registration completion went{" "}
+          <span className="text-heading-orange font-bold">52% to 76%</span>.
+        </p>
+      </section>
+
+      {/* ── Design system — one system, four teams ── */}
+      <section className="mb-16">
+        <h2 className="text-[28px] font-bold text-white mb-2">
+          One system. Four teams. Still in production.
+        </h2>
+        <div className="border-t border-white/20 pt-6 mb-8">
+          <p className="text-white/80 text-[20px] leading-[150%] mb-6">
+            There was no design system at all. Five products, four teams — and
+            every component (modals, status pills, money cards, fund rows)
+            rebuilt from scratch, slightly differently, each time. No shared
+            foundation, no governance, nothing to inherit.
+          </p>
+          <p className="text-white/80 text-[20px] leading-[150%]">
+            I built it from zero — tokens, type, colour, accessibility — and
+            grew the library component by component as the suite expanded. Just
+            as important, I stood up the practices that never existed: weekly
+            office hours, pairing with engineers on first implementations, every
+            new pattern routed through me, and the <em>why</em> documented, not
+            just the <em>what</em>.
+          </p>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
+          {[
+            { v: "4", l: "product teams on one system" },
+            { v: "~40%", l: "faster design time" },
+            { v: "Live", l: "still in production today" },
+          ].map((c) => (
+            <Card key={c.l}>
+              <span className="text-heading-orange text-[36px] md:text-[44px] font-bold block leading-none">
+                {c.v}
+              </span>
+              <p className="text-white/80 text-[14px] leading-[140%] mt-3">
+                {c.l}
+              </p>
+            </Card>
+          ))}
+        </div>
+        <Card className="!p-8">
+          <span className="text-heading-orange text-[12px] uppercase tracking-wider font-bold block mb-4">
+            ARM ONE — component library
+          </span>
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-x-6 gap-y-5">
+            <div>
+              <span className="text-white/60 text-[12px] uppercase tracking-wider block mb-2">
+                Colour tokens
+              </span>
+              <div className="flex flex-wrap gap-2">
+                {[
+                  ["#a8005b", "Brand"],
+                  ["#a41857", "Active"],
+                  ["#17b26a", "Success"],
+                  ["#eaaa08", "Warning"],
+                  ["#d92d20", "Danger"],
+                  ["#0d111c", "Ink"],
+                ].map(([hex, name]) => (
+                  <span
+                    key={hex}
+                    className="flex items-center gap-2 text-white/80 text-[12px]"
+                  >
+                    <span
+                      className="w-4 h-4 rounded-full border border-white/20"
+                      style={{ backgroundColor: hex }}
+                    />
+                    {name}
+                  </span>
+                ))}
+              </div>
+            </div>
+            <div>
+              <span className="text-white/60 text-[12px] uppercase tracking-wider block mb-2">
+                Type · Plus Jakarta Sans
+              </span>
+              <p className="text-white text-[20px] font-bold leading-tight">
+                Heading
+              </p>
+              <p className="text-white/80 text-[16px]">Body text</p>
+              <p className="text-white/60 text-[12px] uppercase tracking-wider">
+                Caption label
+              </p>
+            </div>
+            <div>
+              <span className="text-white/60 text-[12px] uppercase tracking-wider block mb-2">
+                Status pills
+              </span>
+              <div className="flex flex-wrap gap-2">
+                {[
+                  ["Active", "#17b26a"],
+                  ["Pending", "#eaaa08"],
+                  ["High risk", "#d92d20"],
+                  ["Tier 1", "#a8005b"],
+                ].map(([label, hex]) => (
+                  <span
+                    key={label}
+                    className="text-[12px] font-semibold px-3 py-1 rounded-full"
+                    style={{ backgroundColor: `${hex}22`, color: hex }}
+                  >
+                    {label}
+                  </span>
+                ))}
+              </div>
+            </div>
+          </div>
+        </Card>
       </section>
 
       {/* ── How I worked ── */}
@@ -943,6 +1165,18 @@ export default function ARMCaseStudy() {
             and that cadence — is the part of my practice I&rsquo;m most
             proud of.
           </p>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-8">
+          <LightboxImage
+            src="/images/arm-mixpanel-funnel.png"
+            alt="Mixpanel registration funnel — drop-off traced to OTP validation"
+            className="w-full rounded-[16px]"
+          />
+          <LightboxImage
+            src="/images/arm-mixpanel-mutualfunds.png"
+            alt="Mixpanel mutual-funds funnel — buy, select, product info, payment, subscription"
+            className="w-full rounded-[16px]"
+          />
         </div>
       </section>
 
@@ -1094,13 +1328,13 @@ export default function ARMCaseStudy() {
             </Card>
             <Card>
               <h3 className="text-heading-orange text-[18px] font-bold uppercase tracking-wider mb-4">
-                What&rsquo;s next
+                What I learned
               </h3>
               <ul className="space-y-3">
                 {[
-                  "Migrate ARM Pensions into the unified platform — completing the five-into-one vision.",
-                  "Gamification of the saving habit to drive activation and engagement.",
-                  "WhatsApp engagement, cryptocurrency, FX, and agricultural-investment products.",
+                  "In finance, the moment of education matters more than the content — tier limits proved it.",
+                  "The new-user state is its own product, not a degraded version of the active one.",
+                  "Trust-respecting design is usually also the highest-converting design — the soft cross-sell beat the aggressive one.",
                 ].map((t, i) => (
                   <li key={i} className="flex items-start gap-2">
                     <span className="w-[6px] h-[6px] rounded-full bg-white/40 shrink-0 mt-[8px]" />
@@ -1110,6 +1344,56 @@ export default function ARMCaseStudy() {
                   </li>
                 ))}
               </ul>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* ── Where I'd take it next ── */}
+      <section className="mb-16">
+        <h2 className="text-[28px] font-bold text-white mb-2">
+          Where I&rsquo;d take it next
+        </h2>
+        <div className="border-t border-white/20 pt-6">
+          <p className="text-white/80 text-[20px] leading-[150%] mb-6">
+            The platform is proven. The next chapter is using that trust to
+            deepen the relationship — not just cross-sell products, but
+            personalise the entire experience to the customer&rsquo;s stage.
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <Card>
+              <span className="text-heading-orange text-[14px] font-bold uppercase tracking-wider block mb-2">
+                Near-term
+              </span>
+              <p className="text-white/80 text-[16px] leading-[150%]">
+                Migrate ARM Pensions into the unified suite — the flagship I
+                held back until the platform proved itself. Now it can complete
+                the five-into-one vision on a trust base that didn&rsquo;t exist
+                at launch.
+              </p>
+            </Card>
+            <Card>
+              <span className="text-heading-orange text-[14px] font-bold uppercase tracking-wider block mb-2">
+                Growth
+              </span>
+              <p className="text-white/80 text-[16px] leading-[150%]">
+                Move from product-triggered cross-sell cards to
+                behaviour-triggered ones — a customer who&rsquo;s saved for six
+                months without investing gets a different surface than one who
+                just deposited. Plus a WhatsApp re-engagement loop for dormant
+                accounts.
+              </p>
+            </Card>
+            <Card>
+              <span className="text-heading-orange text-[14px] font-bold uppercase tracking-wider block mb-2">
+                Strategic
+              </span>
+              <p className="text-white/80 text-[16px] leading-[150%]">
+                New asset classes — crypto, FX, agricultural investments —
+                without fragmenting the platform again. The design system and IA
+                are built to absorb them; the question is sequencing by customer
+                readiness, not product availability.
+              </p>
             </Card>
           </div>
         </div>
