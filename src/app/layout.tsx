@@ -4,7 +4,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.barbarastevenson.com"),
   title: {
-    default: "Barbara Stevenson — Product Designer",
+    default: "Barbara Stevenson — Senior Product Designer",
     template: "%s · Barbara Stevenson",
   },
   description:
@@ -24,13 +24,13 @@ export const metadata: Metadata = {
     type: "website",
     siteName: "Barbara Stevenson",
     url: "https://www.barbarastevenson.com",
-    title: "Barbara Stevenson — Product Designer",
+    title: "Barbara Stevenson — Senior Product Designer",
     description:
       "Selected case studies across fintech, B2B SaaS, health tech, and media.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Barbara Stevenson — Product Designer",
+    title: "Barbara Stevenson — Senior Product Designer",
     description:
       "Selected case studies across fintech, B2B SaaS, health tech, and media.",
   },

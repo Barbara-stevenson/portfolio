@@ -1,6 +1,6 @@
 import { ImageResponse } from "next/og";
 
-export const alt = "Barbara Stevenson — Product Designer";
+export const alt = "Barbara Stevenson — Senior Product Designer";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -33,13 +33,13 @@ export default function OpengraphImage() {
           <div
             style={{
               color: "#FE9161",
-              fontSize: 88,
+              fontSize: 74,
               fontWeight: 700,
               lineHeight: 1.05,
               letterSpacing: -2,
             }}
           >
-            Product Designer
+            Senior Product Designer
           </div>
           <div
             style={{
