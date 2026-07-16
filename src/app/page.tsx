@@ -33,7 +33,7 @@ const caseStudiesByCategory: Record<string, CaseStudy[]> = {
       title: "Bujeti Bills",
       category: "BUJETI",
       description:
-        "Providing users with a centralized system for managing and tracking recurring expenses",
+        "Accounts payable inside Bujeti — supplier invoices captured in seconds, approved before they're paid.",
       imageSrc: "/images/bujeti bills 1.png",
       imageAlt: "Bujeti expense management dashboard",
       bgColor: "#73986C",

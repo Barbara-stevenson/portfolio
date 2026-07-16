@@ -116,7 +116,7 @@ export default function ARMCaseStudy() {
           href: "/case-studies/bujeti-bills",
           label: "BUJETI",
           description:
-            "Providing users with a centralized system for managing and tracking recurring expenses",
+            "Accounts payable inside Bujeti — supplier invoices captured in seconds, approved before they're paid.",
         },
       }}
     >

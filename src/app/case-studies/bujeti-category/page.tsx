@@ -20,7 +20,7 @@ export default function BujetiCategoryCaseStudy() {
         prev: {
           href: "/case-studies/bujeti-bills",
           label: "BUJETI",
-          description: "Providing users with a centralized system for managing and tracking recurring expenses",
+          description: "Accounts payable inside Bujeti — supplier invoices captured in seconds, approved before they're paid.",
         },
         next: {
           href: "/case-studies/bujeti-onboarding",
