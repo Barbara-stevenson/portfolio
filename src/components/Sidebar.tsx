@@ -91,7 +91,7 @@ export default function Sidebar({ className = "" }: { className?: string }) {
 
           {/* Social links */}
           <div className="border-t border-white/10 pt-6">
-            <nav className="flex items-center justify-between">
+            <nav className="flex flex-wrap items-center gap-x-6 gap-y-2 justify-start md:justify-between">
               <a
                 href="https://www.linkedin.com/in/barbara-odusola-stevenson/"
                 target="_blank"
