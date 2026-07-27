@@ -1,0 +1,102 @@
+<svg width="1800" height="900" viewBox="0 0 1800 900" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    text{font-family:Inter,'Segoe UI',system-ui,sans-serif}
+    .eyebrow{font-weight:700;font-size:14px;letter-spacing:2px;fill:#5e6ad2}
+    .title{font-weight:800;font-size:30px;fill:#2a394a}
+    .sub{font-weight:500;font-size:15px;fill:#5b6b7b}
+    .stage{font-weight:700;font-size:15px;fill:#ffffff}
+    .stagenum{font-weight:700;font-size:12px;fill:#c7cdf2}
+    .rowlbl{font-weight:700;font-size:13px;letter-spacing:1px;fill:#2a394a}
+    .rowsub{font-weight:400;font-size:11px;fill:#8a97a3}
+    .cell{font-weight:400;font-size:13px;fill:#5b6b7b}
+    .think{font-weight:400;font-size:13px;font-style:italic;fill:#4a6076}
+    .opp{font-weight:500;font-size:13px;fill:#3b4699}
+  </style>
+
+  <rect width="1800" height="900" fill="#f6fafb"/>
+
+  <text x="40" y="50" class="eyebrow">MERCHANT JOURNEY MAP</text>
+  <text x="40" y="86" class="title">From "we should take payments" to money reconciled</text>
+  <text x="40" y="112" class="sub">Persona: an existing Method merchant with no gateway (the 84%) · Pain rows show the bolt-on gateway era; the response row is Method Pay</text>
+
+  <!-- stage pills: x = 200 + 262*i, w 250 -->
+  <g>
+    <rect x="200" y="132" width="250" height="44" rx="10" fill="#2a394a"/><text x="216" y="153" class="stagenum">01</text><text x="216" y="170" class="stage">Discover</text>
+    <rect x="462" y="132" width="250" height="44" rx="10" fill="#2a394a"/><text x="478" y="153" class="stagenum">02</text><text x="478" y="170" class="stage">Apply &amp; KYC</text>
+    <rect x="724" y="132" width="250" height="44" rx="10" fill="#2a394a"/><text x="740" y="153" class="stagenum">03</text><text x="740" y="170" class="stage">Approved &amp; activate</text>
+    <rect x="986" y="132" width="250" height="44" rx="10" fill="#2a394a"/><text x="1002" y="153" class="stagenum">04</text><text x="1002" y="170" class="stage">First payment</text>
+    <rect x="1248" y="132" width="250" height="44" rx="10" fill="#2a394a"/><text x="1264" y="153" class="stagenum">05</text><text x="1264" y="170" class="stage">Payout</text>
+    <rect x="1510" y="132" width="250" height="44" rx="10" fill="#2a394a"/><text x="1526" y="153" class="stagenum">06</text><text x="1526" y="170" class="stage">Reconcile</text>
+  </g>
+
+  <!-- sentiment -->
+  <rect x="40" y="194" width="1720" height="140" rx="14" fill="#ffffff" stroke="#dce3e8"/>
+  <text x="58" y="216" class="rowlbl">SENTIMENT</text>
+  <text x="58" y="232" class="rowsub">gateway era</text>
+  <line x1="200" y1="230" x2="1760" y2="230" stroke="#eef1f4"/>
+  <line x1="200" y1="272" x2="1760" y2="272" stroke="#eef1f4"/>
+  <line x1="200" y1="314" x2="1760" y2="314" stroke="#eef1f4"/>
+  <polyline points="325,262 587,300 849,246 1111,258 1373,312 1635,306" fill="none" stroke="#5e6ad2" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+  <circle cx="325" cy="262" r="6" fill="#fff" stroke="#b25e02" stroke-width="3"/>
+  <circle cx="587" cy="300" r="6" fill="#fff" stroke="#c8372d" stroke-width="3"/>
+  <circle cx="849" cy="246" r="6" fill="#fff" stroke="#1f8f3a" stroke-width="3"/>
+  <circle cx="1111" cy="258" r="6" fill="#fff" stroke="#1f8f3a" stroke-width="3"/>
+  <circle cx="1373" cy="312" r="6" fill="#fff" stroke="#c8372d" stroke-width="3"/>
+  <circle cx="1635" cy="306" r="6" fill="#fff" stroke="#c8372d" stroke-width="3"/>
+
+  <!-- DOING -->
+  <text x="58" y="384" class="rowlbl">DOING</text>
+  <g class="cell">
+    <text x="216" y="380">Hears about payments in</text><text x="216" y="398">product, invoice, or sales call</text>
+    <text x="478" y="380">Submits business identity,</text><text x="478" y="398">bank details, verification</text>
+    <text x="740" y="380">Application approved —</text><text x="740" y="398">payments switch on</text>
+    <text x="1002" y="380">Sends an invoice; customer</text><text x="1002" y="398">pays by card or ACH</text>
+    <text x="1264" y="380">Waits for the money to</text><text x="1264" y="398">land in the bank</text>
+    <text x="1526" y="380">Matches deposits to</text><text x="1526" y="398">invoices for the books</text>
+  </g>
+  <line x1="40" y1="418" x2="1760" y2="418" stroke="#e2e8ef"/>
+
+  <!-- THINKING -->
+  <text x="58" y="466" class="rowlbl">THINKING</text>
+  <g class="think">
+    <text x="216" y="462">"Is this worth the setup</text><text x="216" y="480">hassle this time?"</text>
+    <text x="478" y="462">"Why do they need all this —</text><text x="478" y="480">and is it safe to give?"</text>
+    <text x="740" y="462">"Okay — what can I</text><text x="740" y="480">actually do now?"</text>
+    <text x="1002" y="462">"Will it look professional</text><text x="1002" y="480">to my customer?"</text>
+    <text x="1264" y="462">"Where is my money,</text><text x="1264" y="480">exactly?"</text>
+    <text x="1526" y="462">"Which deposit covers</text><text x="1526" y="480">which invoices?"</text>
+  </g>
+  <line x1="40" y1="500" x2="1760" y2="500" stroke="#e2e8ef"/>
+
+  <!-- PAIN -->
+  <rect x="40" y="512" width="1720" height="118" rx="12" fill="#fdecea"/>
+  <text x="58" y="554" class="rowlbl" fill="#a33028">PAIN · GATEWAY ERA</text>
+  <g class="cell" fill="#93382f">
+    <text x="216" y="550">Setup so foreign that 84%</text><text x="216" y="568">simply never did it</text>
+    <text x="478" y="550">Sent to a third-party site;</text><text x="478" y="568">application state invisible</text>
+    <text x="740" y="550">Activation ≠ usage — no</text><text x="740" y="568">path into the first payment</text>
+    <text x="1002" y="550">Checkout wears a stranger's</text><text x="1002" y="568">brand; failures dead-end</text>
+    <text x="1264" y="550">Settlement lives in another</text><text x="1264" y="568">product's dashboard</text>
+    <text x="1526" y="550">Month-end archaeology</text><text x="1526" y="568">across two systems</text>
+  </g>
+
+  <!-- RESPONSE -->
+  <text x="58" y="678" class="rowlbl" fill="#3b4699">METHOD PAY</text>
+  <text x="58" y="694" class="rowsub" fill="#7a83c9">the design response</text>
+  <g>
+    <rect x="200" y="652" width="250" height="196" rx="12" fill="#eceffc" stroke="#d4daf5"/>
+    <rect x="462" y="652" width="250" height="196" rx="12" fill="#eceffc" stroke="#d4daf5"/>
+    <rect x="724" y="652" width="250" height="196" rx="12" fill="#eceffc" stroke="#d4daf5"/>
+    <rect x="986" y="652" width="250" height="196" rx="12" fill="#eceffc" stroke="#d4daf5"/>
+    <rect x="1248" y="652" width="250" height="196" rx="12" fill="#eceffc" stroke="#d4daf5"/>
+    <rect x="1510" y="652" width="250" height="196" rx="12" fill="#eceffc" stroke="#d4daf5"/>
+  </g>
+  <g class="opp">
+    <text x="216" y="688">Five entry points at</text><text x="216" y="706">moments of intent — no</text><text x="216" y="724">"payments page" to find</text>
+    <text x="478" y="688">KYC embedded in Method,</text><text x="478" y="706">themed to our DS; status</text><text x="478" y="724">ladder always visible:</text><text x="478" y="742">Processing → Needs info →</text><text x="478" y="760">In review → Approved</text>
+    <text x="740" y="688">Approval lands with a</text><text x="740" y="706">next step — send your</text><text x="740" y="724">first pay-enabled invoice,</text><text x="740" y="742">not just a green badge</text>
+    <text x="1002" y="688">Branded checkout, saved</text><text x="1002" y="706">methods for one-click</text><text x="1002" y="724">repeats, graceful failure</text><text x="1002" y="742">with a way forward</text>
+    <text x="1264" y="688">Balance (available vs</text><text x="1264" y="706">pending), payout schedule</text><text x="1264" y="724">and history — inside</text><text x="1264" y="742">Method, not a second login</text>
+    <text x="1526" y="688">Each payout unpacked into</text><text x="1526" y="706">its exact transactions,</text><text x="1526" y="724">refunds and fees — plus</text><text x="1526" y="742">export for the books</text>
+  </g>
+</svg>

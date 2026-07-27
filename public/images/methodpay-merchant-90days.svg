@@ -1,0 +1,138 @@
+<svg width="1800" height="1000" viewBox="0 0 1800 1000" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="tl" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#8a97a3"/></marker>
+  </defs>
+  <style>
+    text{font-family:Inter,'Segoe UI',system-ui,sans-serif}
+    .eyebrow{font-weight:700;font-size:14px;letter-spacing:2px;fill:#5e6ad2}
+    .title{font-weight:800;font-size:30px;fill:#2a394a}
+    .sub{font-weight:500;font-size:15px;fill:#5b6b7b}
+    .day{font-weight:800;font-size:13px;fill:#5e6ad2}
+    .phase{font-weight:700;font-size:17px;fill:#2a394a}
+    .body{font-weight:400;font-size:12.5px;fill:#5b6b7b}
+    .ivlbl{font-weight:700;font-size:10.5px;letter-spacing:.8px;fill:#c9531f}
+    .iv{font-weight:600;font-size:12px;fill:#2a394a}
+    .dislbl{font-weight:700;font-size:10.5px;letter-spacing:.8px;fill:#2563c9}
+    .dis{font-weight:400;font-size:12px;fill:#5b6b7b}
+    .principle{font-weight:600;font-size:15px;font-style:italic;fill:#2a394a}
+    .foot{font-weight:400;font-size:13px;fill:#5b6b7b}
+  </style>
+
+  <rect width="1800" height="1000" fill="#f6fafb"/>
+
+  <text x="40" y="50" class="eyebrow">JOURNEY-LEVEL THINKING · THE MERCHANT LIFECYCLE</text>
+  <text x="40" y="86" class="title">One merchant, ninety days. Designed around time, not a launch moment</text>
+  <text x="40" y="112" class="sub">Every surface, banner and email in Method Pay is keyed to where the merchant is in time. A surface stays hidden until the merchant&#8217;s money gives them a reason to open it.</text>
+
+  <!-- timeline spine -->
+  <line x1="60" y1="170" x2="1740" y2="170" stroke="#c9d4dd" stroke-width="2"/>
+  <g>
+    <circle cx="70" cy="170" r="6" fill="#5e6ad2"/><text x="70" y="150" class="day" text-anchor="middle">DAY 0</text>
+    <circle cx="410" cy="170" r="6" fill="#5e6ad2"/><text x="410" y="150" class="day" text-anchor="middle">DAY 7</text>
+    <circle cx="750" cy="170" r="6" fill="#5e6ad2"/><text x="750" y="150" class="day" text-anchor="middle">DAY 14</text>
+    <circle cx="1090" cy="170" r="6" fill="#5e6ad2"/><text x="1090" y="150" class="day" text-anchor="middle">DAY 30</text>
+    <circle cx="1430" cy="170" r="6" fill="#5e6ad2"/><text x="1430" y="150" class="day" text-anchor="middle">DAY 60</text>
+    <circle cx="1740" cy="170" r="6" fill="#1f8f3a"/><text x="1740" y="150" class="day" text-anchor="middle" fill="#1f8f3a">DAY 90</text>
+  </g>
+
+  <!-- five phase cards -->
+  <!-- card: width 328, x = 40 + 348i, y=200, h=560 -->
+  <g>
+    <rect x="40" y="200" width="328" height="540" rx="14" fill="#ffffff" stroke="#dce3e8" stroke-width="1.5"/>
+    <rect x="40" y="200" width="328" height="6" rx="3" fill="#5e6ad2"/>
+    <text x="64" y="240" class="phase">Discover</text>
+    <text x="64" y="262" class="body" font-weight="600" fill="#8a97a3">Days 0&#8211;7</text>
+    <text x="64" y="292" class="body">The smart banner reads the merchant&#8217;s</text>
+    <text x="64" y="310" class="body">situation: new, on a gateway, or hesitant,</text>
+    <text x="64" y="328" class="body">and entry points catch intent in the</text>
+    <text x="64" y="346" class="body">invoice flow, onboarding and migration page.</text>
+    <text x="64" y="392" class="ivlbl">KEY INTERVENTION</text>
+    <text x="64" y="414" class="iv">Segment-aware banner variant.</text>
+    <text x="64" y="432" class="iv">Social proof only for the hesitant.</text>
+    <text x="64" y="478" class="dislbl">DISCLOSED SO FAR</text>
+    <text x="64" y="500" class="dis">One value proposition, one CTA.</text>
+    <text x="64" y="518" class="dis">No fees table, no dashboard, no noise.</text>
+    <text x="64" y="564" class="body" font-style="italic">Measured by: payment_setup_viewed</text>
+    <text x="64" y="582" class="body" font-style="italic">cut by entry_point</text>
+  </g>
+  <g>
+    <rect x="388" y="200" width="328" height="540" rx="14" fill="#ffffff" stroke="#dce3e8" stroke-width="1.5"/>
+    <rect x="388" y="200" width="328" height="6" rx="3" fill="#5e6ad2"/>
+    <text x="412" y="240" class="phase">Apply</text>
+    <text x="412" y="262" class="body" font-weight="600" fill="#8a97a3">Days 7&#8211;14</text>
+    <text x="412" y="292" class="body">Embedded KYC with &#8220;what you&#8217;ll need&#8221;</text>
+    <text x="412" y="310" class="body">listed before starting; bank login as the</text>
+    <text x="412" y="328" class="body">default path; save-and-resume. The status</text>
+    <text x="412" y="346" class="body">ladder makes the wait legible.</text>
+    <text x="412" y="392" class="ivlbl">KEY INTERVENTION</text>
+    <text x="412" y="414" class="iv">Needs-Information loops back, never</text>
+    <text x="412" y="432" class="iv">dead-ends · day-3 nudge if stalled</text>
+    <text x="412" y="478" class="dislbl">DISCLOSED SO FAR</text>
+    <text x="412" y="500" class="dis">Application status only. The money</text>
+    <text x="412" y="518" class="dis">surfaces stay out of sight until earned.</text>
+    <text x="412" y="564" class="body" font-style="italic">Measured by: application_step_completed,</text>
+    <text x="412" y="582" class="body" font-style="italic">days_in_status</text>
+  </g>
+  <g>
+    <rect x="736" y="200" width="328" height="540" rx="14" fill="#ffffff" stroke="#5e6ad2" stroke-width="2"/>
+    <rect x="736" y="200" width="328" height="6" rx="3" fill="#6d40c8"/>
+    <text x="760" y="240" class="phase">Activate</text>
+    <text x="760" y="262" class="body" font-weight="600" fill="#8a97a3">Days 14&#8211;30 · the make-or-break window</text>
+    <text x="760" y="292" class="body">Approval is a launchpad, not a receipt:</text>
+    <text x="760" y="310" class="body">&#8220;You&#8217;re live, and you have $20,000.76</text>
+    <text x="760" y="328" class="body">overdue. Send to Christine Powell, $500.99.&#8221;</text>
+    <text x="760" y="346" class="body">The first dollar is the real activation.</text>
+    <text x="760" y="392" class="ivlbl">KEY INTERVENTION</text>
+    <text x="760" y="414" class="iv">Approved-but-no-payment trigger.</text>
+    <text x="760" y="432" class="iv">Pre-targeted invoice, To-Do reissue.</text>
+    <text x="760" y="478" class="dislbl">DISCLOSED SO FAR</text>
+    <text x="760" y="500" class="dis">Transactions surface unlocks: gross &#8594;</text>
+    <text x="760" y="518" class="dis">fees &#8594; net, honest from the first charge.</text>
+    <text x="760" y="564" class="body" font-style="italic">Measured by: approved &#8594; payment_succeeded</text>
+    <text x="760" y="582" class="body" font-style="italic">gap (the leak we closed: 55% &#8594; 75%)</text>
+  </g>
+  <g>
+    <rect x="1084" y="200" width="328" height="540" rx="14" fill="#ffffff" stroke="#dce3e8" stroke-width="1.5"/>
+    <rect x="1084" y="200" width="328" height="6" rx="3" fill="#5e6ad2"/>
+    <text x="1108" y="240" class="phase">Operate</text>
+    <text x="1108" y="262" class="body" font-weight="600" fill="#8a97a3">Days 30&#8211;60</text>
+    <text x="1108" y="292" class="body">The money rhythms start: first payout</text>
+    <text x="1108" y="310" class="body">(&#8220;lands Thursday&#8221;), first refund, sometimes</text>
+    <text x="1108" y="328" class="body">a first dispute. The in-between states</text>
+    <text x="1108" y="346" class="body">are where trust is won or lost.</text>
+    <text x="1108" y="392" class="ivlbl">KEY INTERVENTION</text>
+    <text x="1108" y="414" class="iv">Refund-pending state + landed email ·</text>
+    <text x="1108" y="432" class="iv">dispute deadlines surfaced, never sprung</text>
+    <text x="1108" y="478" class="dislbl">DISCLOSED SO FAR</text>
+    <text x="1108" y="500" class="dis">Payouts and reconciliation move up front.</text>
+    <text x="1108" y="518" class="dis">&#8220;Where&#8217;s my money?&#8221; is answered in-product.</text>
+    <text x="1108" y="564" class="body" font-style="italic">Measured by: payout_landed, refund cycle</text>
+    <text x="1108" y="582" class="body" font-style="italic">time, support tickets per merchant</text>
+  </g>
+  <g>
+    <rect x="1432" y="200" width="328" height="540" rx="14" fill="#ffffff" stroke="#1f8f3a" stroke-width="2"/>
+    <rect x="1432" y="200" width="328" height="6" rx="3" fill="#1f8f3a"/>
+    <text x="1456" y="240" class="phase">Commit</text>
+    <text x="1456" y="262" class="body" font-weight="600" fill="#8a97a3">Days 60&#8211;90 &#8594; month 6</text>
+    <text x="1456" y="292" class="body">Volume steadies; switchers complete</text>
+    <text x="1456" y="310" class="body">migration on parallel rails; high-volume</text>
+    <text x="1456" y="328" class="body">merchants get the rate conversation.</text>
+    <text x="1456" y="346" class="body">Habits form, and only now do AI drafts appear.</text>
+    <text x="1456" y="392" class="ivlbl">KEY INTERVENTION</text>
+    <text x="1456" y="414" class="iv">Volume-based pricing review ·</text>
+    <text x="1456" y="432" class="iv">dunning &#38; reconciliation suggestions</text>
+    <text x="1456" y="478" class="dislbl">DISCLOSED SO FAR</text>
+    <text x="1456" y="500" class="dis">The full money stack, earned</text>
+    <text x="1456" y="518" class="dis">screen by screen over ninety days.</text>
+    <text x="1456" y="564" class="body" font-style="italic">Measured by: 6-month retention cohort</text>
+    <text x="1456" y="582" class="body" font-style="italic">vs. the 41% baseline</text>
+  </g>
+
+  <!-- principle band -->
+  <rect x="40" y="780" width="1720" height="64" rx="12" fill="#eef1f4"/>
+  <text x="900" y="812" class="principle" text-anchor="middle">Progressive disclosure over ninety days: a surface appears the week the merchant&#8217;s money gives them a reason to look at it.</text>
+  <text x="900" y="834" class="foot" text-anchor="middle" font-style="italic">All three funnel leaks sat at lifecycle transitions (entering, applying, activating), which is why the tracking dictionary timestamps every one.</text>
+
+  <text x="40" y="900" class="foot">Every event in the Amplitude dictionary marks a lifecycle transition, so &#8220;where do merchants stall?&#8221; is answerable by day, not just by screen.</text>
+  <text x="40" y="928" class="foot" fill="#8a97a3">Method Pay &#183; merchant-lifecycle artifact</text>
+</svg>

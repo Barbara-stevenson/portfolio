@@ -20,6 +20,18 @@ interface CaseStudy {
 const caseStudiesByCategory: Record<string, CaseStudy[]> = {
   "Fin Tech": [
     {
+      title: "Method Pay",
+      category: "METHOD PAY",
+      description:
+        "Embedding payments into Method CRM — turning a bolted-on gateway into a native money surface.",
+      imageSrc: "/images/methodpay-card.png",
+      imageAlt:
+        "Method Pay surfaced on the Method home screen with a rate-comparison offer",
+      bgColor: "#D68F2D",
+      href: "/case-studies/method-pay",
+      imagePosition: "center 30%",
+    },
+    {
       title: "ARM",
       category: "ARM",
       description:
@@ -69,6 +81,7 @@ const caseStudiesByCategory: Record<string, CaseStudy[]> = {
       imageAlt: "Method CRM inventory — sales order list with derived status columns",
       bgColor: "#217C8D",
       href: "/case-studies/method-inventory",
+      imagePosition: "center 30%",
     },
   ],
   "Health Tech": [

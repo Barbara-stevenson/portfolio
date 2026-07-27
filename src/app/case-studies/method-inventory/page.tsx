@@ -71,7 +71,7 @@ export default function MethodInventoryCaseStudy() {
     <CaseStudyLayout
       sidebar={{
         prevHref: "/case-studies/arm",
-        nextHref: "/case-studies/emedic",
+        nextHref: "/case-studies/method-pay",
         label: "METHOD CRM",
         title:
           "An operational inventory experience for small product businesses, built inside Method CRM.",
@@ -90,10 +90,10 @@ export default function MethodInventoryCaseStudy() {
             "Unifying five financial segments into one consumer-grade investing platform.",
         },
         next: {
-          href: "/case-studies/emedic",
-          label: "EMEDIC",
+          href: "/case-studies/method-pay",
+          label: "METHOD PAY",
           description:
-            "Improving the marketplace, admin and customer-facing portal of an online pharmacy.",
+            "Embedding payments into Method CRM — turning a bolted-on gateway into a native money surface.",
         },
       }}
     >

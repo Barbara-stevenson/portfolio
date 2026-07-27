@@ -1,0 +1,60 @@
+<svg width="960" height="900" viewBox="0 0 960 900" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    text{font-family:Inter,'Segoe UI',system-ui,sans-serif}
+    .eyebrow{font-weight:700;font-size:13px;letter-spacing:2px;fill:#5e6ad2}
+    .title{font-weight:800;font-size:26px;fill:#2a394a}
+    .tracklbl{font-weight:700;font-size:12px;letter-spacing:1.2px}
+    .tracksub{font-weight:500;font-size:12.5px;fill:#5b6b7b}
+    .tile{font-weight:700;font-size:14px;fill:#2a394a}
+    .lesson{font-weight:400;font-size:13px;fill:#5b6b7b}
+    .lessonb{font-weight:700;fill:#2a394a}
+  </style>
+
+  <rect width="960" height="900" rx="16" fill="#f6fafb"/>
+  <text x="40" y="52" class="eyebrow">THE COMPETITIVE SCAN</text>
+  <text x="40" y="86" class="title">Two tracks of research</text>
+
+  <!-- TRACK A: vertical platforms -->
+  <rect x="40" y="118" width="880" height="330" rx="14" fill="#ffffff" stroke="#dce3e8" stroke-width="1.5"/>
+  <rect x="40" y="118" width="880" height="6" rx="3" fill="#2563c9"/>
+  <text x="64" y="156" class="tracklbl" fill="#2563c9">VERTICAL PLATFORMS</text>
+  <text x="234" y="156" class="tracksub">— the adoption playbook</text>
+
+  <!-- tiles -->
+  <g>
+    <rect x="64" y="176" width="150" height="46" rx="9" fill="#f1f5fb" stroke="#dbe6f5"/><text x="139" y="204" class="tile" text-anchor="middle">HubSpot</text>
+    <rect x="228" y="176" width="120" height="46" rx="9" fill="#f1f5fb" stroke="#dbe6f5"/><text x="288" y="204" class="tile" text-anchor="middle">Keap</text>
+    <rect x="362" y="176" width="130" height="46" rx="9" fill="#f1f5fb" stroke="#dbe6f5"/><text x="427" y="204" class="tile" text-anchor="middle">Jobber</text>
+    <rect x="506" y="176" width="180" height="46" rx="9" fill="#f1f5fb" stroke="#dbe6f5"/><text x="596" y="204" class="tile" text-anchor="middle">QuickBooks</text>
+    <rect x="700" y="176" width="120" height="46" rx="9" fill="#f1f5fb" stroke="#dbe6f5"/><text x="760" y="204" class="tile" text-anchor="middle">Zoho</text>
+  </g>
+
+  <text x="64" y="268" class="lesson"><tspan class="lessonb">Native-branded payments convert the base</tspan> — gateway-branded resells don't.</text>
+  <text x="64" y="298" class="lesson"><tspan class="lessonb">On by default in the invoice flow</tspan> — no separate "set up payments" destination.</text>
+  <text x="64" y="328" class="lesson"><tspan class="lessonb">The workaround becomes the norm</tspan> — ~84% of our own users simply went without.</text>
+  <rect x="64" y="356" width="832" height="1" fill="#eef1f4"/>
+  <text x="64" y="392" class="lesson">What it fed:  <tspan class="lessonb" fill="#2563c9">the strategy</tspan>  — white-label, points of entry, segmentation.</text>
+  <text x="64" y="422" class="tracksub" font-style="italic">Studied for how they earned adoption inside an existing base.</text>
+
+  <!-- TRACK B: payment-native -->
+  <rect x="40" y="474" width="880" height="360" rx="14" fill="#ffffff" stroke="#6d40c8" stroke-width="1.5"/>
+  <rect x="40" y="474" width="880" height="6" rx="3" fill="#6d40c8"/>
+  <text x="64" y="512" class="tracklbl" fill="#6d40c8">PAYMENT-NATIVE</text>
+  <text x="210" y="512" class="tracksub">— the craft bar</text>
+
+  <g>
+    <rect x="64" y="532" width="130" height="46" rx="9" fill="#f5f1fc" stroke="#e6dcf7"/><text x="129" y="560" class="tile" text-anchor="middle">Stripe</text>
+    <rect x="208" y="532" width="130" height="46" rx="9" fill="#f5f1fc" stroke="#e6dcf7"/><text x="273" y="560" class="tile" text-anchor="middle">Square</text>
+    <rect x="352" y="532" width="130" height="46" rx="9" fill="#f5f1fc" stroke="#e6dcf7"/><text x="417" y="560" class="tile" text-anchor="middle">Adyen</text>
+    <rect x="496" y="532" width="150" height="46" rx="9" fill="#f5f1fc" stroke="#e6dcf7"/><text x="571" y="560" class="tile" text-anchor="middle">Braintree</text>
+    <rect x="660" y="532" width="160" height="46" rx="9" fill="#f5f1fc" stroke="#e6dcf7"/><text x="740" y="560" class="tile" text-anchor="middle">GoCardless</text>
+  </g>
+
+  <text x="64" y="624" class="lesson"><tspan class="lessonb">Checkout, saved methods, embedded components</tspan> — and the in-between states</text>
+  <text x="64" y="650" class="lesson">(processing, error recovery, refund pending) that most products get wrong.</text>
+  <text x="64" y="686" class="lesson"><tspan class="lessonb">GoCardless</tspan> set the bar for the bank-rail (ACH) craft specifically — slower money,</text>
+  <text x="64" y="712" class="lesson">different states, different reassurance.</text>
+  <rect x="64" y="740" width="832" height="1" fill="#eef1f4"/>
+  <text x="64" y="776" class="lesson">What it fed:  <tspan class="lessonb" fill="#6d40c8">the architecture</tspan>  — the hybrid model, and every state around the seams.</text>
+  <text x="64" y="806" class="tracksub" font-style="italic">Studied for how the payment layer itself should feel. Stripe won the bake-off from here.</text>
+</svg>
