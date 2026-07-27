@@ -31,10 +31,13 @@ function Video({
   src,
   poster,
   label,
+  aspect = "3018 / 1810",
 }: {
   src: string;
   poster?: string;
   label?: string;
+  /** Reserves the right box before metadata loads, so nothing shifts. */
+  aspect?: string;
 }) {
   const ref = useRef<HTMLVideoElement>(null);
   useEffect(() => {
@@ -42,10 +45,21 @@ function Video({
     if (!el) return;
     const obs = new IntersectionObserver(
       ([entry]) => {
-        if (entry.isIntersecting) el.play().catch(() => {});
-        else el.pause();
+        if (entry.isIntersecting) {
+          // Reaching the section starts the walkthrough from the top.
+          if (el.paused) {
+            try {
+              el.currentTime = 0;
+            } catch {
+              /* not seekable yet — play from wherever it starts */
+            }
+            el.play().catch(() => {});
+          }
+        } else {
+          el.pause();
+        }
       },
-      { threshold: 0.3 }
+      { threshold: 0.25 }
     );
     obs.observe(el);
     return () => obs.disconnect();
@@ -59,8 +73,9 @@ function Video({
       loop
       playsInline
       controls
-      preload="none"
+      preload="metadata"
       aria-label={label}
+      style={{ aspectRatio: aspect }}
       className="w-full rounded-[16px] bg-black block"
     />
   );
@@ -335,7 +350,7 @@ export default function MethodPayCaseStudy() {
         <LightboxImage
           src="/images/methodpay-competitive-scan.svg"
           alt="Competitive scan board — vertical platforms studied for adoption, payment-native products studied for craft"
-          className="w-full rounded-[16px] bg-white"
+          className="w-full md:w-2/3 mx-auto block rounded-[16px] bg-white"
         />
       </section>
 
@@ -366,6 +381,7 @@ export default function MethodPayCaseStudy() {
         <Video
           src="/videos/methodpay-agent-pipeline.mp4"
           poster="/images/methodpay-agent-pipeline-poster.png"
+          aspect="16 / 9"
           label="The research agent running the full pipeline, including the verification pass"
         />
 
@@ -995,48 +1011,6 @@ export default function MethodPayCaseStudy() {
             src="/videos/methodpay-activation-moment.mp4"
             label="After — approval as a launchpad, pointing at an invoice the merchant already has open"
           />
-        </div>
-      </section>
-
-      {/* ── Shipping / collaboration ── */}
-      <section className="mb-16">
-        <h2 className="text-[28px] font-bold text-white mb-2">
-          A payments launch is an organisational design problem
-        </h2>
-        <div className="border-t border-white/20 pt-6 grid grid-cols-1 md:grid-cols-2 gap-4">
-          {[
-            {
-              t: "Product",
-              b: "Co-owned scope with the PM. The PRD's phased feature table was where we negotiated — every surface argued into P1 or GA, with a decision log and risk register keeping the reasoning auditable.",
-            },
-            {
-              t: "Engineering",
-              b: "Two deep partnerships: webhook states (what the merchant sees in the gap before an event lands — retries, honest “as of” states) and parallel-rails migration, proven first on Method's own billing.",
-            },
-            {
-              t: "Sales · PS · Support",
-              b: "I contributed to the internal briefing that trained the front line on the application-status ladder, what “not changing” meant for existing gateways, and where a declined merchant gets routed.",
-            },
-            {
-              t: "Marketing · GTM",
-              b: "The white-label decision made the go-to-market brief possible in the first place. You can't market a gateway you resold.",
-            },
-            {
-              t: "QA",
-              b: "Dedicated test-mode rails and a written testing guide, so flows could be exercised end to end — including failures and refunds — without a real dollar moving. Failure paths were written as test cases.",
-            },
-            {
-              t: "Risk · Compliance · Leadership",
-              b: "Weekly with the CEO, CPO and CTO. Compliance and security sign-off gated the pilot, alongside rate-structure alignment and the time-versus-resources re-forecast.",
-            },
-          ].map((c) => (
-            <Card key={c.t}>
-              <span className="text-heading-orange text-[14px] font-bold uppercase tracking-wider block mb-2">
-                {c.t}
-              </span>
-              <p className="text-white/80 text-[16px] leading-[150%]">{c.b}</p>
-            </Card>
-          ))}
         </div>
       </section>
 
