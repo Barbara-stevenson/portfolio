@@ -93,7 +93,7 @@ export default function MethodInventoryCaseStudy() {
           href: "/case-studies/method-pay",
           label: "METHOD PAY",
           description:
-            "Embedding payments into Method CRM — turning a bolted-on gateway into a native money surface.",
+            "Embedding payments into Method CRM.",
         },
       }}
     >
@@ -152,17 +152,17 @@ export default function MethodInventoryCaseStudy() {
         <div className="border-t border-white/20 pt-6 mb-8">
           <p className="text-white/80 text-[20px] leading-[150%] mb-6">
             Method is a customizable CRM and workflow platform for small
-            businesses — customers, sales pipeline, invoicing, and internal
+            businesses: customers, sales pipeline, invoicing, and internal
             processes. But customers selling physical products hit a wall: they
             could quote and take orders in Method, then had to track the actual
-            stock somewhere else — a standalone inventory tool or a spreadsheet.
-            One process — quote → order → fulfillment → invoice — split across
+            stock somewhere else, in a standalone inventory tool or a spreadsheet.
+            One process, quote → order → fulfillment → invoice, split across
             three disconnected tools, with double entry between them.
           </p>
           <p className="text-white/80 text-[20px] leading-[150%]">
             The pain wasn&rsquo;t a missing feature. It was missing{" "}
-            <span className="text-heading-orange font-bold">continuity</span> —
-            no operational link from the order to the fulfillment to the
+            <span className="text-heading-orange font-bold">continuity</span>.
+            No operational link from the order to the fulfillment to the
             invoice. As one prospect put it:{" "}
             <span className="italic">
               &ldquo;Visibility is our big goal, because QuickBooks won&rsquo;t
@@ -214,7 +214,7 @@ export default function MethodInventoryCaseStudy() {
           <p className="text-white text-[22px] md:text-[26px] leading-[140%] italic font-light">
             &ldquo;What&rsquo;s the minimum operational inventory experience
             that lets users confidently manage and sell products inside
-            Method — without building an ERP?&rdquo;
+            Method, without building an ERP?&rdquo;
           </p>
         </Card>
       </section>
@@ -266,13 +266,13 @@ export default function MethodInventoryCaseStudy() {
         {/* The AI research agent that ran the discovery */}
         <div className="mb-4">
           <h3 className="text-white text-[22px] font-bold mb-2">
-            The engine — an AI research agent I built
+            The engine: an AI research agent I built
           </h3>
           <p className="text-white/80 text-[16px] leading-[150%] max-w-[820px]">
             Covering that much discovery without it swallowing the timeline
             meant changing how the research ran. I built a reusable AI research
             agent: modular modes that took raw discovery calls through
-            competitor analysis, a PRD, user stories, and flow diagrams — each
+            competitor analysis, a PRD, user stories, and flow diagrams, each
             step feeding the next. It&rsquo;s what let one designer work across
             465 transcripts and seven competitor teardowns and still move from
             concept to feedback{" "}
@@ -315,12 +315,12 @@ export default function MethodInventoryCaseStudy() {
       {/* ── The scope decision (STAR) ── */}
       <section className="mb-16">
         <h2 className="text-[28px] font-bold text-white mb-2">
-          The scope decision — locations, not warehouses
+          The scope decision: locations, not warehouses
         </h2>
         <div className="border-t border-white/20 pt-6 mb-8">
           <p className="text-white/80 text-[20px] leading-[150%] mb-6">
             The biggest scope call was what <em>not</em> to build. The reflex in
-            inventory software — and my own first instinct — was the deep
+            inventory software, and my own first instinct, was the deep
             hierarchy: warehouses, zones, aisles, bins. Before committing the
             team to it, I pressure-tested against real customers, and the
             majority operated at the{" "}
@@ -328,7 +328,7 @@ export default function MethodInventoryCaseStudy() {
               location level only
             </span>
             , even where their current tools offered the depth. So we shipped
-            flat &ldquo;locations&rdquo; — feasible inside the window, with lot
+            flat &ldquo;locations&rdquo;: feasible inside the window, with lot
             and bin depth deferred to a data-informed v2 rather than guessed at
             up front.
           </p>
@@ -338,7 +338,7 @@ export default function MethodInventoryCaseStudy() {
             </span>
             <p className="text-white text-[20px] leading-[150%]">
               Building for the most complex case is the trap. The discipline
-              that mattered wasn&rsquo;t shipping faster — it was{" "}
+              that mattered wasn&rsquo;t shipping faster. It was{" "}
               <span className="font-bold">
                 validating the assumption before committing
               </span>
@@ -352,7 +352,7 @@ export default function MethodInventoryCaseStudy() {
       {/* ── The inventory model, phased ── */}
       <section className="mb-16">
         <h2 className="text-[28px] font-bold text-white mb-2">
-          Built in three phases — see it, move it, anticipate it
+          Built in three phases: see it, move it, anticipate it
         </h2>
         <div className="border-t border-white/20 pt-6 mb-8">
           <p className="text-white/80 text-[20px] leading-[150%]">
@@ -376,7 +376,7 @@ export default function MethodInventoryCaseStudy() {
         </h2>
         <div className="border-t border-white/20 pt-6 mb-8">
           <p className="text-white/80 text-[24px] leading-[150%] mb-6">
-            Four principles carried every decision — and the first one is the
+            Four principles carried every decision, and the first one is the
             spine of the whole product.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -388,11 +388,11 @@ export default function MethodInventoryCaseStudy() {
                 Derived status, never stored
               </h3>
               <p className="text-white/80 text-[16px] leading-[150%]">
-                One formula —{" "}
+                One formula,{" "}
                 <span className="text-heading-orange font-semibold">
                   Available = On hand − Committed + Expected
                 </span>{" "}
-                — computed everywhere, plus three status axes recomputed live
+                computed everywhere, plus three status axes recomputed live
                 from the lines beneath them. A status can never quietly lie.
               </p>
             </Card>
@@ -405,7 +405,7 @@ export default function MethodInventoryCaseStudy() {
               </h3>
               <p className="text-white/80 text-[16px] leading-[150%]">
                 The MVP records when goods <span className="italic">leave</span>
-                , not when they arrive — because without carrier integration we
+                , not when they arrive, because without carrier integration we
                 can&rsquo;t observe delivery. Words should only claim what the
                 system knows.
               </p>
@@ -418,7 +418,7 @@ export default function MethodInventoryCaseStudy() {
                 Structure available, never mandatory
               </h3>
               <p className="text-white/80 text-[16px] leading-[150%]">
-                One fulfillment flow, three speeds — all-in-one, save &amp;
+                One fulfillment flow, three speeds: all-in-one, save &amp;
                 resume, or quick-ship. The structure is there when an order
                 needs it and out of the way when it doesn&rsquo;t.
               </p>
@@ -448,13 +448,13 @@ export default function MethodInventoryCaseStudy() {
       {/* ── The Items app ── */}
       <section className="mb-16">
         <h2 className="text-[28px] font-bold text-white mb-2">
-          The Items app — every number, one source of truth
+          The Items app: every number, one source of truth
         </h2>
         <div className="border-t border-white/20 pt-6 mb-8">
           <p className="text-white/80 text-[20px] leading-[150%]">
             &ldquo;See it&rdquo; first: live stock by location, with Available
             computed the same way everywhere it appears. This is the
-            visibility payoff customers asked for — the number they could
+            visibility payoff customers asked for. The number they could
             never get before.
           </p>
         </div>
@@ -478,25 +478,25 @@ export default function MethodInventoryCaseStudy() {
         </h2>
         <div className="border-t border-white/20 pt-6 mb-8">
           <p className="text-white/80 text-[20px] leading-[150%] mb-6">
-            Overselling was the most documented operational failure — reps
+            Overselling was the most documented operational failure. Reps were
             committing quantities the warehouse didn&rsquo;t have. Every order
             line now shows live Available with a{" "}
             <span className="text-heading-orange font-bold">
               non-blocking oversell warning
             </span>{" "}
-            — informing, not gating — and reserves stock the moment it&rsquo;s
+            , informing rather than gating, and reserves stock the moment it&rsquo;s
             committed.
           </p>
           <p className="text-white/80 text-[20px] leading-[150%] mb-6">
             I scored three fulfillment options and shipped a hybrid: a
             wizard as the interaction, persistent pick lists and fulfillment
-            status as the infrastructure — because a wizard without state
+            status as the infrastructure, because a wizard without state
             tracking is half a feature. The packing slip is generated at pack
             time with a{" "}
             <span className="text-heading-orange font-bold">
               &ldquo;Show prices&rdquo; toggle, off by default
             </span>{" "}
-            — one checkbox straight out of a customer&rsquo;s words:{" "}
+            , one checkbox straight out of a customer&rsquo;s words:{" "}
             <span className="italic">
               &ldquo;We need a delivery ticket… toggle the price list off,
               where the customer does not see it.&rdquo;
@@ -524,15 +524,15 @@ export default function MethodInventoryCaseStudy() {
       {/* ── The PO ── */}
       <section className="mb-16">
         <h2 className="text-[28px] font-bold text-white mb-2">
-          The PO — the SO&rsquo;s mirror, where Expected comes from
+          The PO: the SO&rsquo;s mirror, where Expected comes from
         </h2>
         <div className="border-t border-white/20 pt-6 mb-8">
           <p className="text-white/80 text-[20px] leading-[150%]">
-            Receiving had the same continuity disease in reverse — POs in
+            Receiving had the same continuity disease in reverse: POs in
             Excel, bills re-keyed by hand. I designed PO-centric receiving: a
             Receive action pre-fills the receipt, partial receipts are native,
             and saving syncs the receipt and bill straight to the connected
-            books in one step. Zero double entry — and the{" "}
+            books in one step. Zero double entry, and the{" "}
             <span className="text-heading-orange font-bold">Expected</span> leg
             of the Available formula is finally complete. Backorders stay
             single-line statuses, and incoming stock auto-allocates to the
@@ -549,7 +549,7 @@ export default function MethodInventoryCaseStudy() {
       {/* ── Permissions / RBAC ── */}
       <section className="mb-16">
         <h2 className="text-[28px] font-bold text-white mb-2">
-          Permissions — &ldquo;Same picture for all. Different powers.&rdquo;
+          Permissions: &ldquo;Same picture for all. Different powers.&rdquo;
         </h2>
         <div className="border-t border-white/20 pt-6 mb-8">
           <p className="text-white/80 text-[20px] leading-[150%]">
@@ -557,8 +557,8 @@ export default function MethodInventoryCaseStudy() {
               See wide, act narrow.
             </span>{" "}
             Access is role-based, least-privilege and deny-by-default. Every
-            role reads the same order and its full status — the shared picture
-            the research found missing — but each role&rsquo;s{" "}
+            role reads the same order and its full status, the shared picture
+            the research found missing, but each role&rsquo;s{" "}
             <span className="italic">actions</span> map to a scoped permission
             set. Money and stock are permissions of their own. The prototype
             enforces it live: switch to Warehouse and prices vanish.
@@ -617,7 +617,7 @@ export default function MethodInventoryCaseStudy() {
           </div>
         </Card>
         <p className="text-white/60 text-[15px] leading-[150%] mt-4">
-          Separation of duties in practice — most staff hold a single role and
+          Separation of duties in practice: most staff hold a single role and
           only ever see that view; owners hold all and switch among their own
           hats. No one can escalate into access they weren&rsquo;t granted.
         </p>
@@ -626,13 +626,13 @@ export default function MethodInventoryCaseStudy() {
       {/* ── Usability finding — Undo → Revert ── */}
       <section className="mb-16">
         <h2 className="text-[28px] font-bold text-white mb-2">
-          Undo was too light — so I built Revert
+          Undo was too light, so I built Revert
         </h2>
         <div className="border-t border-white/20 pt-6 mb-8">
           <p className="text-white/80 text-[20px] leading-[150%] mb-6">
             Across eight moderated sessions with warehouse and distribution
-            users on a working prototype, the mistake-correction task failed —
-            the inline per-row undo icon felt trivially light for an action
+            users on a working prototype, the mistake-correction task failed.
+            The inline per-row undo icon felt trivially light for an action
             that moves stock and reopens an order. So I rebuilt it: undo became
             a{" "}
             <span className="text-heading-orange font-bold">
@@ -640,7 +640,7 @@ export default function MethodInventoryCaseStudy() {
             </span>
             , with a compulsory reason per line and a clear &ldquo;can&rsquo;t
             be undone&rdquo; warning. Reasons write to Method&rsquo;s existing
-            audit log — reuse over rebuild — and doubled as product insight
+            audit log, reuse over rebuild, and doubled as product insight
             (the top revert reason was &ldquo;customer changed order&rdquo;).
           </p>
           <Card className="!p-8">
@@ -674,7 +674,7 @@ export default function MethodInventoryCaseStudy() {
         </h2>
         <div className="border-t border-white/20 pt-6">
           <p className="text-white/80 text-[20px] leading-[150%] mb-6">
-            Two primitives — a standardised modal and a status pill/badge —
+            Two primitives, a standardised modal and a status pill/badge,
             were drifting across designers and flows. Not a screen problem, a
             system problem. I aligned the team on one spec per use case, then
             shipped Dialog, StatusBadge, Badge, DataTable, ActionBar, and Toast
@@ -684,12 +684,12 @@ export default function MethodInventoryCaseStudy() {
             <span className="text-heading-orange font-bold">
               only from that shared library
             </span>{" "}
-            — never hand-rolled one-offs, enforced automatically — so the
+            , never hand-rolled one-offs, enforced automatically, so the
             system can&rsquo;t drift again.
           </p>
           <Card className="!p-8">
             <span className="text-heading-orange text-[12px] uppercase tracking-wider font-bold block mb-4">
-              The system — derived status badges + shared components
+              The system: derived status badges + shared components
             </span>
             <div className="space-y-3">
               {[
@@ -766,19 +766,19 @@ export default function MethodInventoryCaseStudy() {
       {/* ── AI strategy ── */}
       <section className="mb-16">
         <h2 className="text-[28px] font-bold text-white mb-2">
-          AI strategy — automate perception, augment action
+          AI strategy: automate perception, augment action
         </h2>
         <div className="border-t border-white/20 pt-6 mb-10">
           <p className="text-white/80 text-[20px] leading-[150%]">
             Grounded in Google&rsquo;s PAIR guidelines, I drew one line: AI
             automates <span className="italic">perception</span> (status
             derivation, anomaly detection, ranking) but only{" "}
-            <span className="italic">augments</span> action — it drafts, flags,
+            <span className="italic">augments</span> action. It drafts, flags,
             and ranks; the human confirms. Critically,{" "}
             <span className="text-heading-orange font-bold">
               AI never commits stock or money
             </span>
-            . Automation is earned on a trust ladder — v1 drafts and explains,
+            . Automation is earned on a trust ladder: v1 drafts and explains,
             v2 one-click approve once edit-distance shows acceptance, v3
             auto-order within guardrails, with revert as the safety net. Each
             embed below is tagged with how far it actually got.
@@ -800,7 +800,7 @@ export default function MethodInventoryCaseStudy() {
           </div>
           <p className="text-white/80 text-[16px] leading-[150%] mb-4 max-w-[760px]">
             Spots items that are out of stock with no inbound PO, then pre-seeds
-            a Draft PO — suggested vendor, lines, and quantities the buyer edits
+            a Draft PO with suggested vendor, lines, and quantities the buyer edits
             and commits. The AI drafts; the human places the order.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -824,7 +824,7 @@ export default function MethodInventoryCaseStudy() {
             tone: "beta",
             img: "method-ai-oversell",
             alt: "AI oversell assist — suggests a location transfer or Draft PO to cover a shortfall",
-            desc: "When an order line exceeds what's available, it suggests the fix — a transfer from a location with surplus, or a Draft PO to cover the shortfall.",
+            desc: "When an order line exceeds what's available, it suggests the fix: a transfer from a location with surplus, or a Draft PO to cover the shortfall.",
           },
           {
             name: "Receiving discrepancy flag",
@@ -832,7 +832,7 @@ export default function MethodInventoryCaseStudy() {
             tone: "beta",
             img: "method-ai-receiving",
             alt: "AI receiving discrepancy flag — a short receipt flagged with a reason",
-            desc: "A short or over receipt is flagged at the line with a reason to pick — so variances get resolved, not silently absorbed.",
+            desc: "A short or over receipt is flagged at the line with a reason to pick, so variances get resolved instead of silently absorbed.",
           },
           {
             name: "Transfer rebalance",
@@ -848,7 +848,7 @@ export default function MethodInventoryCaseStudy() {
             tone: "beta",
             img: "method-ai-shrinkage",
             alt: "AI shrinkage watch — grouped down-adjustments flagged to investigate",
-            desc: "Groups repeated downward adjustments and flags the pattern to investigate — quiet shrinkage made visible.",
+            desc: "Groups repeated downward adjustments and flags the pattern to investigate. Quiet shrinkage made visible.",
           },
           {
             name: "Duplicate detection",
@@ -864,7 +864,7 @@ export default function MethodInventoryCaseStudy() {
             tone: "concept",
             img: "method-ai-pickroute",
             alt: "AI pick-route suggestion — an overridable picking order",
-            desc: "Suggests an efficient, overridable picking order — route planning isn't a picker's craft, so it leans automated.",
+            desc: "Suggests an efficient, overridable picking order. Route planning isn't a picker's craft, so it leans automated.",
           },
         ].map((f) => (
           <div key={f.name} className="mb-12">
@@ -904,7 +904,7 @@ export default function MethodInventoryCaseStudy() {
               +25%
             </span>
             <p className="text-white/80 text-[14px] leading-[140%] mt-1">
-              sales-pipeline engagement — reps could promise stock with
+              sales-pipeline engagement. Reps could promise stock with
               confidence
             </p>
           </div>
@@ -913,7 +913,7 @@ export default function MethodInventoryCaseStudy() {
               +30%
             </span>
             <p className="text-white/80 text-[14px] leading-[140%] mt-1">
-              order-to-cash workflow completion — continuity, no tool-switching
+              order-to-cash workflow completion: continuity, no tool-switching
             </p>
           </div>
           <div>
@@ -927,8 +927,8 @@ export default function MethodInventoryCaseStudy() {
         </div>
         <p className="text-white/70 text-[18px] leading-[150%]">
           Beyond the headline numbers, early signals were healthy across the
-          board — strong adoption, fast fulfillment, and a low pick-list revert
-          rate — and the work left foundations behind it: a governed design
+          board: strong adoption, fast fulfillment, and a low pick-list revert
+          rate. The work left foundations behind it: a governed design
           system other teams build on, and a reusable research capability
           adopted past this project.
         </p>
@@ -943,10 +943,9 @@ export default function MethodInventoryCaseStudy() {
               What I learned
             </span>
             <p className="text-white/80 text-[16px] leading-[150%]">
-              Enterprise UX isn&rsquo;t screens — it&rsquo;s state, continuity,
+              Enterprise UX isn&rsquo;t screens. It&rsquo;s state, continuity,
               and accountability. Words are system design
-              (&ldquo;ship, not deliver&rdquo;). And AI earns trust through
-              posture, not capability.
+              (&ldquo;ship, not deliver&rdquo;). And AI earns trust through its posture.
             </p>
           </Card>
           <Card>
@@ -955,8 +954,8 @@ export default function MethodInventoryCaseStudy() {
             </span>
             <p className="text-white/80 text-[16px] leading-[150%]">
               Scoring options before committing · letting usability findings
-              overturn shipped UI (undo → revert) · scoping by principle —
-              locations, ship-not-deliver — rather than by feature pressure.
+              overturn shipped UI (undo → revert) · scoping by principle,
+              locations and ship-not-deliver, rather than by feature pressure.
             </p>
           </Card>
           <Card>
@@ -965,7 +964,7 @@ export default function MethodInventoryCaseStudy() {
             </span>
             <p className="text-white/80 text-[16px] leading-[150%]">
               Open the carrier-integration conversation in parallel. Shipping
-              &ldquo;ship, not deliver&rdquo; was the right MVP cut — but
+              &ldquo;ship, not deliver&rdquo; was the right MVP cut, but
               closing the loop to &ldquo;Delivered&rdquo; shouldn&rsquo;t have
               been a Phase-2 gap.
             </p>

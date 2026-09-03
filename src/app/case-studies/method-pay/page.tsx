@@ -101,7 +101,7 @@ export default function MethodPayCaseStudy() {
         nextHref: "/case-studies/arm",
         label: "METHOD PAY",
         title:
-          "Embedding payments into Method CRM — turning a bolted-on gateway into a native money surface.",
+          "Embedding payments into Method CRM.",
         impactItems: [
           "16 → 23% of accounts now take payments",
           "$19M annualised GPV run-rate, from zero",
@@ -178,7 +178,7 @@ export default function MethodPayCaseStudy() {
         <h2 className="text-[28px] font-bold text-white mb-2">The problem</h2>
         <div className="border-t border-white/20 pt-6 mb-8">
           <p className="text-white/80 text-[20px] leading-[150%] mb-6">
-            Method runs the whole customer relationship — contacts, pipeline,
+            Method runs the whole customer relationship: contacts, pipeline,
             estimates, invoices. But the moment money actually moved, the
             experience left the platform. Payments ran through a bolted-on
             third-party gateway with its own setup, its own dashboard, and its
@@ -186,7 +186,7 @@ export default function MethodPayCaseStudy() {
           </p>
           <p className="text-white/80 text-[20px] leading-[150%]">
             The invoice lived in Method. The payment lived somewhere else. The
-            problem was never &ldquo;we lack payments&rdquo; — it was that we
+            problem was never &ldquo;we lack payments.&rdquo; It was that we
             didn&rsquo;t{" "}
             <span className="text-heading-orange font-bold">own</span> them. Ten
             gateways in the picker, and per transaction exactly one margin
@@ -216,7 +216,7 @@ export default function MethodPayCaseStudy() {
             20%
           </span>
           <p className="text-white/80 text-[13px] leading-[140%] mt-1">
-            our share of processing revenue — the gateway took the other 80%
+            our share of processing revenue. The gateway provider took the other 80%
           </p>
         </div>
         <div>
@@ -224,7 +224,7 @@ export default function MethodPayCaseStudy() {
             41%
           </span>
           <p className="text-white/80 text-[13px] leading-[140%] mt-1">
-            six-month payment retention — the incumbent baseline to beat
+            six-month payment retention, the incumbent baseline to beat
           </p>
         </div>
       </section>
@@ -237,8 +237,8 @@ export default function MethodPayCaseStudy() {
           <span className="text-heading-orange font-bold">$100M</span> gross
           payment volume ambition for 2027. The gap between those two numbers is
           this case study. Read properly, it was an{" "}
-          <em>activation</em> problem wearing a payments costume — the growth
-          was sitting inside the existing base, not in new markets.
+          <em>activation</em> problem wearing a payments costume. The growth
+          was sitting inside the existing base.
         </p>
       </section>
 
@@ -249,8 +249,8 @@ export default function MethodPayCaseStudy() {
             How might we
           </span>
           <p className="text-white text-[22px] md:text-[26px] leading-[140%] italic font-light">
-            &ldquo;How might we make taking a payment feel like part of Method —
-            and make not using it feel like the workaround?&rdquo;
+            &ldquo;How might we let a merchant get paid without ever leaving
+            Method?&rdquo;
           </p>
         </Card>
         <p className="text-white/70 text-[18px] leading-[150%] mt-6">
@@ -280,8 +280,8 @@ export default function MethodPayCaseStudy() {
                 14
               </span>
               <p className="text-white/70 text-[14px] leading-[140%] mt-3">
-                merchant interviews — on the incumbent gateway, no gateway,
-                churned, and high-volume
+                merchant interviews across four situations: on the incumbent gateway,
+                no gateway, churned, and high-volume
               </p>
             </Card>
             <Card>
@@ -328,8 +328,8 @@ export default function MethodPayCaseStudy() {
               &ldquo;My payments work today. Don&rsquo;t break them.&rdquo;
             </p>
             <p className="text-white/70 text-[15px] leading-[150%]">
-              Incumbents survive on inertia, not love. It drove parallel-rails
-              migration — the existing gateway keeps running, untouched.
+              Incumbents survive on inertia. It drove parallel-rails
+              migration, so the existing gateway keeps running, untouched.
             </p>
           </Card>
           <Card>
@@ -342,7 +342,7 @@ export default function MethodPayCaseStudy() {
             </p>
             <p className="text-white/70 text-[15px] leading-[150%]">
               Payments config was invisible until something broke. It drove
-              points of entry: meet merchants in the workflow, not in settings.
+              points of entry: meet merchants in the workflow.
             </p>
           </Card>
         </div>
@@ -367,13 +367,13 @@ export default function MethodPayCaseStudy() {
             <span className="text-heading-orange font-bold">
               verification pass
             </span>{" "}
-            — a second agent whose only job is to refute. Two independent
+            , a second agent whose only job is to refute. Two independent
             sources or the claim doesn&rsquo;t ship. It caught a wrong dispute
             fee in my own notes: $25, when Stripe charges $15 and Square charges
             nothing. That&rsquo;s why I trust the rest of the report.
           </p>
           <p className="text-white/80 text-[20px] leading-[150%] mb-6">
-            Three checkpoints stay mine — the competitor list, the axes of
+            Three checkpoints stay mine: the competitor list, the axes of
             comparison, and the synthesis. Nothing moves to the next stage until
             I&rsquo;ve signed it off.
           </p>
@@ -391,7 +391,7 @@ export default function MethodPayCaseStudy() {
           </span>
           <p className="text-white text-[20px] leading-[150%] mb-4">
             Of ten products, only Shopify lets a merchant say what happens to
-            returned stock — and even there it&rsquo;s one checkbox that
+            returned stock, and even there it&rsquo;s one checkbox that
             defaults to on, so &ldquo;came back fine&rdquo; and &ldquo;came back
             broken&rdquo; are the same answer. QuickBooks restocks silently. You
             find out when the broken unit ships to the next customer.
@@ -402,10 +402,10 @@ export default function MethodPayCaseStudy() {
             <span className="text-heading-orange font-bold">
               lost efficiency by two points
             </span>{" "}
-            — it asks one question the others skip. That trade{" "}
+            , because it asks one question the others skip. That trade{" "}
             <em>was</em> the decision, so it stayed visible rather than being
             scored away. It&rsquo;s why Method&rsquo;s refund has three stock
-            outcomes, not a checkbox.
+            outcomes.
           </p>
         </Card>
       </section>
@@ -413,12 +413,12 @@ export default function MethodPayCaseStudy() {
       {/* ── Segments & rollout ── */}
       <section className="mb-16">
         <h2 className="text-[28px] font-bold text-white mb-2">
-          Five segments, five strategies — not one launch
+          Five segments meant five strategies
         </h2>
         <div className="border-t border-white/20 pt-6 mb-8">
           <p className="text-white/80 text-[20px] leading-[150%]">
             Same product, five different entrances into five different lives.
-            The largest and most reachable was the 84% — existing users
+            The largest and most reachable was the 84%: existing users
             invoicing in Method with no gateway at all. The revenue segment was
             the smallest: high-volume merchants doing $50K+ a month, who get
             direct outreach and a rate conversation rather than a prompt.
@@ -435,19 +435,19 @@ export default function MethodPayCaseStudy() {
             {
               tag: "Activate",
               who: "Existing user, no gateway",
-              body: "Uses Method for invoicing only — the 84%. The largest and most reachable segment.",
+              body: "Uses Method for invoicing only. The 84%, and the largest and most reachable segment.",
               entry: "Invoice “Pay now” + in-workflow prompts",
             },
             {
               tag: "Court",
               who: "High-volume SMB",
-              body: "$50K+ a month in payments. Small in count, outsized in GPV — the revenue segment.",
+              body: "$50K+ a month in payments. Small in count, outsized in GPV. The revenue segment.",
               entry: "Direct outreach and rate conversations",
             },
             {
               tag: "Migrate",
               who: "Incumbent-gateway user",
-              body: "Already processing through the legacy gateway — familiar, but constrained.",
+              body: "Already processing through the legacy gateway. Familiar, but constrained.",
               entry: "Guided migration path and incentives",
             },
             {
@@ -478,20 +478,20 @@ export default function MethodPayCaseStudy() {
 
       <section className="mb-16">
         <h2 className="text-[28px] font-bold text-white mb-2">
-          Who could even see it — a ladder, not a launch
+          Who could even see it, and when
         </h2>
         <div className="border-t border-white/20 pt-6 mb-8">
           <p className="text-white/80 text-[20px] leading-[150%] mb-6">
             The launch-date argument was the wrong argument. I reframed it as an
             exposure sequence: five rungs, each opening only after the last one
             held, each with a different audience and a different enablement bar
-            — so the launch of a money product never became a money incident.
+            , so the launch of a money product never became a money incident.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-5 gap-3">
             {[
               ["1", "Hidden", "Behind a feature flag. Built and tested with zero exposure."],
               ["2", "Targeted accounts", "Manually enabled through sales conversations. Hand-picked."],
-              ["3", "Low-risk accounts", "Flag opened by risk profile — merchants discover and apply."],
+              ["3", "Low-risk accounts", "Flag opened by risk profile. Merchants discover and apply."],
               ["4", "Limited beta", "Broader availability, with sales, support and PS briefed."],
               ["5", "GA & migration", "Staged rollout to everyone, incumbent migration path open."],
             ].map(([n, title, body]) => (
@@ -510,7 +510,7 @@ export default function MethodPayCaseStudy() {
           </div>
         </div>
         <p className="text-white/70 text-[18px] leading-[150%]">
-          Enablement shipped before exposure at every rung — the org is part of
+          Enablement shipped before exposure at every rung. The org is part of
           the interface. Application approval gated every merchant regardless of
           stage.
         </p>
@@ -524,7 +524,7 @@ export default function MethodPayCaseStudy() {
         <div className="border-t border-white/20 pt-6 mb-8">
           <p className="text-white/80 text-[20px] leading-[150%] mb-6">
             Building processing from scratch meant owning PCI compliance, KYC,
-            fraud and disputes — years of work that isn&rsquo;t Method&rsquo;s
+            fraud and disputes. Years of work that isn&rsquo;t Method&rsquo;s
             craft. Partnering meant choosing the platform whose embedded surface
             we&rsquo;d live inside. We ran a structured bake-off between Stripe
             and a US-focused challenger on compliance coverage, embedded
@@ -536,7 +536,7 @@ export default function MethodPayCaseStudy() {
             </span>
             <p className="text-white text-[20px] leading-[150%]">
               Embedded-component maturity. I was choosing the UI we&rsquo;d live
-              inside — the rate card mattered less than that. Stripe won: the
+              inside. Stripe won: the
               deepest embedded toolkit, battle-tested KYC/KYB, and room to grow
               internationally without re-platforming.
             </p>
@@ -559,18 +559,18 @@ export default function MethodPayCaseStudy() {
             Where users <em>act</em> on regulated data, compliance should sit
             with the platform certified to hold it. Where users{" "}
             <em>read</em>, the experience must be unmistakably Method. Two
-            embedded Stripe surfaces made the cut —{" "}
+            embedded Stripe surfaces made the cut:{" "}
             <span className="text-heading-orange font-bold">
               KYC/KYB onboarding and card checkout
             </span>{" "}
-            — because both carry real liability <em>and</em> both could be
+            , because both carry real liability <em>and</em> both could be
             themed to Method. Everything else is Method&rsquo;s own UI over
             Stripe&rsquo;s APIs.
           </p>
           <p className="text-white/80 text-[20px] leading-[150%] mb-6">
             The same principle settled the brand question. I pushed for
-            white-label — Method Pay as Method&rsquo;s product, not
-            &ldquo;Powered by Stripe&rdquo; — with HubSpot&rsquo;s adoption data
+            white-label, Method Pay carrying our own name rather than
+            &ldquo;Powered by Stripe,&rdquo; with HubSpot&rsquo;s adoption data
             as the evidence. The nuance that won it wasn&rsquo;t binary, it was
             placement: disclose Stripe at the KYC and bank moments, where a name
             regulators recognise <em>is</em> the reassurance.
@@ -592,13 +592,13 @@ export default function MethodPayCaseStudy() {
       {/* ── The flows ── */}
       <section className="mb-16">
         <h2 className="text-[28px] font-bold text-white mb-2">
-          Three money flows — and who owns each step
+          Three money flows, and who owns each step
         </h2>
         <div className="border-t border-white/20 pt-6 mb-8">
           <p className="text-white/80 text-[20px] leading-[150%]">
             The tints are the argument: violet steps live inside Stripe&rsquo;s
             certified components, blue steps are ours over the APIs. Note the
-            &ldquo;Needs information&rdquo; loop in the application flow — it
+            &ldquo;Needs information&rdquo; loop in the application flow. It
             loops back, it never dead-ends.
           </p>
         </div>
@@ -612,7 +612,7 @@ export default function MethodPayCaseStudy() {
       {/* ── Surface 1: onboarding ── */}
       <section className="mb-16">
         <h2 className="text-[28px] font-bold text-white mb-2">
-          Applying to move money — without leaving Method
+          Applying to move money without leaving Method
         </h2>
         <div className="border-t border-white/20 pt-6 mb-8">
           <p className="text-white/80 text-[20px] leading-[150%] mb-6">
@@ -630,7 +630,7 @@ export default function MethodPayCaseStudy() {
           <p className="text-white/80 text-[20px] leading-[150%]">
             Nothing switches off while they apply. The old gateway keeps
             running on parallel rails, and the approved screen still links back
-            to it — merchants switch when they see it working. We went first,
+            to it. Merchants switch when they see it working. We went first,
             moving Method&rsquo;s own billing across before asking anyone else.
           </p>
         </div>
@@ -651,7 +651,7 @@ export default function MethodPayCaseStudy() {
         </h2>
         <div className="border-t border-white/20 pt-6 mb-8">
           <p className="text-white/80 text-[20px] leading-[150%] mb-6">
-            Payments config lived in Settings — findable if you went looking,
+            Payments config lived in Settings, findable if you went looking,
             but nobody goes looking. Merchants don&rsquo;t wake up wanting to
             configure payments; they wake up wanting to get paid. So{" "}
             <span className="text-heading-orange font-bold">
@@ -681,8 +681,8 @@ export default function MethodPayCaseStudy() {
           </div>
           <p className="text-white/80 text-[16px] leading-[150%]">
             Chasing overdue invoices is the work merchants skip, so the AI
-            drafts the whole escalating sequence — gentle first reminder, firmer
-            second, final notice — queued most-overdue first. Nothing sends
+            drafts the whole escalating sequence: gentle first reminder, firmer
+            second, final notice, queued most-overdue first. Nothing sends
             until the merchant approves each one, and there is no &ldquo;send
             all.&rdquo; The AI writes the awkward part; the merchant still
             decides to send it.
@@ -697,16 +697,16 @@ export default function MethodPayCaseStudy() {
         </h2>
         <div className="border-t border-white/20 pt-6 mb-8">
           <p className="text-white/80 text-[20px] leading-[150%]">
-            Merchants don&rsquo;t think in &ldquo;charges&rdquo; — they think
+            Merchants don&rsquo;t think in &ldquo;charges.&rdquo; They think
             &ldquo;did the Hendersons pay, and what did it cost me?&rdquo; The
             old gateway answered in processor-speak, in someone else&rsquo;s
             dashboard. This is a custom Method surface: payments, refunds and
             disputes in one list with real-time status, filter and search by
-            customer, and a detail view that shows the money honestly —{" "}
+            customer, and a detail view that shows the money honestly:{" "}
             <span className="text-heading-orange font-bold">
               gross → application fee → processing fee → net
             </span>
-            . Showing our own fee plainly is a trust decision, not an accident.
+            . Showing our own fee plainly is a trust decision.
           </p>
         </div>
         <Video
@@ -718,7 +718,7 @@ export default function MethodPayCaseStudy() {
       {/* ── Surface 4: payouts ── */}
       <section className="mb-16">
         <h2 className="text-[28px] font-bold text-white mb-2">
-          &ldquo;Where&rsquo;s my money?&rdquo; — answered in-product
+          &ldquo;Where&rsquo;s my money?&rdquo; answered in-product
         </h2>
         <div className="border-t border-white/20 pt-6 mb-8">
           <p className="text-white/80 text-[20px] leading-[150%]">
@@ -729,7 +729,7 @@ export default function MethodPayCaseStudy() {
             what&rsquo;s still settling, and any deposit traces back to the
             payments and refunds behind it. A merchant who can answer
             &ldquo;why is this one short?&rdquo; doesn&rsquo;t need to open a
-            ticket — and the itemised decomposition is what accountants actually
+            ticket, and the itemised decomposition is what accountants actually
             need at month-end.
           </p>
         </div>
@@ -748,7 +748,7 @@ export default function MethodPayCaseStudy() {
           <p className="text-white/80 text-[20px] leading-[150%] mb-6">
             A refund carries information a processor never sees: why it
             happened, which lines came back, and whether the stock can be sold
-            again. So the modal asks — partial or full, a business reason, and a{" "}
+            again. So the modal asks: partial or full, a business reason, and a{" "}
             <span className="text-heading-orange font-bold">
               stock outcome: returned to stock, written off, or not returned
             </span>
@@ -760,7 +760,7 @@ export default function MethodPayCaseStudy() {
             Card refunds take days to reach a statement, so I designed the
             waiting too: a pending state, an arrival estimate the moment you hit
             refund, and email copy telling the customer it landed. The problem
-            was never speed — it was uncertainty. &ldquo;Where&rsquo;s my
+            was never speed. It was uncertainty. &ldquo;Where&rsquo;s my
             refund&rdquo; tickets became self-serve.
           </p>
         </div>
@@ -779,7 +779,7 @@ export default function MethodPayCaseStudy() {
             Because reasons are captured as structured data rather than free
             text, they&rsquo;re countable. Three refunds on one SKU for
             &ldquo;wrong item shipped&rdquo; surfaced on its own and pointed at
-            the pick process — a fulfilment problem found in payments data,
+            the pick process. A fulfilment problem found in payments data,
             with nobody running a report.
           </p>
         </Card>
@@ -788,7 +788,7 @@ export default function MethodPayCaseStudy() {
       {/* ── Surface 6: disputes ── */}
       <section className="mb-16">
         <h2 className="text-[28px] font-bold text-white mb-2">
-          Disputes — a queue against the clock
+          Disputes, a queue against the clock
         </h2>
         <div className="border-t border-white/20 pt-6 mb-8">
           <p className="text-white/80 text-[20px] leading-[150%]">
@@ -799,8 +799,8 @@ export default function MethodPayCaseStudy() {
             <span className="text-heading-orange font-bold">
               Skip is first-class
             </span>{" "}
-            — forcing a decision when you&rsquo;re missing a document produces
-            bad decisions. And Accept shows its price: &ldquo;$230
+            , because forcing a decision when you&rsquo;re missing a document
+            produces bad decisions. And Accept shows its price: &ldquo;$230
             debited&rdquo; against &ldquo;3 items ready.&rdquo; Sometimes
             accepting is the cheaper call, and it should read like the business
             decision it is.
@@ -820,11 +820,11 @@ export default function MethodPayCaseStudy() {
           <p className="text-white/80 text-[16px] leading-[150%]">
             Deadlines are tight and gathering proof is slow, so the AI pre-fills
             the packet and drafts the rebuttal. The move that earns trust is
-            that it names what it <em>couldn&rsquo;t</em> find —
+            that it names what it <em>couldn&rsquo;t</em> find:
             &ldquo;Refund policy, not on file.&rdquo; A tool that hands back a
             full packet every time teaches you to stop reading it. On a money
             surface, &ldquo;AI never commits money&rdquo; isn&rsquo;t a
-            limitation — it&rsquo;s the thesis.
+            limitation. It&rsquo;s the thesis.
           </p>
         </Card>
       </section>
@@ -846,9 +846,9 @@ export default function MethodPayCaseStudy() {
             after. I co-authored the Amplitude tracking dictionary with the PM
             and analyst, and the rule was to{" "}
             <span className="text-heading-orange font-bold">
-              instrument the state machine, not pageviews
+              instrument the state machine
             </span>{" "}
-            — every event mirrors a state I designed, carrying entry point,
+            , so every event mirrors a state I designed, carrying entry point,
             segment and current gateway as properties. Two of the secondary
             metrics were deliberate counter-metrics: switchback rate, and
             support contacts per 100 payments. Every headline number went up, so
@@ -862,7 +862,7 @@ export default function MethodPayCaseStudy() {
               title: "Proof of life",
               q: "Does it work end to end, with real money?",
               items: [
-                ["1st", "real transaction — a live merchant, a live customer, a real charge"],
+                ["1st", "real transaction: a live merchant, a live customer, a real charge"],
                 ["Us", "Method ran its own SaaS billing on Method Pay before asking any merchant to"],
               ],
             },
@@ -872,8 +872,8 @@ export default function MethodPayCaseStudy() {
               q: "Do merchants choose it, use it, and stay?",
               items: [
                 ["Attach", "share of active accounts using Method Pay, starting from 0%"],
-                ["Paid", "share of invoices actually paid through it — the workflow test"],
-                ["Switch", "merchants who turn the legacy gateway off. Switchers, not just adopters"],
+                ["Paid", "share of invoices actually paid through it. The workflow test"],
+                ["Switch", "merchants who turn the legacy gateway off. The real switch signal"],
                 [">41%", "six-month retention, beating the incumbent baseline"],
               ],
             },
@@ -927,7 +927,7 @@ export default function MethodPayCaseStudy() {
           <p className="text-white/80 text-[20px] leading-[150%]">
             All three were invisible in aggregate. They surfaced because the
             events were named after the states, so each one pointed at
-            something specific we could go change — two drop-offs sitting in a{" "}
+            something specific we could go change: two drop-offs sitting in a{" "}
             <span className="text-heading-orange font-bold">transition</span>{" "}
             rather than on a screen, and one ceiling on the entry point I&rsquo;d
             already called the winner. The screens tested fine in isolation.
@@ -940,7 +940,7 @@ export default function MethodPayCaseStudy() {
           </h3>
           <p className="text-white/80 text-[16px] leading-[150%] mb-4 max-w-[820px]">
             The biggest single-step drop in the application. It looked like a
-            trust problem and wasn&rsquo;t — Stripe was already disclosed on
+            trust problem and wasn&rsquo;t. Stripe was already disclosed on
             that step. It was a <em>preparation</em> problem: merchants arrived
             without their details to hand, went looking, and didn&rsquo;t come
             back. So I told them what to gather before starting, made bank login
@@ -962,7 +962,7 @@ export default function MethodPayCaseStudy() {
             02 · The winning entry point had a ceiling
           </h3>
           <p className="text-white/80 text-[16px] leading-[150%] max-w-[820px]">
-            The invoice-flow prompt converted best — and only fires when a
+            The invoice-flow prompt converted best, and only fires when a
             merchant is invoicing, which they do in bursts. With 84% of accounts
             never having enabled payments, most were never going to walk past
             it. Home converted at about a third of the rate, exactly as
@@ -971,7 +971,7 @@ export default function MethodPayCaseStudy() {
               4× as many never-enabled accounts
             </span>{" "}
             in a month. Home is owned by the onboarding growth team; what I
-            brought was the entry-point question — at what point in the
+            brought was the entry-point question: at what point in the
             merchant&rsquo;s journey does this offer make sense, and what should
             gate it. It became the second-largest source of first payments,
             behind the invoice prompt and ahead of settings.
@@ -990,7 +990,7 @@ export default function MethodPayCaseStudy() {
           <p className="text-white/80 text-[16px] leading-[150%] mb-4 max-w-[820px]">
             A gap between approval and the first payment: merchants got approved
             and then didn&rsquo;t send anything. Approval became a launchpad
-            rather than a receipt — &ldquo;send your first payment link&rdquo;
+            rather than a receipt. &ldquo;Send your first payment link&rdquo;
             as the next action, pointed at an invoice they already had open.{" "}
             <span className="text-heading-orange font-bold">
               First-payment rate among approved merchants 43% → 71%.
@@ -1026,7 +1026,7 @@ export default function MethodPayCaseStudy() {
               up from 16%
             </span>
             <p className="text-white/80 text-[14px] leading-[140%] mt-2">
-              of accounts now take payments — and ~2 in 3 who enable choose
+              of accounts now take payments, and ~2 in 3 who enable choose
               Method Pay
             </p>
           </div>
@@ -1049,7 +1049,7 @@ export default function MethodPayCaseStudy() {
               up from $5.2K
             </span>
             <p className="text-white/80 text-[14px] leading-[140%] mt-2">
-              annualised fee revenue — the referral fee became a product line
+              annualised fee revenue. The referral fee became a product line
             </p>
           </div>
         </div>
@@ -1113,7 +1113,7 @@ export default function MethodPayCaseStudy() {
           </Card>
           <Card>
             <span className="text-heading-orange text-[14px] font-bold uppercase tracking-wider block mb-2">
-              Migration is trust, not a feature
+              Migration is trust
             </span>
             <p className="text-white/80 text-[16px] leading-[150%]">
               Switching a live merchant&rsquo;s revenue is the scariest ask in
@@ -1123,12 +1123,12 @@ export default function MethodPayCaseStudy() {
           </Card>
           <Card>
             <span className="text-heading-orange text-[14px] font-bold uppercase tracking-wider block mb-2">
-              Meet the moment, not a page
+              Meet the moment
             </span>
             <p className="text-white/80 text-[16px] leading-[150%]">
-              Adoption is placement, not a feature you announce. Payments
-              belongs at the moments of intent — the invoice, onboarding, the
-              workflow — not at a settings destination.
+              Adoption is placement. Payments
+              belongs at the moments of intent: the invoice, onboarding, the
+              workflow.
             </p>
           </Card>
         </div>
@@ -1145,7 +1145,7 @@ export default function MethodPayCaseStudy() {
               Near-term
             </span>
             <p className="text-white/80 text-[16px] leading-[150%]">
-              Migration at scale — moving the rest of the incumbent-gateway base
+              Migration at scale. Moving the rest of the incumbent-gateway base
               across, white-glove for high-volume accounts, and sunsetting the
               last legacy connections.
             </p>
@@ -1156,7 +1156,7 @@ export default function MethodPayCaseStudy() {
             </span>
             <p className="text-white/80 text-[16px] leading-[150%]">
               Time-to-payment on the dashboard. We track whether an invoice gets
-              paid, not how long it sat — so the product&rsquo;s central claim
+              paid, but not how long it sat, so the product&rsquo;s central claim
               is the one number we never put in front of the merchant.
             </p>
           </Card>
@@ -1165,7 +1165,7 @@ export default function MethodPayCaseStudy() {
               Growth
             </span>
             <p className="text-white/80 text-[16px] leading-[150%]">
-              Recurring billing — the most-requested capability in the research
+              Recurring billing. The most-requested capability in the research
               and the natural next monetisation layer, since saved payment
               methods are already the foundation. Plus multi-stage dunning.
             </p>
@@ -1176,8 +1176,8 @@ export default function MethodPayCaseStudy() {
             </span>
             <p className="text-white/80 text-[16px] leading-[150%]">
               Merchants still get paid by cash and cheque, and today those land
-              outside Method Pay — recording them is what makes &ldquo;one
-              legible ledger&rdquo; true rather than aspirational. Then
+              outside Method Pay. Recording them is what makes &ldquo;one
+              legible ledger&rdquo; true. Then
               international activation, designed per market rather than
               translated.
             </p>

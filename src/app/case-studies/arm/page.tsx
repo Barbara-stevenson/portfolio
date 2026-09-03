@@ -116,7 +116,7 @@ export default function ARMCaseStudy() {
           href: "/case-studies/bujeti-bills",
           label: "BUJETI",
           description:
-            "Accounts payable inside Bujeti — supplier invoices captured in seconds, approved before they're paid.",
+            "Accounts payable inside Bujeti. Supplier invoices captured in seconds, approved before they're paid.",
         },
       }}
     >
@@ -173,7 +173,7 @@ export default function ARMCaseStudy() {
         <h2 className="text-[28px] font-bold text-white mb-2">The problem</h2>
         <div className="border-t border-white/20 pt-6">
           <p className="text-white/80 text-[20px] leading-[150%] mb-6">
-            ARM had spent three decades building trust with Nigerian wealth —
+            ARM had spent three decades building trust with Nigerian wealth,
             across five business segments: securities trading, robo-advisor,
             savings, pensions, and asset management. With over ₦500 billion
             (~$1.1B+) in assets under management, ARM was Nigeria&rsquo;s
@@ -236,7 +236,7 @@ export default function ARMCaseStudy() {
         <h2 className="text-[28px] font-bold text-white mb-2">My role</h2>
         <div className="border-t border-white/20 pt-6">
           <p className="text-white/80 text-[20px] leading-[150%]">
-            I led the end-to-end design — from strategy through execution to
+            I led the end-to-end design, from strategy through execution to
             post-launch monitoring, across web, mobile, and the marketing
             site. I set the design strategy, defined the information
             architecture, established UX and UI guidelines, ran usability
@@ -307,7 +307,7 @@ export default function ARMCaseStudy() {
         </h2>
         <div className="border-t border-white/20 pt-6">
           <p className="text-white/80 text-[20px] leading-[150%] mb-6">
-            These four came out of the profiling assessment — and they&rsquo;re
+            These four came out of the profiling assessment, and they&rsquo;re
             why &ldquo;application personalisation&rdquo; became a principle:
             the same screen re-weights itself by archetype.
           </p>
@@ -344,7 +344,7 @@ export default function ARMCaseStudy() {
                 The Active Investor
               </h3>
               <p className="text-white/80 text-[16px] leading-[150%]">
-                Confident and hands-on — trades stocks, watches the market.
+                Confident and hands-on. Trades stocks, watches the market.
                 Real-time data, depth on every position, fast execution.
               </p>
             </Card>
@@ -370,7 +370,7 @@ export default function ARMCaseStudy() {
         <div className="border-t border-white/20 pt-6 mb-8">
           <p className="text-white/80 text-[24px] leading-[150%] mb-8">
             I ran mixed-methods research in collaboration with the business
-            analyst and product manager — qualitative interviews with
+            analyst and product manager: qualitative interviews with
             employees and customers, a quantitative survey to ARM&rsquo;s
             entire customer base, and a structured competitor audit.
           </p>
@@ -417,7 +417,7 @@ export default function ARMCaseStudy() {
             <p className="text-white text-[22px] md:text-[26px] leading-[140%] italic font-light mb-4">
               &ldquo;I started investing so I could give my children the kind
               of education and life I didn&rsquo;t have. I just need it to
-              be easy — and I need to trust the people holding my
+              be easy, and I need to trust the people holding my
               money.&rdquo;
             </p>
             <p className="text-white/60 text-[14px] uppercase tracking-wider">
@@ -467,7 +467,7 @@ export default function ARMCaseStudy() {
               {
                 num: "05",
                 title: "Accessibility for all",
-                body: "Usable by people of all abilities. Contrast, semantics, motion — designed in, not bolted on.",
+                body: "Usable by people of all abilities. Contrast, semantics, motion, designed in from the start.",
               },
             ].map((p) => (
               <Card key={p.num}>
@@ -494,7 +494,7 @@ export default function ARMCaseStudy() {
         <div className="border-t border-white/20 pt-6">
           <p className="text-white/80 text-[20px] leading-[150%] mb-6">
             The legacy ARM brand spoke in the register of an
-            investment-bank press release — formal, distant, careful. The
+            investment-bank press release: formal, distant, careful. The
             customers we were trying to win and keep wanted the opposite.
             I established five copy principles and held the team to them
             on every screen.
@@ -509,11 +509,11 @@ export default function ARMCaseStudy() {
               {
                 num: "02",
                 title: "Numbers first, story second",
-                body: "“₦47,210 today · 0.39%” is the format — not “Your portfolio increased by 0.39% today, equating to ₦47,210.”",
+                body: "“₦47,210 today · 0.39%” is the format, rather than “Your portfolio increased by 0.39% today, equating to ₦47,210.”",
               },
               {
                 num: "03",
-                title: "Explain the why, not just the what",
+                title: "Explain the why behind the number",
                 body: "A “Tier 1” badge links to a one-line explanation of what Tier 1 means. A “Money Market Fund” recommendation carries a one-line description.",
               },
               {
@@ -551,7 +551,7 @@ export default function ARMCaseStudy() {
         <div className="border-t border-white/20 pt-6 mb-8">
           <p className="text-white/80 text-[20px] leading-[150%]">
             I designed a compact, flexible IA with five bottom-nav
-            destinations — Home, Portfolio, Explore, Support, Profile. The
+            destinations: Home, Portfolio, Explore, Support, Profile. The
             structure could absorb any future product without restructuring.
           </p>
         </div>
@@ -569,8 +569,8 @@ export default function ARMCaseStudy() {
         </h2>
         <div className="border-t border-white/20 pt-6 mb-8">
           <p className="text-white/80 text-[20px] leading-[150%]">
-            I mapped a five-stage customer journey — Research, Onboarding,
-            Purchasing, Post-Purchase, and Ongoing Engagement — documenting
+            I mapped a five-stage customer journey (Research, Onboarding,
+            Purchasing, Post-Purchase, and Ongoing Engagement), documenting
             at each stage what customers were doing, thinking, feeling, and
             the design opportunities I&rsquo;d target.
           </p>
@@ -591,12 +591,12 @@ export default function ARMCaseStudy() {
           <p className="text-white/80 text-[20px] leading-[150%] mb-6">
             Customers used to log into separate apps for the entire ARM
             suite. I designed a single unified dashboard showing every
-            product side-by-side — with allocation context, performance
+            product side-by-side, with allocation context, performance
             over time, and a recommendation layer driven by the
             customer&rsquo;s risk profile.
           </p>
           <p className="text-white/80 text-[20px] leading-[150%]">
-            The shift wasn&rsquo;t visual — it was strategic. Once
+            The shift wasn&rsquo;t visual. It was strategic. Once
             customers could see their whole financial picture in one place,
             cross-segment engagement became natural. This became the
             foundation for the +45% cross-segment engagement lift.
@@ -617,12 +617,12 @@ export default function ARMCaseStudy() {
           <p className="text-white/80 text-[20px] leading-[150%] mb-6">
             Usability testing surfaced a painful pattern: customers were only
             discovering platform tier limits at the moment they tried to
-            invest more — drop-off at the worst possible moment. I
+            invest more. Drop-off at the worst possible moment. I
             redesigned the success state of onboarding to surface tier
             status upfront, with a one-tap path to upload Tier 3 documents.
           </p>
           <p className="text-white/80 text-[20px] leading-[150%]">
-            I also split the dashboard for new vs. existing customers — the
+            I also split the dashboard for new vs. existing customers. The
             same screen had been trying to serve two very different jobs.
             Registration completion went from 52% to 76%.
           </p>
@@ -636,14 +636,14 @@ export default function ARMCaseStudy() {
       {/* ── Solution 3: Robo Advisor ── */}
       <section className="mb-16">
         <h2 className="text-[28px] font-bold text-white mb-2">
-          The Robo Advisor — turning paralysis into a path
+          The Robo Advisor: turning paralysis into a path
         </h2>
         <div className="border-t border-white/20 pt-6 mb-8">
           <p className="text-white/80 text-[20px] leading-[150%] mb-6">
             Customers told me, again and again: &ldquo;I don&rsquo;t know
             what to buy.&rdquo; So I designed a five-minute Investment
-            Profiling assessment — five questions on income, time horizon,
-            risk appetite, and goals — that outputs a personalised risk
+            Profiling assessment: five questions on income, time horizon,
+            risk appetite, and goals, outputting a personalised risk
             profile (Conservative, Balanced, Aggressive) and three matched
             product recommendations.
           </p>
@@ -663,12 +663,12 @@ export default function ARMCaseStudy() {
       {/* ── Solution 4: Stocks — three views ── */}
       <section className="mb-16">
         <h2 className="text-[28px] font-bold text-white mb-2">
-          Stocks — three views for the most active product
+          Stocks: three views for the most active product
         </h2>
         <div className="border-t border-white/20 pt-6 mb-8">
           <p className="text-white/80 text-[20px] leading-[150%] mb-6">
             Stocks customers are almost exclusively the Active Investor
-            archetype — they need real-time data, depth on every position,
+            archetype. They need real-time data, depth on every position,
             and tools to manage what they already hold. A single page
             can&rsquo;t do that work without becoming overwhelming. I
             designed a three-level progressive disclosure where each surface
@@ -683,7 +683,7 @@ export default function ARMCaseStudy() {
                 &ldquo;What&rsquo;s the market doing?&rdquo;
               </p>
               <p className="text-white/80 text-[16px] leading-[150%]">
-                Market context above the fold — Top Gainers, By Volume, By
+                Market context above the fold: Top Gainers, By Volume, By
                 Value, sector browsing. Personal context immediately below.
                 In-app News & Insights from ARM&rsquo;s research desk.
               </p>
@@ -709,7 +709,7 @@ export default function ARMCaseStudy() {
                 &ldquo;What is this position really doing?&rdquo;
               </p>
               <p className="text-white/80 text-[16px] leading-[150%]">
-                The full breakdown without progressive reveals — Commission,
+                The full breakdown without progressive reveals: Commission,
                 Brokerage, Price change, Profit, Total purchase, Total
                 gain/loss. Active investors trust apps that show them the
                 math.
@@ -738,14 +738,14 @@ export default function ARMCaseStudy() {
             anywhere. I designed the funding sheet to sort payment methods
             dynamically by a 24-hour reliability score for that
             customer&rsquo;s network (debit card, bank transfer, USSD,
-            direct debit) — so the option most likely to succeed was always
+            direct debit), so the option most likely to succeed was always
             at the top. Payment success rate climbed from 32% to 47%.
           </p>
           <p className="text-white/80 text-[20px] leading-[150%] mb-6">
             <strong className="text-white">
               Idle wallet balance earns its keep.
             </strong>{" "}
-            Funded-but-not-yet-invested cash isn&rsquo;t dead — it earns a
+            Funded-but-not-yet-invested cash isn&rsquo;t dead. It earns a
             base yield (up to 9% on USD) with a one-tap opt-in. The wallet
             itself becomes a soft money-market-lite product, creating a
             natural on-ramp from funded → earning → invested.
@@ -757,7 +757,7 @@ export default function ARMCaseStudy() {
             </strong>{" "}
             The team wanted auto-invest at sign-up. I held the recommendation
             back until the moment after a customer&rsquo;s first successful
-            manual top-up — when behaviour was established and trust was
+            manual top-up, when behaviour was established and trust was
             earned. Placing it on the product page (not the wallet) tied the
             commitment to the product the customer had just bought, so the
             recurring contribution carried the same intent as the original
@@ -774,21 +774,21 @@ export default function ARMCaseStudy() {
       {/* ── Solution 6: Product pages — archetype-aware ── */}
       <section className="mb-16">
         <h2 className="text-[28px] font-bold text-white mb-2">
-          Product pages — same scaffold, different emphasis
+          Product pages: same scaffold, different emphasis
         </h2>
         <div className="border-t border-white/20 pt-6 mb-8">
           <p className="text-white/80 text-[20px] leading-[150%] mb-6">
             Every product page in the launched suite (Mutual Funds, Stocks,
             Treasury Bills) was redesigned around one principle: four
             actions are always one tap away, the surrounding context adapts
-            to who is viewing. View, Top up, Withdraw, Buy — the constant
+            to who is viewing. View, Top up, Withdraw, Buy: the constant
             scaffold. Everything else shifts per archetype.
           </p>
           <p className="text-white/80 text-[20px] leading-[150%] mb-6">
             The First-Timer sees the product explained in plain language,
             with Strategic Asset Allocation and Fund Fact Sheet above the
             fold. The Active Investor sees balance, accrued earnings,
-            performance, and transactional actions — education collapses.
+            performance, and transactional actions, and education collapses.
             The Switcher sees a comparison strip (&ldquo;Our Yield 21% p.a.
             vs Others 12&ndash;16% p.a.&rdquo;) plus Disclosure and Fund
             Fact Sheet trust artefacts.
@@ -847,16 +847,16 @@ export default function ARMCaseStudy() {
         <div className="border-t border-white/20 pt-6 mb-8">
           <p className="text-white/80 text-[20px] leading-[150%] mb-6">
             Only 8% of customers held more than one product. Leadership wanted
-            a marketing campaign — but unification had already given us the
+            a marketing campaign. Unification had already given us the
             better surface: the dashboard itself. I designed a contextual
             &ldquo;next best product&rdquo; card that led with the
-            customer&rsquo;s own money — a personalised LTV projection
+            customer&rsquo;s own money: a personalised LTV projection
             (&ldquo;You&rsquo;ve saved ₦340,000 this year; it could be ₦410,000
             in 12 months&rdquo;) instead of generic product marketing.
           </p>
           <p className="text-white/80 text-[20px] leading-[150%]">
             I A/B tested copy and placement; the soft, trust-respecting variant
-            beat the aggressive one — cross-product adoption climbed from{" "}
+            beat the aggressive one. Cross-product adoption climbed from{" "}
             <span className="text-heading-orange font-bold">8% to 23%</span>.
           </p>
         </div>
@@ -887,28 +887,28 @@ export default function ARMCaseStudy() {
             What I learned
           </span>
           <p className="text-white text-[20px] leading-[150%]">
-            &ldquo;Make your money work&rdquo; framing — anchoring on the
-            customer&rsquo;s own balance with a concrete projected gain —
+            &ldquo;Make your money work&rdquo; framing, anchoring on the
+            customer&rsquo;s own balance with a concrete projected gain,
             outperformed generic product pitches. The &ldquo;Why am I seeing
             this?&rdquo; transparency link reduced dismissals; customers who
             understood the targeting logic were more likely to engage.
           </p>
         </Card>
         <p className="text-white/60 text-[15px] leading-[150%]">
-          Instrumented in Mixpanel — card impression as the entry event;
+          Instrumented in Mixpanel: card impression as the entry event;
           opened-MMF-flow, first investment, and 30 / 90-day retention as the
           conversion funnel.
         </p>
       </section>
 
-      {/* ── Three versions, not one redesign ── */}
+      {/* ── Three versions before it worked ── */}
       <section className="mb-16">
         <h2 className="text-[28px] font-bold text-white mb-2">
-          Three versions, not one redesign
+          Three versions before it worked
         </h2>
         <div className="border-t border-white/20 pt-6 mb-8">
           <p className="text-white/80 text-[20px] leading-[150%]">
-            After the first build I ran moderated usability tests — 10
+            After the first build I ran moderated usability tests: 10
             participants over Google Meet, recording every session. The biggest
             finding: one dashboard served both new and existing users, so new
             users logged in to a $0 shell. I shipped, watched the data,
@@ -919,7 +919,7 @@ export default function ARMCaseStudy() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           <div>
             <p className="text-heading-orange text-[14px] font-bold uppercase tracking-wider text-center mb-3">
-              V1 — the default everyone ships
+              V1: the default everyone ships
             </p>
             <LightboxImage
               src="/images/arm-dashboard-V1.png"
@@ -928,13 +928,13 @@ export default function ARMCaseStudy() {
             />
             <p className="text-white/80 text-[16px] leading-[150%] mt-4">
               One dashboard for everyone, with conditional content slots. New
-              users saw empty zeros everywhere — it felt broken. Drop-off was
+              users saw empty zeros everywhere, and it felt broken. Drop-off was
               real; the data sent me back.
             </p>
           </div>
           <div>
             <p className="text-heading-orange text-[14px] font-bold uppercase tracking-wider text-center mb-3">
-              V2 — apologise for the emptiness
+              V2: apologise for the emptiness
             </p>
             <LightboxImage
               src="/images/arm-dashboard-V2.png"
@@ -944,12 +944,12 @@ export default function ARMCaseStudy() {
             <p className="text-white/80 text-[16px] leading-[150%] mt-4">
               A &ldquo;Welcome, let&rsquo;s get you started,&rdquo; an honest
               $0, and a primary CTA to fund or explore. The greybox session
-              confirmed it still felt like a placeholder, not a product.
+              confirmed it still felt like a placeholder.
             </p>
           </div>
           <div>
             <p className="text-heading-orange text-[14px] font-bold uppercase tracking-wider text-center mb-3">
-              V3 — a different surface entirely
+              V3: a different surface entirely
             </p>
             <LightboxImage
               src="/images/arm-dashboard-V3.png"
@@ -957,10 +957,10 @@ export default function ARMCaseStudy() {
               className="w-full rounded-[16px]"
             />
             <p className="text-white/80 text-[16px] leading-[150%] mt-4">
-              The new-user dashboard shouldn&rsquo;t apologise for being empty —
-              it should be a discovery surface, not a monitoring one. Real
+              The new-user dashboard shouldn&rsquo;t apologise for being empty.
+              It should be a discovery surface. Real
               products, top-performing funds with live returns, a BVN nudge and
-              profiling CTA. Balance still $0 — honest — but useful immediately.
+              profiling CTA. Balance still $0, honestly so, but useful immediately.
             </p>
           </div>
         </div>
@@ -969,14 +969,14 @@ export default function ARMCaseStudy() {
             What I learned
           </span>
           <p className="text-white text-[20px] leading-[150%]">
-            The new-user state is its own product, not a degraded version of
+            The new-user state is its own product, rather than a degraded version of
             the active one. That&rsquo;s now my default.
           </p>
         </Card>
         <p className="text-white/80 text-[18px] leading-[150%] mt-6">
           The same sessions surfaced a second fix: tier limits only appeared
           when a customer tried to invest past them. I moved them into the
-          onboarding success state with a one-tap path to upgrade —
+          onboarding success state with a one-tap path to upgrade, and
           registration completion went{" "}
           <span className="text-heading-orange font-bold">52% to 76%</span>.
         </p>
@@ -989,13 +989,13 @@ export default function ARMCaseStudy() {
         </h2>
         <div className="border-t border-white/20 pt-6 mb-8">
           <p className="text-white/80 text-[20px] leading-[150%] mb-6">
-            There was no design system at all. Five products, four teams — and
+            There was no design system at all. Five products, four teams, and
             every component (modals, status pills, money cards, fund rows)
             rebuilt from scratch, slightly differently, each time. No shared
             foundation, no governance, nothing to inherit.
           </p>
           <p className="text-white/80 text-[20px] leading-[150%]">
-            I built it from zero — tokens, type, colour, accessibility — and
+            I built it from zero (tokens, type, colour, accessibility) and
             grew the library component by component as the suite expanded. Just
             as important, I stood up the practices that never existed: weekly
             office hours, pairing with engineers on first implementations, every
@@ -1021,7 +1021,7 @@ export default function ARMCaseStudy() {
         </div>
         <Card className="!p-8">
           <span className="text-heading-orange text-[12px] uppercase tracking-wider font-bold block mb-4">
-            ARM ONE — component library
+            ARM ONE component library
           </span>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-x-6 gap-y-5">
             <div>
@@ -1103,7 +1103,7 @@ export default function ARMCaseStudy() {
           </p>
           <p className="text-white/80 text-[20px] leading-[150%]">
             For prioritisation I used an impact-effort matrix as a team
-            exercise — I presented design options, the team voted, and we
+            exercise. I presented design options, the team voted, and we
             built consensus before backlog refinement. Stakeholder reviews
             ran on a monthly cadence with the executive team.
           </p>
@@ -1113,17 +1113,17 @@ export default function ARMCaseStudy() {
       {/* ── Phased rollout — Pensions ── */}
       <section className="mb-16">
         <h2 className="text-[28px] font-bold text-white mb-2">
-          Phased rollout, not big-bang
+          Phased rollout
         </h2>
         <div className="border-t border-white/20 pt-6">
           <p className="text-white/80 text-[20px] leading-[150%] mb-6">
             The single most important strategic decision on this project was
             what <em>not</em> to migrate in the first phase. ARM is best
-            known for pensions — a thirty-year flagship, the most
+            known for pensions: a thirty-year flagship, the most
             trust-sensitive segment, and the most operationally complex due
             to PenCom regulation. The instinct from leadership was to lead
-            with pensions. The Pensions BU lead — who&rsquo;d been at ARM
-            longer than the rest of the exec team combined — asked me in
+            with pensions. The Pensions BU lead, who&rsquo;d been at ARM
+            longer than the rest of the exec team combined, asked me in
             the April 2022 review why we weren&rsquo;t leading with the
             flagship. I had three slides on cross-product validation. He
             left convinced. Two years later, when I transitioned out, he
@@ -1140,7 +1140,7 @@ export default function ARMCaseStudy() {
           <p className="text-white/80 text-[20px] leading-[150%]">
             With the platform validated through +45% engagement and +40%
             retail participation lift, the pensions migration is the next
-            phase — completing the five-into-one vision.
+            phase, completing the five-into-one vision.
           </p>
         </div>
       </section>
@@ -1153,8 +1153,8 @@ export default function ARMCaseStudy() {
         <div className="border-t border-white/20 pt-6">
           <p className="text-white/80 text-[20px] leading-[150%] mb-6">
             For every feature shipped I maintained ongoing monitoring in
-            Mixpanel — activation, churn, conversion. It was a Sunday
-            Mixpanel session — I was pulling the weekly report — when I
+            Mixpanel: activation, churn, conversion. It was a Sunday
+            Mixpanel session, pulling the weekly report, when I
             noticed the registration funnel bleeding at OTP validation. I
             traced it to unreliable Nigerian telco SMS delivery, had
             engineering on a call Monday morning, and the fix shipped
@@ -1162,8 +1162,8 @@ export default function ARMCaseStudy() {
             following weeks.
           </p>
           <p className="text-white/80 text-[20px] leading-[150%]">
-            Ship → measure → diagnose → escalate → iterate. That loop —
-            and that cadence — is the part of my practice I&rsquo;m most
+            Ship → measure → diagnose → escalate → iterate. That loop,
+            and that cadence, is the part of my practice I&rsquo;m most
             proud of.
           </p>
         </div>
@@ -1187,7 +1187,7 @@ export default function ARMCaseStudy() {
         <div className="border-t border-white/20 pt-6">
           <p className="text-white/80 text-[20px] leading-[150%] mb-8">
             The redesign delivered measurable change at every layer of the
-            funnel — and meaningful business outcomes.
+            funnel, and meaningful business outcomes.
           </p>
 
           {/* Headline metrics — 3-up */}
@@ -1314,9 +1314,9 @@ export default function ARMCaseStudy() {
               </h3>
               <ul className="space-y-3">
                 {[
-                  "Design an early-career / student-investor track from day one. I cut it in 2022 as a deliberate scope decision before a board review — and post-launch, some of our highest-engagement users were 22–26 year olds we hadn't designed for. I'd argue louder for it next time.",
+                  "Design an early-career / student-investor track from day one. I cut it in 2022 as a deliberate scope decision before a board review, and post-launch, some of our highest-engagement users were 22–26 year olds we hadn't designed for. I'd argue louder for it next time.",
                   "Build the gamification & loyalty layer in phase one rather than deferring it.",
-                  "Invest in motion and micro-interactions earlier — they shifted brand perception more than I expected.",
+                  "Invest in motion and micro-interactions earlier. They shifted brand perception more than I expected.",
                 ].map((t, i) => (
                   <li key={i} className="flex items-start gap-2">
                     <span className="w-[6px] h-[6px] rounded-full bg-white/40 shrink-0 mt-[8px]" />
@@ -1333,9 +1333,9 @@ export default function ARMCaseStudy() {
               </h3>
               <ul className="space-y-3">
                 {[
-                  "In finance, the moment of education matters more than the content — tier limits proved it.",
-                  "The new-user state is its own product, not a degraded version of the active one.",
-                  "Trust-respecting design is usually also the highest-converting design — the soft cross-sell beat the aggressive one.",
+                  "In finance, the moment of education matters more than the content, and tier limits proved it.",
+                  "The new-user state is its own product.",
+                  "Trust-respecting design is usually also the highest-converting design. The soft cross-sell beat the aggressive one.",
                 ].map((t, i) => (
                   <li key={i} className="flex items-start gap-2">
                     <span className="w-[6px] h-[6px] rounded-full bg-white/40 shrink-0 mt-[8px]" />
@@ -1358,7 +1358,7 @@ export default function ARMCaseStudy() {
         <div className="border-t border-white/20 pt-6">
           <p className="text-white/80 text-[20px] leading-[150%] mb-6">
             The platform is proven. The next chapter is using that trust to
-            deepen the relationship — not just cross-sell products, but
+            deepen the relationship, going beyond cross-selling products to
             personalise the entire experience to the customer&rsquo;s stage.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
@@ -1367,7 +1367,7 @@ export default function ARMCaseStudy() {
                 Near-term
               </span>
               <p className="text-white/80 text-[16px] leading-[150%]">
-                Migrate ARM Pensions into the unified suite — the flagship I
+                Migrate ARM Pensions into the unified suite, the flagship I
                 held back until the platform proved itself. Now it can complete
                 the five-into-one vision on a trust base that didn&rsquo;t exist
                 at launch.
@@ -1379,7 +1379,7 @@ export default function ARMCaseStudy() {
               </span>
               <p className="text-white/80 text-[16px] leading-[150%]">
                 Move from product-triggered cross-sell cards to
-                behaviour-triggered ones — a customer who&rsquo;s saved for six
+                behaviour-triggered ones. A customer who&rsquo;s saved for six
                 months without investing gets a different surface than one who
                 just deposited. Plus a WhatsApp re-engagement loop for dormant
                 accounts.
@@ -1390,10 +1390,10 @@ export default function ARMCaseStudy() {
                 Strategic
               </span>
               <p className="text-white/80 text-[16px] leading-[150%]">
-                New asset classes — crypto, FX, agricultural investments —
+                New asset classes (crypto, FX, agricultural investments)
                 without fragmenting the platform again. The design system and IA
                 are built to absorb them; the question is sequencing by customer
-                readiness, not product availability.
+                readiness rather than product availability.
               </p>
             </Card>
           </div>
@@ -1405,7 +1405,7 @@ export default function ARMCaseStudy() {
         <h2 className="text-[28px] font-bold text-white mb-2">Conclusion</h2>
         <div className="border-t border-white/20 pt-6">
           <p className="text-white/80 text-[20px] leading-[150%]">
-            ARM One was the most demanding project of my career — and the
+            ARM One was the most demanding project of my career, and the
             one I&rsquo;m most proud of. It taught me how to lead a
             multidisciplinary team through a generational platform change,
             how to balance the politics of five business segments, and how

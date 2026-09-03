@@ -23,7 +23,7 @@ const caseStudiesByCategory: Record<string, CaseStudy[]> = {
       title: "Method Pay",
       category: "METHOD PAY",
       description:
-        "Embedding payments into Method CRM — turning a bolted-on gateway into a native money surface.",
+        "Embedding payments into Method CRM.",
       imageSrc: "/images/methodpay-card.png",
       imageAlt:
         "Method Pay surfaced on the Method home screen with a rate-comparison offer",
