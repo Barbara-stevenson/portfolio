@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 const description =
-  "An operational inventory experience for small product businesses inside Method CRM — research run by a custom AI agent, a locations-not-warehouses scope decision, pick-pack-ship, RBAC, a governed design system, and an AI strategy.";
+  "An operational inventory experience for small product businesses inside Method CRM: research run by a custom AI agent, a locations-not-warehouses scope decision, pick-pack-ship, RBAC, a governed design system, and an AI strategy.";
 
 export const metadata: Metadata = {
   title: "Method Inventory — operational inventory at Method CRM",

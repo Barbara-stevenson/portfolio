@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 const description =
-  "Unifying five financial segments into one consumer-grade investing platform — +45% cross-segment engagement, 52→76% registration completion, 8→23% cross-sell, and a design system across four teams.";
+  "Unifying five financial segments into one consumer-grade investing platform: +45% cross-segment engagement, 52→76% registration completion, 8→23% cross-sell, and a design system across four teams.";
 
 export const metadata: Metadata = {
   title: "ARM ONE — five financial products, one platform",
