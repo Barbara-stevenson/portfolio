@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 
-const description = "Revamping the Bujeti onboarding experience.";
+const description =
+  "Turning a document wall into a three-rung access ladder: sign up and you are in, one certificate opens basic features, full KYC opens the regulated ones, and the ask arrives when someone reaches for a gated feature. +40% subscription conversion.";
 
 export const metadata: Metadata = {
   title: "Bujeti — onboarding redesign",
