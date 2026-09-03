@@ -104,12 +104,18 @@ export default function BujetiOnboardingCaseStudy() {
         <h2 className="text-[28px] font-bold text-white mb-2">The problem</h2>
         <div className="border-t border-white/20 pt-6">
           <p className="text-white/80 text-[20px] leading-[150%] mb-6">
-            Sign-up asked every company for a full set of registration
-            documents before it would let anyone in. Plenty of them did not have
+            Collecting every KYC detail before anyone reached the platform was a
+            business requirement, not an accident. The reasoning was sound on
+            its face: verify first, and every account on the platform is a
+            verified one.
+          </p>
+          <p className="text-white/80 text-[20px] leading-[150%] mb-6">
+            What it produced was drop-off. Plenty of companies did not have
             those documents to hand at the moment they were signing up, so the
             flow stopped there. We were not losing people who had decided
             against Bujeti. We were losing people who had decided{" "}
-            <em>for</em> it and could not finish.
+            <em>for</em> it and could not finish, which meant the requirement
+            was buying clean data on a shrinking number of accounts.
           </p>
           <p className="text-white/80 text-[20px] leading-[150%] mb-6">
             The flow also asked everyone for the same things, regardless of what
@@ -366,6 +372,14 @@ export default function BujetiOnboardingCaseStudy() {
         <h2 className="text-[28px] font-bold text-white mb-2">How I worked</h2>
         <div className="border-t border-white/20 pt-6">
           <ul className="space-y-3">
+            <li className="flex items-start gap-3">
+              <span className="w-[6px] h-[6px] rounded-full bg-white/40 shrink-0 mt-[10px]" />
+              <span className="text-white/80 text-[20px] leading-[150%]">
+                Reopened a settled business requirement, using the drop-off
+                figures to make the case that verifying everyone up front was
+                costing more accounts than it was protecting
+              </span>
+            </li>
             <li className="flex items-start gap-3">
               <span className="w-[6px] h-[6px] rounded-full bg-white/40 shrink-0 mt-[10px]" />
               <span className="text-white/80 text-[20px] leading-[150%]">
